@@ -24,21 +24,21 @@ import demo6 from "@/assets/optimized/demo6-640.webp.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Manual Visual da Arte da Sedução" },
+      { title: "Catálogo Visual das Plantas Medicinais" },
       {
         name: "description",
-        content: "Entenda A Arte da Sedução com conceitos visuais, explicações simples, exemplos práticos e materiais para consulta rápida.",
+        content: "+200 soluções naturais organizadas de forma simples, visual e prática.",
       },
-      { property: "og:title", content: "Manual Visual da Arte da Sedução" },
+      { property: "og:title", content: "Catálogo Visual das Plantas Medicinais" },
       {
         property: "og:description",
-        content: "Conceitos visuais, explicações simples e exemplos práticos para compreender A Arte da Sedução.",
+        content: "+200 soluções naturais, plantas, preparos, utilizações e cuidados em um catálogo visual.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:title", content: "Manual Visual da Arte da Sedução" },
+      { name: "twitter:title", content: "Catálogo Visual das Plantas Medicinais" },
       {
         name: "twitter:description",
-        content: "Conceitos visuais, explicações simples e exemplos práticos para compreender A Arte da Sedução.",
+        content: "+200 soluções naturais, plantas, preparos, utilizações e cuidados em um catálogo visual.",
       },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -237,7 +237,7 @@ function Index() {
       <Section className="pt-16 md:pt-24">
         <div className="max-w-3xl mx-auto text-center fade-up">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-white">
-            Entenda <span className="text-gradient-gold">A Arte da Sedução</span> de forma simples, visual e prática.
+            <span className="text-gradient-gold">+200 soluções naturais</span> organizadas de forma simples, visual e prática.
           </h1>
 
           <div className="max-w-xl mx-auto mb-8">
@@ -247,7 +247,7 @@ function Index() {
                sizes="(max-width: 640px) calc(100vw - 48px), 576px"
                width="720"
                height="720"
-               alt="Manual Visual da Arte da Sedução"
+               alt="Catálogo Visual das Plantas Medicinais"
                loading="eager"
                fetchPriority="high"
                decoding="sync"
@@ -256,16 +256,16 @@ function Index() {
           </div>
 
           <p className="text-[#F5F5F5]/80 text-base md:text-lg leading-relaxed mb-8">
-            Os principais conceitos de uma das obras mais conhecidas sobre sedução e comportamento humano organizados em um material visual, simples e fácil de consultar — com explicações claras, elementos visuais e exemplos para facilitar sua compreensão.
+            Tenha +200 soluções naturais organizadas em um único catálogo visual, com informações sobre plantas, formas de preparo, utilizações e cuidados — tudo estruturado para você consultar com facilidade sempre que precisar.
           </p>
 
           <ul className="space-y-3 mb-10 inline-block text-left">
             {[
-              "Compreenda os principais conceitos sem precisar enfrentar uma leitura complexa.",
-              "Veja rapidamente a ideia que deseja compreender ou relembrar.",
-              "Entenda os diferentes arquétipos, perfis e estratégias apresentados na obra.",
-              "Visualize como os conceitos podem aparecer em situações e comportamentos.",
-              "Tenha um material organizado para estudar, revisar e consultar sempre que precisar.",
+              "Encontre rapidamente a planta ou informação que procura.",
+              "Consulte as informações de forma visual e organizada.",
+              "Veja diferentes formas de utilização e preparo.",
+              "Tenha um material simples para consultar sempre que precisar.",
+              "Organize seu conhecimento sobre plantas medicinais em um único lugar.",
             ].map((b) => (
               <li key={b} className="flex items-start gap-3 text-[#F5F5F5]/90">
                 <CheckIcon />
@@ -288,15 +288,15 @@ function Index() {
       <Section className="bg-[#080808]">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Os materiais do <span className="text-gradient-gold">Manual Visual da Arte da Sedução</span> possuem
+            O <span className="text-gradient-gold">Catálogo Visual das Plantas Medicinais</span> possui
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { i: "📖", t: "CONCEITOS EXPLICADOS", d: "Os principais conceitos da obra apresentados de forma organizada para facilitar a compreensão e a revisão." },
-            { i: "💬", t: "LINGUAGEM SIMPLES", d: "Explicações objetivas para você compreender as ideias sem precisar enfrentar textos complicados." },
-            { i: "🎯", t: "EXEMPLOS E CONTEXTOS", d: "Referências e situações que ajudam a visualizar como os conceitos podem aparecer nas relações e no comportamento humano." },
-            { i: "🔍", t: "CONSULTA RÁPIDA", d: "Encontre o conceito que procura e revise o conteúdo em poucos minutos." },
+            { i: "📖", t: "+200 SOLUÇÕES ORGANIZADAS", d: "Informações organizadas para facilitar a consulta e encontrar rapidamente o que você procura." },
+            { i: "🔎", t: "CONSULTA VISUAL", d: "Conteúdo apresentado de forma visual para tornar a localização das informações mais simples." },
+            { i: "🫖", t: "FORMAS DE PREPARO", d: "Veja as principais formas de preparo apresentadas de maneira clara e organizada." },
+            { i: "📋", t: "CONSULTA RÁPIDA", d: "Encontre uma planta, necessidade ou informação sem precisar percorrer todo o material." },
           ].map((c) => (
             <div key={c.t} className="premium-card rounded-xl p-6">
               <div className="w-14 h-14 rounded-full bg-[#C8A96B]/10 border border-[#C8A96B]/30 flex items-center justify-center text-2xl mb-4">{c.i}</div>
@@ -307,9 +307,9 @@ function Index() {
         </div>
         <div className="text-center mt-14">
           <p className="text-xl md:text-2xl font-semibold max-w-2xl mx-auto mb-6 text-[#F5F5F5]">
-            Transforme uma leitura complexa em algo simples de compreender, visualizar e consultar.
+            Tenha +200 soluções naturais em um material simples de compreender, visualizar e consultar.
           </p>
-          <CTAButton onClick={scrollToOffer}>EU QUERO O MANUAL VISUAL</CTAButton>
+          <CTAButton onClick={scrollToOffer}>EU QUERO O CATÁLOGO VISUAL</CTAButton>
         </div>
       </Section>
 
@@ -325,7 +325,7 @@ function Index() {
           <div className="relative">
             <GoldOrnament />
             <h2 className="text-3xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight mb-4">
-              Quantas vezes você já precisou voltar a uma ideia para realmente conseguir compreendê-la?
+              Quantas vezes você já precisou procurar uma informação sobre uma planta e não encontrou facilmente?
             </h2>
             <p className="text-[#F5F5F5]/70 mb-8">Aproveite a oferta por tempo limitado.</p>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
@@ -342,12 +342,12 @@ function Index() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { t: "COMPREENDER OS PRINCIPAIS CONCEITOS", d: "Tenha os principais conceitos de A Arte da Sedução organizados de forma simples, visual e fácil de consultar." },
-            { t: "TORNAR O ESTUDO MAIS SIMPLES", d: "Compreenda ideias que podem parecer complexas através de explicações objetivas e estruturas visuais." },
-            { t: "REVISAR COM FACILIDADE", d: "Consulte rapidamente um conceito quando quiser relembrar determinada ideia." },
-            { t: "ECONOMIZAR TEMPO DE ESTUDO", d: "Encontre rapidamente aquilo que procura sem precisar percorrer novamente todo o conteúdo." },
-            { t: "MEMORIZAR COM MAIS FACILIDADE", d: "Use elementos visuais, palavras-chave e estruturas resumidas para reforçar a compreensão e a revisão." },
-            { t: "TER UMA FERRAMENTA DE CONSULTA", d: "Tenha um material organizado para estudar e consultar sempre que precisar." },
+            { t: "ENCONTRAR INFORMAÇÕES COM FACILIDADE", d: "Tenha plantas e informações organizadas em um único catálogo visual." },
+            { t: "TORNAR A CONSULTA MAIS SIMPLES", d: "Veja as informações de maneira objetiva, visual e organizada." },
+            { t: "ENCONTRAR RAPIDAMENTE O QUE PROCURA", d: "Consulte uma planta ou categoria sem precisar procurar em diferentes lugares." },
+            { t: "ECONOMIZAR TEMPO", d: "Tenha as informações reunidas em um único material de consulta." },
+            { t: "TER TUDO ORGANIZADO", d: "Use índices, categorias e fichas para localizar o conteúdo com mais facilidade." },
+            { t: "TER UMA FERRAMENTA DE CONSULTA", d: "Tenha um material para consultar sempre que precisar." },
           ].map((c) => (
             <article key={c.t} className="premium-card rounded-xl p-6">
               <CheckIcon className="mb-4" />
@@ -371,7 +371,7 @@ function Index() {
               sizes="(max-width: 767px) calc(100vw - 96px), 528px"
               width="720"
               height="720"
-              alt="Manual Visual da Arte da Sedução"
+              alt="Catálogo Visual das Plantas Medicinais"
               loading="lazy"
               decoding="async"
               className="w-full h-auto subtle-float"
@@ -380,22 +380,22 @@ function Index() {
           <div>
             <span className="inline-block px-3 py-1 rounded-full bg-[#22C55E]/15 border border-[#22C55E]/40 text-[#22C55E] text-xs font-semibold mb-4">⚡ ACESSO IMEDIATO</span>
             <p className="text-[#F5F5F5]/85 mb-2">Tudo foi organizado para ser simples de utilizar e consultar.</p>
-            <p className="text-[#F5F5F5]/70 mb-6">Você escolhe qualquer conceito e começa a estudar imediatamente.</p>
-            <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">Manual Visual da Arte da Sedução</h3>
+            <p className="text-[#F5F5F5]/70 mb-6">Você pode escolher uma planta, localizar a informação desejada e voltar ao conteúdo sempre que precisar.</p>
+            <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">Catálogo Visual das Plantas Medicinais</h3>
             <ul className="space-y-3">
             {[
-              "Conceitos apresentados visualmente",
-              "Arquétipos organizados",
-              "Tipos de alvos apresentados de forma estruturada",
-              "Estratégias organizadas por fases",
-              "Explicações simples e objetivas",
-              "Exemplos e contextos",
-              "O que observar",
-              "Palavras-chave",
-              "Frases para memorizar",
-              "Exercícios e reflexões",
-              "Mapas visuais",
-              "Consulta rápida",
+              "+200 soluções naturais organizadas visualmente",
+              "Plantas medicinais organizadas",
+              "Fichas de consulta",
+              "Principais utilizações",
+              "Formas de preparo",
+              "Partes utilizadas",
+              "Cuidados importantes",
+              "Consulta por necessidade",
+              "Índice de plantas",
+              "Índice por necessidade",
+              "Acesso imediato",
+              "Acesso imediato",
               "Acesso imediato",
             ].map((b) => (
                 <li key={b} className="flex items-center gap-3 text-[#F5F5F5]/90">
@@ -420,23 +420,23 @@ function Index() {
           {[
             {
               img: nhBonus1.url,
-              t: "Resumos Visuais da Arte da Sedução",
-              d: "Os principais conceitos organizados em uma estrutura visual para facilitar a revisão e a memorização.",
+              t: "Lista da Farmácia Natural",
+              d: "Uma lista prática para organizar as principais plantas e itens que você pode ter na sua farmácia natural.",
             },
             {
               img: nhBonus2.url,
-              t: "Mapa Mental da Arte da Sedução",
-              d: "Uma visão geral dos principais conceitos e suas conexões para você conseguir visualizar a estrutura da obra de forma ampla.",
+              t: "Guia Visual de Preparos",
+              d: "Um guia visual com diferentes formas de preparo apresentadas de maneira simples, organizada e fácil de consultar.",
             },
             {
               img: nhBonus3.url,
-              t: "Checklist de Aplicação da Arte da Sedução",
-              d: "Uma ferramenta prática para observar situações, comportamentos e padrões relacionados aos conceitos estudados.",
+              t: "Fichas de Consulta Rápida",
+              d: "Fichas práticas para consultar rapidamente as principais informações sobre as plantas medicinais.",
             },
             {
               img: nhBonus4.url,
-              t: "Plano de Aplicação da Arte da Sedução",
-              d: "Uma estrutura organizada para transformar o estudo em um processo de observação, reflexão e aplicação consciente.",
+              t: "Checklist da Farmácia Natural",
+              d: "Um checklist para organizar sua farmácia natural e acompanhar os itens que você já possui e os que deseja adicionar.",
             },
           ].map((b, i) => (
             <div key={b.t} className="premium-card rounded-xl overflow-hidden flex flex-col">
@@ -475,7 +475,7 @@ function Index() {
             </div>
             <p className="text-[#F5F5F5]/80 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
-              {["Manual Visual da Arte da Sedução"].map((t) => (
+              {["Catálogo Visual das Plantas Medicinais"].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[#F5F5F5]/85 text-sm">
                   <CheckIcon /><span>{t}</span>
                 </li>
@@ -503,19 +503,19 @@ function Index() {
             <p className="text-[#F5F5F5]/85 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
               {[
-                "Manual Visual da Arte da Sedução",
-                "Conceitos apresentados visualmente",
-                "Arquétipos organizados",
-                "Tipos de alvos",
-                "Estratégias organizadas por fases",
-                "Explicações simples e organizadas",
-                "Exemplos e contextos",
-                "O que observar",
-                "Palavras-chave",
-                "Frases para memorizar",
-                "Mapas visuais",
-                "Exercícios e reflexões",
-                "Consulta rápida",
+                "Catálogo Visual das Plantas Medicinais",
+                "+200 soluções naturais organizadas visualmente",
+                "Plantas medicinais organizadas",
+                "Fichas de consulta",
+                "Principais utilizações",
+                "Formas de preparo",
+                "Partes utilizadas",
+                "Cuidados importantes",
+                "Consulta por necessidade",
+                "Índice de plantas",
+                "Acesso imediato",
+                "Índice por necessidade",
+                "Acesso imediato",
                 "Acesso imediato",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[#F5F5F5]/90 text-sm">
@@ -523,10 +523,10 @@ function Index() {
                 </li>
               ))}
               {[
-                "Bônus #1 — Resumos Visuais da Arte da Sedução",
-                "Bônus #2 — Mapa Mental da Arte da Sedução",
-                "Bônus #3 — Checklist de Aplicação da Arte da Sedução",
-                "Bônus #4 — Plano de Aplicação da Arte da Sedução",
+                "Bônus #1 — Lista da Farmácia Natural",
+                "Bônus #2 — Guia Visual de Preparos",
+                "Bônus #3 — Fichas de Consulta Rápida",
+                "Bônus #4 — Checklist da Farmácia Natural",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[#F5F5F5]/90 text-sm">
                   <span className="shrink-0 w-6 h-6 rounded-full bg-[#C8A96B]/15 border border-[#C8A96B]/40 flex items-center justify-center text-[#C8A96B] text-sm">🎁</span>
@@ -548,10 +548,10 @@ function Index() {
         <div className="max-w-3xl mx-auto text-center mt-14">
           <GoldOrnament />
           <p className="text-lg md:text-2xl font-semibold leading-snug text-[#F5F5F5]">
-            Uma única compreensão pode mudar completamente a forma como você interpreta uma situação.
+            Quando as informações estão organizadas, fica muito mais fácil encontrar aquilo que você procura.
           </p>
           <p className="text-[#F5F5F5]/70 mt-4">
-            Quando conceitos complexos ficam mais fáceis de compreender, você ganha mais clareza para observar, interpretar e refletir sobre comportamentos e relações.
+            Tenha plantas, utilizações, preparos e cuidados reunidos em um único material visual para consultar sempre que precisar.
           </p>
         </div>
       </Section>
@@ -571,13 +571,13 @@ function Index() {
             </div>
           </div>
           <h2 className="text-2xl md:text-4xl font-semibold mb-6">
-            Você tem garantia vitalícia no Manual Visual da Arte da Sedução.
+            Você tem garantia vitalícia no Catálogo Visual das Plantas Medicinais.
           </h2>
           <p className="text-[#F5F5F5]/75 mb-4">Isso significa que, a qualquer momento, se você achar que:</p>
           <ul className="space-y-3 mb-6 inline-block text-left">
             {[
               "o material não faz sentido para seus objetivos",
-              "o conteúdo não ajuda na sua compreensão",
+              "o conteúdo não ajuda na sua consulta",
               "ou simplesmente não quiser continuar com o produto",
             ].map((t) => (
               <li key={t} className="flex items-start gap-3 text-[#F5F5F5]/85">
@@ -592,7 +592,7 @@ function Index() {
             Essa garantia existe porque acreditamos no valor prático do material.
           </p>
           <p className="text-[#F5F5F5]/70 leading-relaxed max-w-xl mx-auto mb-3">
-            Você não está comprando apenas informação. Está adquirindo uma biblioteca visual criada para facilitar a compreensão, revisão e consulta dos principais conceitos de A Arte da Sedução.
+            Você não está comprando apenas informação. Está adquirindo uma biblioteca visual criada para facilitar a consulta e organização das informações sobre plantas medicinais.
           </p>
           <p className="text-[#F5F5F5]/85 leading-relaxed max-w-xl mx-auto">
             Se não fizer sentido para você, o risco fica do nosso lado.
@@ -608,10 +608,10 @@ function Index() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { i: "🛒", t: "Conclua sua compra", d: "Após a confirmação do pagamento, seu acesso é liberado." },
+            { i: "🛒", t: "Conclua sua compra", d: "Após a confirmação do pagamento, seu acesso é liberado automaticamente." },
             { i: "📩", t: "Entre na área de membros", d: "Todo o conteúdo ficará organizado para acesso imediato." },
-            { i: "📱", t: "Acesse os materiais", items: ["Manual Visual da Arte da Sedução", "Bônus 01 — Resumos Visuais", "Bônus 02 — Mapa Mental", "Bônus 03 — Checklist de Aplicação", "Bônus 04 — Plano de Aplicação"] },
-            { i: "📚", t: "Comece a estudar", items: ["Escolha qualquer conceito", "Entenda a ideia", "Visualize os principais pontos", "Revise em poucos minutos", "Consulte sempre que precisar"] },
+            { i: "📱", t: "Acesse os materiais", items: ["Catálogo Visual das Plantas Medicinais", "Bônus 01 — Lista da Farmácia Natural", "Bônus 02 — Guia Visual de Preparos", "Bônus 03 — Fichas de Consulta Rápida", "Bônus 04 — Checklist da Farmácia Natural"] },
+            { i: "📚", t: "Comece a consultar", items: ["Escolha uma planta ou categoria", "Encontre a informação desejada", "Consulte as formas de preparo", "Veja os cuidados importantes", "Volte ao material sempre que precisar"] },
           ].map((s, i) => (
             <div key={s.t} className="premium-card rounded-xl p-6 text-center">
               <div className="w-14 h-14 rounded-full bg-[#C8A96B]/10 border border-[#C8A96B]/30 flex items-center justify-center text-2xl mx-auto mb-4">{s.i}</div>
@@ -643,16 +643,16 @@ function Index() {
         </div>
         <div className="max-w-3xl mx-auto space-y-3">
           {[
-            { q: "Preciso ler o livro original para aproveitar o material?", a: "Não. O Manual Visual foi criado para facilitar a compreensão e a consulta dos principais conceitos de A Arte da Sedução. Você pode começar pelo Manual e consultar os conceitos de forma independente, sempre que quiser." },
-            { q: "Serve para quem nunca estudou o assunto?", a: "Sim. O conteúdo foi organizado de forma simples, visual e objetiva, tornando a experiência mais acessível mesmo para quem está tendo o primeiro contato com os conceitos." },
-            { q: "Posso acessar pelo celular?", a: "Sim. Você poderá acessar o material digital pelo celular, tablet ou computador, de onde estiver." },
-            { q: "O acesso é imediato?", a: "Sim. Após a confirmação do pagamento, o acesso aos materiais é liberado automaticamente para você começar a estudar." },
-            { q: "Os materiais podem ser impressos?", a: "Sim. Os materiais digitais podem ser utilizados para consulta e, quando você preferir, também podem ser impressos para estudo offline." },
+            { q: "O que é o Catálogo Visual das Plantas Medicinais?", a: "É um material digital em PDF que reúne +200 soluções naturais e informações sobre plantas medicinais de forma visual, organizada e fácil de consultar." },
+            { q: "O material serve para iniciantes?", a: "Sim. O conteúdo foi estruturado para facilitar a consulta, inclusive para quem está começando a conhecer as plantas medicinais." },
+            { q: "Posso acessar pelo celular?", a: "Sim. Como o produto é digital, você poderá acessar o material pelo celular e por outros dispositivos compatíveis com PDF." },
+            { q: "O acesso é imediato?", a: "Sim. Após a confirmação do pagamento, o acesso aos materiais é liberado automaticamente." },
+            { q: "Os materiais podem ser impressos?", a: "Sim. Por serem materiais em PDF, você pode optar por utilizá-los digitalmente ou imprimir os conteúdos para consulta física." },
             { q: "Os 4 bônus já estão incluídos?", a: "Sim. Ao escolher o Plano Completo, você recebe o Manual Visual + os 4 bônus exclusivos, sem precisar fazer nenhuma compra adicional." },
-            { q: "O acesso possui mensalidade?", a: "Não. É um pagamento único. Você não precisa pagar mensalidade ou assinatura para ter acesso aos materiais." },
-            { q: "Posso revisar o material sempre que quiser?", a: "Sim. Depois de adquirir o acesso, você poderá retornar ao material sempre que quiser para estudar, revisar ou consultar os conceitos." },
-            { q: "Como funciona a garantia?", a: "Você conta com garantia vitalícia. Se, depois de conhecer o material, perceber que ele não faz sentido para seus objetivos, não ajuda na sua compreensão ou simplesmente decidir que não quer continuar, poderá solicitar o reembolso dentro das condições da garantia." },
-            { q: "Esse material ensina a manipular pessoas?", a: "Não. O Manual tem caráter educacional. Ele organiza e apresenta conceitos relacionados à sedução, comportamento e relações humanas para facilitar estudo, compreensão e reflexão. O objetivo é ampliar sua percepção sobre esses conceitos — não incentivar manipulação, coerção ou desrespeito à vontade de outras pessoas." },
+            { q: "O acesso possui mensalidade?", a: "Não. É uma compra única. Você não precisa pagar mensalidade para continuar acessando o material." },
+            { q: "Posso revisar o material sempre que quiser?", a: "Sim. O material fica disponível para você consultar novamente sempre que precisar." },
+            { q: "Como funciona a garantia?", a: "A garantia é vitalícia. Se o material não fizer sentido para seus objetivos, não ajudar na sua consulta ou você simplesmente não quiser continuar com o produto, poderá solicitar o reembolso." },
+            { q: "O material substitui orientação de um profissional de saúde?", a: "Não. O catálogo é um material educacional e de consulta. Informações sobre saúde, sintomas, medicamentos, condições específicas ou situações individuais devem ser avaliadas com um profissional de saúde qualificado." },
           ].map((f, i) => (
             <FaqItem key={i} q={f.q} a={f.a} />
           ))}
@@ -663,16 +663,16 @@ function Index() {
       <Section className="text-center">
         <GoldOrnament />
         <h2 className="text-3xl md:text-4xl font-semibold max-w-3xl mx-auto leading-tight mb-8">
-          Torne <span className="text-gradient-gold">A Arte da Sedução</span> mais simples de compreender.
+          Tenha <span className="text-gradient-gold">+200 soluções naturais</span> organizadas em um catálogo simples de consultar.
         </h2>
-        <p className="text-[#F5F5F5]/70 mb-8">ESTUDE. VISUALIZE. REVISE. COMPREENDA.</p>
+        <p className="text-[#F5F5F5]/70 mb-8"></p>
         <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
         <div className="mt-16 pt-8 border-t border-[#C8A96B]/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-[#F5F5F5]/45 leading-relaxed text-left">
           <p className="text-center text-[#F5F5F5]/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
           <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
-          <p>O Manual Visual da Arte da Sedução é um material independente de caráter educacional e não é afiliado, patrocinado ou endossado pelo autor ou pela editora da obra original.</p>
-          <p>Todos os direitos sobre a obra original A Arte da Sedução permanecem pertencentes aos respectivos titulares. Este material não substitui a leitura da obra original e foi desenvolvido com foco em organização visual, estudo, compreensão e consulta.</p>
-          <p>A reprodução não autorizada deste material, no todo ou em parte, constitui violação dos direitos autorais, sujeitando os infratores às sanções previstas na legislação aplicável.</p>
+          <p>O Catálogo Visual das Plantas Medicinais é um material independente de caráter educacional. As informações apresentadas não substituem orientação, diagnóstico ou tratamento realizado por profissional de saúde qualificado.</p>
+          <p></p>
+          <p>A reprodução não autorizada desta publicação, no todo ou em parte, por quaisquer meios, constitui violação dos direitos autorais, sujeitando os infratores às sanções previstas na legislação aplicável.</p>
         </div>
       </Section>
     </main>
