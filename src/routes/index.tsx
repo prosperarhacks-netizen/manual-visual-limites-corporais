@@ -1,7 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import receber480 from "@/assets/optimized/receber-480.webp.asset.json";
-import receber720 from "@/assets/optimized/receber-720.webp.asset.json";
 import bloco1Imagem from "@/assets/catalogo-novo/1-Photoroom.png.asset.json";
 import bloco2Imagem1 from "@/assets/catalogo-novo/2.jpg.asset.json";
 import bloco2Imagem2 from "@/assets/catalogo-novo/3.jpg.asset.json";
