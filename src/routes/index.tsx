@@ -20,6 +20,12 @@ import demo3 from "@/assets/optimized/demo3-640.webp.asset.json";
 import demo4 from "@/assets/optimized/demo4-640.webp.asset.json";
 import demo5 from "@/assets/optimized/demo5-640.webp.asset.json";
 import demo6 from "@/assets/optimized/demo6-640.webp.asset.json";
+import bloco1Imagem from "@/assets/catalogo-novo/1-Photoroom.png.asset.json";
+import bloco2Imagem1 from "@/assets/catalogo-novo/2.jpg.asset.json";
+import bloco2Imagem2 from "@/assets/catalogo-novo/3.jpg.asset.json";
+import bloco2Imagem3 from "@/assets/catalogo-novo/4.jpg.asset.json";
+import bloco2Imagem4 from "@/assets/catalogo-novo/5.jpg.asset.json";
+import bloco2Imagem5 from "@/assets/catalogo-novo/6.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -46,8 +52,7 @@ export const Route = createFileRoute("/")({
       {
         rel: "preload",
         as: "image",
-        href: hero720.url,
-        imageSrcSet: `${hero480.url} 480w, ${hero720.url} 720w`,
+        href: bloco1Imagem.url,
         imageSizes: "(max-width: 640px) calc(100vw - 48px), 576px",
         fetchPriority: "high",
       },
@@ -60,7 +65,13 @@ const CHECKOUT_BASICO = "https://pay.cakto.com.br/ibaapmw";
 const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/3bvoj8e_1076779";
 const TODAY = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo" }).format(new Date());
 
-const PAGINAS_MANUAL = [b2_1.url, b2_2.url, b2_3.url, b2_4.url, b2_5.url, b2_6.url];
+const PAGINAS_MANUAL = [
+  bloco2Imagem1.url,
+  bloco2Imagem2.url,
+  bloco2Imagem3.url,
+  bloco2Imagem4.url,
+  bloco2Imagem5.url,
+];
 
 function scrollToOffer(e: React.MouseEvent) {
   e.preventDefault();
@@ -242,11 +253,10 @@ function Index() {
 
           <div className="max-w-xl mx-auto mb-8">
              <img
-               src={hero720.url}
-               srcSet={`${hero480.url} 480w, ${hero720.url} 720w`}
+               src={bloco1Imagem.url}
                sizes="(max-width: 640px) calc(100vw - 48px), 576px"
-               width="720"
-               height="720"
+               width="1080"
+               height="1080"
                alt="Catálogo Visual das Plantas Medicinais"
                loading="eager"
                fetchPriority="high"
