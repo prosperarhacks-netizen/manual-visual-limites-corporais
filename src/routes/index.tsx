@@ -293,7 +293,7 @@ function Index() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { i: "📖", t: "+200 SOLUÇÕES ORGANIZADAS", d: "Informações organizadas para facilitar a consulta e encontrar rapidamente o que você procura." },
+            { i: "🌿", t: "+200 SOLUÇÕES ORGANIZADAS", d: "Informações organizadas para facilitar a consulta e encontrar rapidamente o que você procura." },
             { i: "🔎", t: "CONSULTA VISUAL", d: "Conteúdo apresentado de forma visual para tornar a localização das informações mais simples." },
             { i: "🫖", t: "FORMAS DE PREPARO", d: "Veja as principais formas de preparo apresentadas de maneira clara e organizada." },
             { i: "📋", t: "CONSULTA RÁPIDA", d: "Encontre uma planta, necessidade ou informação sem precisar percorrer todo o material." },
@@ -394,8 +394,6 @@ function Index() {
               "Consulta por necessidade",
               "Índice de plantas",
               "Índice por necessidade",
-              "Acesso imediato",
-              "Acesso imediato",
               "Acesso imediato",
             ].map((b) => (
                 <li key={b} className="flex items-center gap-3 text-[#F5F5F5]/90">
@@ -513,9 +511,7 @@ function Index() {
                 "Cuidados importantes",
                 "Consulta por necessidade",
                 "Índice de plantas",
-                "Acesso imediato",
                 "Índice por necessidade",
-                "Acesso imediato",
                 "Acesso imediato",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[#F5F5F5]/90 text-sm">
@@ -648,7 +644,7 @@ function Index() {
             { q: "Posso acessar pelo celular?", a: "Sim. Como o produto é digital, você poderá acessar o material pelo celular e por outros dispositivos compatíveis com PDF." },
             { q: "O acesso é imediato?", a: "Sim. Após a confirmação do pagamento, o acesso aos materiais é liberado automaticamente." },
             { q: "Os materiais podem ser impressos?", a: "Sim. Por serem materiais em PDF, você pode optar por utilizá-los digitalmente ou imprimir os conteúdos para consulta física." },
-            { q: "Os 4 bônus já estão incluídos?", a: "Sim. Ao escolher o Plano Completo, você recebe o Manual Visual + os 4 bônus exclusivos, sem precisar fazer nenhuma compra adicional." },
+            { q: "Os 4 bônus já estão incluídos?", a: "Sim. No Plano Completo, os quatro bônus são entregues gratuitamente junto com o Catálogo Visual." },
             { q: "O acesso possui mensalidade?", a: "Não. É uma compra única. Você não precisa pagar mensalidade para continuar acessando o material." },
             { q: "Posso revisar o material sempre que quiser?", a: "Sim. O material fica disponível para você consultar novamente sempre que precisar." },
             { q: "Como funciona a garantia?", a: "A garantia é vitalícia. Se o material não fizer sentido para seus objetivos, não ajudar na sua consulta ou você simplesmente não quiser continuar com o produto, poderá solicitar o reembolso." },
@@ -665,13 +661,11 @@ function Index() {
         <h2 className="text-3xl md:text-4xl font-semibold max-w-3xl mx-auto leading-tight mb-8">
           Tenha <span className="text-gradient-gold">+200 soluções naturais</span> organizadas em um catálogo simples de consultar.
         </h2>
-        <p className="text-[#F5F5F5]/70 mb-8"></p>
         <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
         <div className="mt-16 pt-8 border-t border-[#C8A96B]/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-[#F5F5F5]/45 leading-relaxed text-left">
           <p className="text-center text-[#F5F5F5]/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
           <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
           <p>O Catálogo Visual das Plantas Medicinais é um material independente de caráter educacional. As informações apresentadas não substituem orientação, diagnóstico ou tratamento realizado por profissional de saúde qualificado.</p>
-          <p></p>
           <p>A reprodução não autorizada desta publicação, no todo ou em parte, por quaisquer meios, constitui violação dos direitos autorais, sujeitando os infratores às sanções previstas na legislação aplicável.</p>
         </div>
       </Section>
