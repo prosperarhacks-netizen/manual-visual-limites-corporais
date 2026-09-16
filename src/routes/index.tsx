@@ -1,13 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import hero480 from "@/assets/optimized/hero-480.webp.asset.json";
-import hero720 from "@/assets/optimized/hero-720.webp.asset.json";
-import receber480 from "@/assets/optimized/receber-480.webp.asset.json";
-import receber720 from "@/assets/optimized/receber-720.webp.asset.json";
-import nhBonus1 from "@/assets/optimized/bonus1-540.webp.asset.json";
-import nhBonus2 from "@/assets/optimized/bonus2-540.webp.asset.json";
-import nhBonus3 from "@/assets/optimized/bonus3-540.webp.asset.json";
-import nhBonus4 from "@/assets/optimized/bonus4-540.webp.asset.json";
 import bloco1Imagem from "@/assets/catalogo-novo/1-Photoroom.png.asset.json";
 import bloco2Imagem1 from "@/assets/catalogo-novo/2.jpg.asset.json";
 import bloco2Imagem2 from "@/assets/catalogo-novo/3.jpg.asset.json";
@@ -20,6 +12,12 @@ import demonstrativo3 from "@/assets/catalogo-novo/9.jpg.asset.json";
 import demonstrativo4 from "@/assets/catalogo-novo/10.jpg.asset.json";
 import demonstrativo5 from "@/assets/catalogo-novo/11.jpg.asset.json";
 import tudoQueRecebeImagem from "@/assets/catalogo-novo/2-Photoroom.png.asset.json";
+import bonus1Imagem from "@/assets/catalogo-novo/bonus-1-novo.jpg.asset.json";
+import bonus2Imagem from "@/assets/catalogo-novo/bonus-2-novo.jpg.asset.json";
+import bonus3Imagem from "@/assets/catalogo-novo/bonus-3-novo.jpg.asset.json";
+import bonus4Imagem from "@/assets/catalogo-novo/bonus-4-novo.jpg.asset.json";
+import planoBasicoImagem from "@/assets/catalogo-novo/plano-basico-novo.png.asset.json";
+import planoCompletoImagem from "@/assets/catalogo-novo/plano-completo-novo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -418,22 +416,22 @@ function Index() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             {
-              img: nhBonus1.url,
+               img: bonus1Imagem.url,
               t: "Lista da Farmácia Natural",
               d: "Uma lista prática para organizar as principais plantas e itens que você pode ter na sua farmácia natural.",
             },
             {
-              img: nhBonus2.url,
+               img: bonus2Imagem.url,
               t: "Guia Visual de Preparos",
               d: "Um guia visual com diferentes formas de preparo apresentadas de maneira simples, organizada e fácil de consultar.",
             },
             {
-              img: nhBonus3.url,
+               img: bonus3Imagem.url,
               t: "Fichas de Consulta Rápida",
               d: "Fichas práticas para consultar rapidamente as principais informações sobre as plantas medicinais.",
             },
             {
-              img: nhBonus4.url,
+               img: bonus4Imagem.url,
               t: "Checklist da Farmácia Natural",
               d: "Um checklist para organizar sua farmácia natural e acompanhar os itens que você já possui e os que deseja adicionar.",
             },
@@ -470,7 +468,7 @@ function Index() {
           <article className="premium-card rounded-2xl p-8 flex flex-col">
             <h3 className="text-xl md:text-2xl font-bold text-center mb-6 tracking-wider text-[#F5F5F5]">PLANO BÁSICO</h3>
             <div className="mb-6">
-              <img src={hero720.url} srcSet={`${hero480.url} 480w, ${hero720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Básico" loading="lazy" decoding="async" className="w-full h-auto" />
+               <img src={planoBasicoImagem.url} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="760" height="760" alt="Mockup do Plano Básico" loading="lazy" decoding="async" className="w-full h-auto" />
             </div>
             <p className="text-[#F5F5F5]/80 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
@@ -497,7 +495,7 @@ function Index() {
             <h3 className="text-xl md:text-2xl font-bold text-center mb-2 tracking-wider text-gradient-gold mt-3">PLANO COMPLETO</h3>
             <p className="text-center text-[#F5F5F5]/75 text-sm mb-5">⚡ 4x mais conteúdos</p>
             <div className="mb-6">
-              <img src={receber720.url} srcSet={`${receber480.url} 480w, ${receber720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Completo" loading="lazy" decoding="async" className="w-full h-auto" />
+               <img src={planoCompletoImagem.url} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="760" height="760" alt="Mockup do Plano Completo" loading="lazy" decoding="async" className="w-full h-auto" />
             </div>
             <p className="text-[#F5F5F5]/85 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
