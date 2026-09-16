@@ -8,12 +8,6 @@ import nhBonus1 from "@/assets/optimized/bonus1-540.webp.asset.json";
 import nhBonus2 from "@/assets/optimized/bonus2-540.webp.asset.json";
 import nhBonus3 from "@/assets/optimized/bonus3-540.webp.asset.json";
 import nhBonus4 from "@/assets/optimized/bonus4-540.webp.asset.json";
-import b2_1 from "@/assets/optimized/gallery1-640.webp.asset.json";
-import b2_2 from "@/assets/optimized/gallery2-640.webp.asset.json";
-import b2_3 from "@/assets/optimized/gallery3-640.webp.asset.json";
-import b2_4 from "@/assets/optimized/gallery4-640.webp.asset.json";
-import b2_5 from "@/assets/optimized/gallery5-640.webp.asset.json";
-import b2_6 from "@/assets/optimized/gallery6-640.webp.asset.json";
 import demo1 from "@/assets/optimized/demo1-640.webp.asset.json";
 import demo2 from "@/assets/optimized/demo2-640.webp.asset.json";
 import demo3 from "@/assets/optimized/demo3-640.webp.asset.json";
@@ -53,7 +47,6 @@ export const Route = createFileRoute("/")({
         rel: "preload",
         as: "image",
         href: bloco1Imagem.url,
-        imageSizes: "(max-width: 640px) calc(100vw - 48px), 576px",
         fetchPriority: "high",
       },
     ],
