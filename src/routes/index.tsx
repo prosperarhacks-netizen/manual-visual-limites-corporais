@@ -8,18 +8,18 @@ import nhBonus1 from "@/assets/optimized/bonus1-540.webp.asset.json";
 import nhBonus2 from "@/assets/optimized/bonus2-540.webp.asset.json";
 import nhBonus3 from "@/assets/optimized/bonus3-540.webp.asset.json";
 import nhBonus4 from "@/assets/optimized/bonus4-540.webp.asset.json";
-import demo1 from "@/assets/optimized/demo1-640.webp.asset.json";
-import demo2 from "@/assets/optimized/demo2-640.webp.asset.json";
-import demo3 from "@/assets/optimized/demo3-640.webp.asset.json";
-import demo4 from "@/assets/optimized/demo4-640.webp.asset.json";
-import demo5 from "@/assets/optimized/demo5-640.webp.asset.json";
-import demo6 from "@/assets/optimized/demo6-640.webp.asset.json";
 import bloco1Imagem from "@/assets/catalogo-novo/1-Photoroom.png.asset.json";
 import bloco2Imagem1 from "@/assets/catalogo-novo/2.jpg.asset.json";
 import bloco2Imagem2 from "@/assets/catalogo-novo/3.jpg.asset.json";
 import bloco2Imagem3 from "@/assets/catalogo-novo/4.jpg.asset.json";
 import bloco2Imagem4 from "@/assets/catalogo-novo/5.jpg.asset.json";
 import bloco2Imagem5 from "@/assets/catalogo-novo/6.jpg.asset.json";
+import demonstrativo1 from "@/assets/catalogo-novo/7.jpg.asset.json";
+import demonstrativo2 from "@/assets/catalogo-novo/8.jpg.asset.json";
+import demonstrativo3 from "@/assets/catalogo-novo/9.jpg.asset.json";
+import demonstrativo4 from "@/assets/catalogo-novo/10.jpg.asset.json";
+import demonstrativo5 from "@/assets/catalogo-novo/11.jpg.asset.json";
+import tudoQueRecebeImagem from "@/assets/catalogo-novo/2-Photoroom.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -179,12 +179,11 @@ function GalleryMarquee() {
 /* -------------------- 6. PHOTO CAROUSEL (Demonstrativo) -------------------- */
 
 const DEMONSTRATIVO_IMAGES = [
-  { src: demo1.url, alt: "Demonstrativo 1" },
-  { src: demo2.url, alt: "Demonstrativo 2" },
-  { src: demo3.url, alt: "Demonstrativo 3" },
-  { src: demo4.url, alt: "Demonstrativo 4" },
-  { src: demo5.url, alt: "Demonstrativo 5" },
-  { src: demo6.url, alt: "Demonstrativo 6" },
+  { src: demonstrativo1.url, alt: "Página demonstrativa sobre babosa" },
+  { src: demonstrativo2.url, alt: "Página demonstrativa sobre gengibre" },
+  { src: demonstrativo3.url, alt: "Página demonstrativa sobre calêndula" },
+  { src: demonstrativo4.url, alt: "Página demonstrativa sobre lavanda" },
+  { src: demonstrativo5.url, alt: "Página demonstrativa sobre arnica" },
 ];
 
 function DemonstrativoCarousel() {
@@ -369,12 +368,11 @@ function Index() {
         <div className="premium-card rounded-2xl p-6 md:p-10 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <img
-              src={receber720.url}
-              srcSet={`${receber480.url} 480w, ${receber720.url} 720w`}
+              src={tudoQueRecebeImagem.url}
               sizes="(max-width: 767px) calc(100vw - 96px), 528px"
-              width="720"
-              height="720"
-              alt="Catálogo Visual das Plantas Medicinais"
+              width="760"
+              height="760"
+              alt="Catálogo Visual das Plantas Medicinais com quatro bônus exclusivos"
               loading="lazy"
               decoding="async"
               className="w-full h-auto subtle-float"
