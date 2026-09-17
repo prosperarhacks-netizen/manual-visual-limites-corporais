@@ -52,8 +52,8 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const CHECKOUT_BASICO = "https://pay.cakto.com.br/ibaapmw";
-const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/3bvoj8e_1076779";
+const CHECKOUT_BASICO = "https://pay.cakto.com.br/94hc3rk_1115511";
+const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/39omqox";
 const PAGINAS_MANUAL = [
   bloco2Imagem1.url,
   bloco2Imagem2.url,
