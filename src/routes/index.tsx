@@ -267,16 +267,16 @@ function Index() {
           </div>
 
           <p className="text-[#F5F5F5]/80 text-base md:text-lg leading-relaxed mb-8">
-            Tenha +200 soluções naturais organizadas em um único catálogo visual, com informações sobre plantas, formas de preparo, utilizações e cuidados — tudo estruturado para você consultar com facilidade sempre que precisar.
+            Tenha +200 soluções naturais organizadas em um único material visual, simples e fácil de consultar — com informações sobre plantas, utilizações, formas de preparo e cuidados importantes.
           </p>
 
           <ul className="space-y-3 mb-10 inline-block text-left">
             {[
-              "Encontre rapidamente a planta ou informação que procura.",
-              "Consulte as informações de forma visual e organizada.",
-              "Veja diferentes formas de utilização e preparo.",
-              "Tenha um material simples para consultar sempre que precisar.",
-              "Organize seu conhecimento sobre plantas medicinais em um único lugar.",
+              "Encontre rapidamente a planta ou solução que deseja consultar.",
+              "Visualize as principais informações sem precisar procurar em vários lugares.",
+              "Conheça diferentes plantas e suas principais utilizações.",
+              "Veja formas de preparo apresentadas de maneira simples e organizada.",
+              "Tenha um material completo para consultar sempre que precisar.",
             ].map((b) => (
               <li key={b} className="flex items-start gap-3 text-[#F5F5F5]/90">
                 <CheckIcon />
@@ -299,15 +299,15 @@ function Index() {
       <Section className="bg-[#080808]">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            O <span className="text-gradient-gold">Catálogo Visual das Plantas Medicinais</span> possui
+            Os materiais do <span className="text-gradient-gold">Catálogo Visual das Plantas Medicinais</span> possuem
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { i: "🌿", t: "+200 SOLUÇÕES ORGANIZADAS", d: "Informações organizadas para facilitar a consulta e encontrar rapidamente o que você procura." },
-            { i: "🔎", t: "CONSULTA VISUAL", d: "Conteúdo apresentado de forma visual para tornar a localização das informações mais simples." },
-            { i: "🫖", t: "FORMAS DE PREPARO", d: "Veja as principais formas de preparo apresentadas de maneira clara e organizada." },
-            { i: "📋", t: "CONSULTA RÁPIDA", d: "Encontre uma planta, necessidade ou informação sem precisar percorrer todo o material." },
+            { i: "🌿", t: "PLANTAS ORGANIZADAS", d: "Mais de 200 soluções naturais apresentadas de forma organizada para facilitar sua consulta." },
+            { i: "💬", t: "LINGUAGEM SIMPLES", d: "Informações objetivas para você compreender o conteúdo sem precisar enfrentar textos complicados." },
+            { i: "🎯", t: "UTILIZAÇÕES E CONTEXTOS", d: "Informações que ajudam você a entender como diferentes plantas são tradicionalmente utilizadas e em quais contextos aparecem." },
+            { i: "🔍", t: "CONSULTA RÁPIDA", d: "Encontre a planta ou informação que procura e consulte o conteúdo em poucos minutos." },
           ].map((c) => (
             <div key={c.t} className="premium-card rounded-xl p-6">
               <div className="w-14 h-14 rounded-full bg-[#C8A96B]/10 border border-[#C8A96B]/30 flex items-center justify-center text-2xl mb-4">{c.i}</div>
@@ -318,7 +318,7 @@ function Index() {
         </div>
         <div className="text-center mt-14">
           <p className="text-xl md:text-2xl font-semibold max-w-2xl mx-auto mb-6 text-[#F5F5F5]">
-            Tenha +200 soluções naturais em um material simples de compreender, visualizar e consultar.
+            Transforme informações espalhadas em um material simples de compreender, visualizar e consultar.
           </p>
           <CTAButton onClick={scrollToOffer}>EU QUERO O CATÁLOGO VISUAL</CTAButton>
         </div>
@@ -336,7 +336,7 @@ function Index() {
           <div className="relative">
             <GoldOrnament />
             <h2 className="text-3xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight mb-4">
-              Quantas vezes você já precisou procurar uma informação sobre uma planta e não encontrou facilmente?
+              Quantas vezes você já precisou procurar uma informação sobre uma planta e encontrou tudo espalhado?
             </h2>
             <p className="text-[#F5F5F5]/70 mb-8">Aproveite a oferta por tempo limitado.</p>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
@@ -353,16 +353,17 @@ function Index() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { t: "ENCONTRAR INFORMAÇÕES COM FACILIDADE" },
-            { t: "TORNAR A CONSULTA MAIS SIMPLES" },
-            { t: "ENCONTRAR RAPIDAMENTE O QUE PROCURA" },
-            { t: "ECONOMIZAR TEMPO" },
-            { t: "TER TUDO ORGANIZADO" },
-            { t: "TER UMA FERRAMENTA DE CONSULTA" },
+            { t: "COMPREENDER AS PRINCIPAIS INFORMAÇÕES", d: "Tenha informações sobre plantas medicinais organizadas de forma simples, visual e fácil de consultar." },
+            { t: "TORNAR A CONSULTA MAIS SIMPLES", d: "Encontre informações organizadas em um único material, sem precisar ficar procurando em diferentes lugares." },
+            { t: "ENCONTRAR O QUE PROCURA COM FACILIDADE", d: "Consulte rapidamente uma planta, utilização ou forma de preparo quando quiser relembrar determinada informação." },
+            { t: "ECONOMIZAR TEMPO", d: "Encontre rapidamente aquilo que procura sem precisar percorrer diversos conteúdos para encontrar uma informação específica." },
+            { t: "VISUALIZAR COM MAIS FACILIDADE", d: "Use imagens, palavras-chave e estruturas visuais para facilitar a compreensão e a consulta." },
+            { t: "TER UMA FERRAMENTA DE CONSULTA", d: "Tenha um material organizado para consultar sempre que precisar." },
           ].map((c) => (
             <article key={c.t} className="premium-card rounded-xl p-6">
               <CheckIcon className="mb-4" />
               <h3 className="text-base md:text-lg font-semibold text-[#F5F5F5]">{c.t}</h3>
+              <p className="text-sm text-[#F5F5F5]/65 leading-relaxed mt-2">{c.d}</p>
             </article>
           ))}
         </div>
@@ -390,20 +391,23 @@ function Index() {
           <div>
             <span className="inline-block px-3 py-1 rounded-full bg-[#22C55E]/15 border border-[#22C55E]/40 text-[#22C55E] text-xs font-semibold mb-4">⚡ ACESSO IMEDIATO</span>
             <p className="text-[#F5F5F5]/85 mb-2">Tudo foi organizado para ser simples de utilizar e consultar.</p>
-            <p className="text-[#F5F5F5]/70 mb-6">Você pode escolher uma planta, localizar a informação desejada e voltar ao conteúdo sempre que precisar.</p>
+            <p className="text-[#F5F5F5]/70 mb-6">Você escolhe qualquer planta ou informação e começa a consultar imediatamente.</p>
             <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">Catálogo Visual das Plantas Medicinais</h3>
             <ul className="space-y-3">
             {[
-              "+200 soluções naturais organizadas visualmente",
-              "Plantas medicinais organizadas",
-              "Fichas de consulta",
+              "+200 soluções naturais",
+              "Plantas apresentadas visualmente",
               "Principais utilizações",
               "Formas de preparo",
               "Partes utilizadas",
               "Cuidados importantes",
-              "Consulta por necessidade",
+              "Explicações simples e objetivas",
+              "Exemplos e contextos",
+              "Informações organizadas por planta",
+              "Palavras-chave",
               "Índice de plantas",
               "Índice por necessidade",
+              "Consulta rápida",
               "Acesso imediato",
             ].map((b) => (
                 <li key={b} className="flex items-center gap-3 text-[#F5F5F5]/90">
@@ -429,22 +433,22 @@ function Index() {
             {
                img: bonus1Imagem.url,
               t: "Lista da Farmácia Natural",
-              d: "Uma lista prática para organizar as principais plantas e itens que você pode ter na sua farmácia natural.",
+              d: "Uma lista prática para organizar e visualizar as principais plantas e itens que podem fazer parte da sua farmácia natural.",
             },
             {
                img: bonus2Imagem.url,
               t: "Guia Visual de Preparos",
-              d: "Um guia visual com diferentes formas de preparo apresentadas de maneira simples, organizada e fácil de consultar.",
+              d: "Um guia visual com diferentes formas de preparo apresentadas de maneira simples e organizada para facilitar sua consulta.",
             },
             {
                img: bonus3Imagem.url,
               t: "Fichas de Consulta Rápida",
-              d: "Fichas práticas para consultar rapidamente as principais informações sobre as plantas medicinais.",
+              d: "Fichas práticas para você consultar rapidamente as principais informações sobre as plantas sem precisar percorrer todo o catálogo.",
             },
             {
                img: bonus4Imagem.url,
               t: "Checklist da Farmácia Natural",
-              d: "Um checklist para organizar sua farmácia natural e acompanhar os itens que você já possui e os que deseja adicionar.",
+              d: "Um checklist simples para ajudar você a organizar sua consulta e acompanhar os principais itens da sua farmácia natural.",
             },
           ].map((b, i) => (
             <div key={b.t} className="premium-card rounded-xl overflow-hidden flex flex-col">
@@ -512,6 +516,19 @@ function Index() {
             <ul className="space-y-3 mb-6">
               {[
                 "Catálogo Visual das Plantas Medicinais",
+                "+200 soluções naturais",
+                "Plantas apresentadas visualmente",
+                "Principais utilizações",
+                "Formas de preparo",
+                "Partes utilizadas",
+                "Cuidados importantes",
+                "Explicações simples e organizadas",
+                "Exemplos e contextos",
+                "Palavras-chave",
+                "Índice de plantas",
+                "Índice por necessidade",
+                "Consulta rápida",
+                "Acesso imediato",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[#F5F5F5]/90 text-sm">
                   <CheckIcon /><span>{t}</span>
@@ -545,10 +562,10 @@ function Index() {
         <div className="max-w-3xl mx-auto text-center mt-14">
           <GoldOrnament />
           <p className="text-lg md:text-2xl font-semibold leading-snug text-[#F5F5F5]">
-            Quando as informações estão organizadas, fica muito mais fácil encontrar aquilo que você procura.
+            Uma única informação encontrada no momento certo pode facilitar completamente a sua consulta.
           </p>
           <p className="text-[#F5F5F5]/70 mt-4">
-            Tenha plantas, utilizações, preparos e cuidados reunidos em um único material visual para consultar sempre que precisar.
+            Quando as informações sobre plantas ficam organizadas de forma simples e visual, você ganha mais praticidade para encontrar, compreender e revisar aquilo que procura.
           </p>
         </div>
       </Section>
