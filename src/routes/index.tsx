@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import hero480 from "@/assets/catalogo-optimized/hero-480.webp.asset.json";
 import hero720 from "@/assets/catalogo-optimized/hero-720.webp.asset.json";
 import bloco2Imagem1 from "@/assets/catalogo-optimized/pagina-2-640.webp.asset.json";
@@ -60,7 +60,6 @@ export const Route = createFileRoute("/")({
 
 const CHECKOUT_BASICO = "https://pay.cakto.com.br/94hc3rk_1115511";
 const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/39omqox";
-const TODAY = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo" }).format(new Date());
 const PAGINAS_MANUAL = [
   bloco2Imagem1.url,
   bloco2Imagem2.url,
@@ -139,6 +138,12 @@ function CheckIcon({ className = "" }: { className?: string }) {
 /* -------------------- 1. TOP OFFER BAR -------------------- */
 
 function TopOfferBar() {
+  const [today, setToday] = useState("");
+
+  useEffect(() => {
+    setToday(new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo" }).format(new Date()));
+  }, []);
+
   return (
     <div className="w-full text-center py-2.5 px-4 text-xs md:text-sm font-semibold tracking-wide"
       style={{
@@ -146,7 +151,7 @@ function TopOfferBar() {
         color: "#F87171",
         borderBottom: "1px solid rgba(239, 68, 68, 0.40)",
       }}>
-      ⚡ OFERTA ESPECIAL DISPONÍVEL APENAS HOJE <b className="text-[#FCA5A5]">{TODAY}</b>
+      ⚡ OFERTA ESPECIAL DISPONÍVEL APENAS HOJE {today && <b className="text-[#FCA5A5]">{today}</b>}
     </div>
   );
 }
