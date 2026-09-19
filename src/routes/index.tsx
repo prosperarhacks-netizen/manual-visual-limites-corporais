@@ -346,17 +346,16 @@ function Index() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { t: "ENCONTRAR INFORMAÇÕES COM FACILIDADE", d: "Tenha plantas e informações organizadas em um único catálogo visual." },
-            { t: "TORNAR A CONSULTA MAIS SIMPLES", d: "Veja as informações de maneira objetiva, visual e organizada." },
-            { t: "ENCONTRAR RAPIDAMENTE O QUE PROCURA", d: "Consulte uma planta ou categoria sem precisar procurar em diferentes lugares." },
-            { t: "ECONOMIZAR TEMPO", d: "Tenha as informações reunidas em um único material de consulta." },
-            { t: "TER TUDO ORGANIZADO", d: "Use índices, categorias e fichas para localizar o conteúdo com mais facilidade." },
-            { t: "TER UMA FERRAMENTA DE CONSULTA", d: "Tenha um material para consultar sempre que precisar." },
+            { t: "ENCONTRAR INFORMAÇÕES COM FACILIDADE" },
+            { t: "TORNAR A CONSULTA MAIS SIMPLES" },
+            { t: "ENCONTRAR RAPIDAMENTE O QUE PROCURA" },
+            { t: "ECONOMIZAR TEMPO" },
+            { t: "TER TUDO ORGANIZADO" },
+            { t: "TER UMA FERRAMENTA DE CONSULTA" },
           ].map((c) => (
             <article key={c.t} className="premium-card rounded-xl p-6">
               <CheckIcon className="mb-4" />
-              <h3 className="text-base md:text-lg font-semibold mb-2 text-[#F5F5F5]">{c.t}</h3>
-              <p className="text-sm text-[#F5F5F5]/65 leading-relaxed">{c.d}</p>
+              <h3 className="text-base md:text-lg font-semibold text-[#F5F5F5]">{c.t}</h3>
             </article>
           ))}
         </div>
