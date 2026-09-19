@@ -1,23 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import bloco1Imagem from "@/assets/catalogo-novo/1-Photoroom.png.asset.json";
-import bloco2Imagem1 from "@/assets/catalogo-novo/2.jpg.asset.json";
-import bloco2Imagem2 from "@/assets/catalogo-novo/3.jpg.asset.json";
-import bloco2Imagem3 from "@/assets/catalogo-novo/4.jpg.asset.json";
-import bloco2Imagem4 from "@/assets/catalogo-novo/5.jpg.asset.json";
-import bloco2Imagem5 from "@/assets/catalogo-novo/6.jpg.asset.json";
-import demonstrativo1 from "@/assets/catalogo-novo/7.jpg.asset.json";
-import demonstrativo2 from "@/assets/catalogo-novo/8.jpg.asset.json";
-import demonstrativo3 from "@/assets/catalogo-novo/9.jpg.asset.json";
-import demonstrativo4 from "@/assets/catalogo-novo/10.jpg.asset.json";
-import demonstrativo5 from "@/assets/catalogo-novo/11.jpg.asset.json";
-import tudoQueRecebeImagem from "@/assets/catalogo-novo/2-Photoroom.png.asset.json";
-import bonus1Imagem from "@/assets/catalogo-novo/bonus-1-novo.jpg.asset.json";
-import bonus2Imagem from "@/assets/catalogo-novo/bonus-2-novo.jpg.asset.json";
-import bonus3Imagem from "@/assets/catalogo-novo/bonus-3-novo.jpg.asset.json";
-import bonus4Imagem from "@/assets/catalogo-novo/bonus-4-novo.jpg.asset.json";
-import planoBasicoImagem from "@/assets/catalogo-novo/plano-basico-novo.png.asset.json";
-import planoCompletoImagem from "@/assets/catalogo-novo/plano-completo-novo.png.asset.json";
+import hero480 from "@/assets/catalogo-optimized/hero-480.webp.asset.json";
+import hero720 from "@/assets/catalogo-optimized/hero-720.webp.asset.json";
+import bloco2Imagem1 from "@/assets/catalogo-optimized/pagina-2-640.webp.asset.json";
+import bloco2Imagem2 from "@/assets/catalogo-optimized/pagina-3-640.webp.asset.json";
+import bloco2Imagem3 from "@/assets/catalogo-optimized/pagina-4-640.webp.asset.json";
+import bloco2Imagem4 from "@/assets/catalogo-optimized/pagina-5-640.webp.asset.json";
+import bloco2Imagem5 from "@/assets/catalogo-optimized/pagina-6-640.webp.asset.json";
+import demonstrativo1 from "@/assets/catalogo-optimized/pagina-7-640.webp.asset.json";
+import demonstrativo2 from "@/assets/catalogo-optimized/pagina-8-640.webp.asset.json";
+import demonstrativo3 from "@/assets/catalogo-optimized/pagina-9-640.webp.asset.json";
+import demonstrativo4 from "@/assets/catalogo-optimized/pagina-10-640.webp.asset.json";
+import demonstrativo5 from "@/assets/catalogo-optimized/pagina-11-640.webp.asset.json";
+import receber480 from "@/assets/catalogo-optimized/receber-480.webp.asset.json";
+import receber720 from "@/assets/catalogo-optimized/receber-720.webp.asset.json";
+import bonus1Imagem from "@/assets/catalogo-optimized/bonus-1-540.webp.asset.json";
+import bonus2Imagem from "@/assets/catalogo-optimized/bonus-2-540.webp.asset.json";
+import bonus3Imagem from "@/assets/catalogo-optimized/bonus-3-540.webp.asset.json";
+import bonus4Imagem from "@/assets/catalogo-optimized/bonus-4-540.webp.asset.json";
+import planoBasico480 from "@/assets/catalogo-optimized/plano-basico-480.webp.asset.json";
+import planoBasico720 from "@/assets/catalogo-optimized/plano-basico-720.webp.asset.json";
+import planoCompleto480 from "@/assets/catalogo-optimized/plano-completo-480.webp.asset.json";
+import planoCompleto720 from "@/assets/catalogo-optimized/plano-completo-720.webp.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,7 +48,9 @@ export const Route = createFileRoute("/")({
       {
         rel: "preload",
         as: "image",
-        href: bloco1Imagem.url,
+        href: hero480.url,
+        imageSrcSet: `${hero480.url} 480w, ${hero720.url} 720w`,
+        imageSizes: "(max-width: 640px) calc(100vw - 48px), 576px",
         fetchPriority: "high",
       },
     ],
@@ -247,7 +253,8 @@ function Index() {
 
           <div className="max-w-xl mx-auto mb-8">
              <img
-               src={bloco1Imagem.url}
+                src={hero480.url}
+                srcSet={`${hero480.url} 480w, ${hero720.url} 720w`}
                sizes="(max-width: 640px) calc(100vw - 48px), 576px"
                width="1080"
                height="1080"
@@ -369,7 +376,8 @@ function Index() {
         <div className="premium-card rounded-2xl p-6 md:p-10 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <img
-              src={tudoQueRecebeImagem.url}
+              src={receber480.url}
+              srcSet={`${receber480.url} 480w, ${receber720.url} 720w`}
               sizes="(max-width: 767px) calc(100vw - 96px), 528px"
               width="760"
               height="760"
@@ -471,7 +479,7 @@ function Index() {
           <article className="premium-card rounded-2xl p-8 flex flex-col">
             <h3 className="text-xl md:text-2xl font-bold text-center mb-6 tracking-wider text-[#F5F5F5]">PLANO BÁSICO</h3>
             <div className="mb-6">
-               <img src={planoBasicoImagem.url} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="760" height="760" alt="Mockup do Plano Básico" loading="lazy" decoding="async" className="w-full h-auto" />
+               <img src={planoBasico480.url} srcSet={`${planoBasico480.url} 480w, ${planoBasico720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Básico" loading="lazy" decoding="async" className="w-full h-auto" />
             </div>
             <p className="text-[#F5F5F5]/80 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
@@ -498,7 +506,7 @@ function Index() {
             <h3 className="text-xl md:text-2xl font-bold text-center mb-2 tracking-wider text-gradient-gold mt-3">PLANO COMPLETO</h3>
             <p className="text-center text-[#F5F5F5]/75 text-sm mb-5">⚡ 4x mais conteúdos</p>
             <div className="mb-6">
-               <img src={planoCompletoImagem.url} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="760" height="760" alt="Mockup do Plano Completo" loading="lazy" decoding="async" className="w-full h-auto" />
+               <img src={planoCompleto480.url} srcSet={`${planoCompleto480.url} 480w, ${planoCompleto720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Completo" loading="lazy" decoding="async" className="w-full h-auto" />
             </div>
             <p className="text-[#F5F5F5]/85 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
