@@ -8,6 +8,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import poppinsRegular from "../assets/fonts/poppins-400-latin.woff2?url";
 
 function NotFoundComponent() {
   return (
@@ -75,17 +76,11 @@ export const Route = createRootRoute({
     links: [
       { rel: "stylesheet", href: appCss },
       {
-        rel: "preconnect",
-        href: "https://fonts.googleapis.com",
-      },
-      {
-        rel: "preconnect",
-        href: "https://fonts.gstatic.com",
+        rel: "preload",
+        href: poppinsRegular,
+        as: "font",
+        type: "font/woff2",
         crossOrigin: "anonymous",
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
       },
     ],
     scripts: [
