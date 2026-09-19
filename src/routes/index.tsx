@@ -539,7 +539,9 @@ function Index() {
               <div className="text-sm text-[#F5F5F5]/70 mt-1">ou 5x de R$7,58 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-[#C8A96B]/10 border border-[#C8A96B]/30 text-[#C8A96B] text-xs">💰 Você economiza R$30,00</div>
             </div>
-            <CTAButton href={CHECKOUT_COMPLETO}>QUERO O PLANO COMPLETO</CTAButton>
+            <CTAButton href={CHECKOUT_COMPLETO}>
+              <span className="text-center">QUERO O PLANO COMPLETO</span>
+            </CTAButton>
             <p className="text-xs text-[#F5F5F5]/50 mt-4 text-center tracking-wide">📩 Você recebe tudo na hora, direto no seu e-mail.</p>
           </article>
         </div>
