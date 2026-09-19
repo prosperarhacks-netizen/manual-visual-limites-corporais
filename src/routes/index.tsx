@@ -505,17 +505,6 @@ function Index() {
             <ul className="space-y-3 mb-6">
               {[
                 "Catálogo Visual das Plantas Medicinais",
-                "+200 soluções naturais organizadas visualmente",
-                "Plantas medicinais organizadas",
-                "Fichas de consulta",
-                "Principais utilizações",
-                "Formas de preparo",
-                "Partes utilizadas",
-                "Cuidados importantes",
-                "Consulta por necessidade",
-                "Índice de plantas",
-                "Índice por necessidade",
-                "Acesso imediato",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[#F5F5F5]/90 text-sm">
                   <CheckIcon /><span>{t}</span>
