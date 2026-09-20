@@ -270,21 +270,6 @@ function Index() {
             Você encontra +200 soluções naturais reunidas em um único material, com informações sobre plantas, utilizações, formas de preparo e cuidados importantes — tudo organizado para facilitar sua consulta.
           </p>
 
-          <ul className="space-y-3 mb-10 inline-block text-left">
-            {[
-              "Encontre rapidamente a planta ou solução que está procurando.",
-              "Veja as principais informações sem precisar ficar pesquisando em vários lugares.",
-              "Conheça diferentes plantas e entenda como elas são tradicionalmente utilizadas.",
-              "Consulte as formas de preparo de maneira simples e organizada.",
-              "Tenha tudo em um só lugar para voltar e consultar sempre que precisar.",
-            ].map((b) => (
-              <li key={b} className="flex items-start gap-3 text-[#F1F3E8]/90">
-                <CheckIcon />
-                <span>{b}</span>
-              </li>
-            ))}
-          </ul>
-
           <div>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
             <p className="text-xs text-[#F1F3E8]/50 mt-4 tracking-wide">📩 Você recebe tudo na hora, direto no seu e-mail.</p>
@@ -353,17 +338,16 @@ function Index() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { t: "COMPREENDER AS PRINCIPAIS INFORMAÇÕES", d: "Tenha informações sobre plantas medicinais organizadas de forma simples, visual e fácil de consultar." },
-            { t: "TORNAR A CONSULTA MAIS SIMPLES", d: "Encontre informações organizadas em um único material, sem precisar ficar procurando em diferentes lugares." },
-            { t: "ENCONTRAR O QUE PROCURA COM FACILIDADE", d: "Consulte rapidamente uma planta, utilização ou forma de preparo quando quiser relembrar determinada informação." },
-            { t: "ECONOMIZAR TEMPO", d: "Encontre rapidamente aquilo que procura sem precisar percorrer diversos conteúdos para encontrar uma informação específica." },
-            { t: "VISUALIZAR COM MAIS FACILIDADE", d: "Use imagens, palavras-chave e estruturas visuais para facilitar a compreensão e a consulta." },
-            { t: "TER UMA FERRAMENTA DE CONSULTA", d: "Tenha um material organizado para consultar sempre que precisar." },
+            { t: "COMPREENDER AS PRINCIPAIS INFORMAÇÕES" },
+            { t: "TORNAR A CONSULTA MAIS SIMPLES" },
+            { t: "ENCONTRAR O QUE PROCURA COM FACILIDADE" },
+            { t: "ECONOMIZAR TEMPO" },
+            { t: "VISUALIZAR COM MAIS FACILIDADE" },
+            { t: "TER UMA FERRAMENTA DE CONSULTA" },
           ].map((c) => (
             <article key={c.t} className="premium-card rounded-xl p-6">
               <CheckIcon className="mb-4" />
               <h3 className="text-base md:text-lg font-semibold text-[#F1F3E8]">{c.t}</h3>
-              <p className="text-sm text-[#F1F3E8]/65 leading-relaxed mt-2">{c.d}</p>
             </article>
           ))}
         </div>
