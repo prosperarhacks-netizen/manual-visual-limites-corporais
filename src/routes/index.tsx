@@ -494,9 +494,9 @@ function Index() {
               ))}
             </ul>
             <div className="text-center mb-6 mt-auto">
-              <div className="text-sm text-[#F1F3E8]/60 mb-1">De <s className="text-[#EF4444]">R$27,90</s> por:</div>
-              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$17,90</div>
-              <div className="text-sm text-[#F1F3E8]/70 mt-1">ou 2x de R$8,95 no cartão</div>
+              <div className="text-sm text-[#F1F3E8]/60 mb-1">De <s className="text-[#EF4444]">R$37,90</s> por:</div>
+              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$27,90</div>
+              <div className="text-sm text-[#F1F3E8]/70 mt-1">ou 2x de R$13,95 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 text-[#A8C686] text-xs">💰 Você economiza R$10,00</div>
             </div>
             <CTAButton href={CHECKOUT_BASICO} variant="ghost">QUERO O BÁSICO</CTAButton>
@@ -548,9 +548,9 @@ function Index() {
             </ul>
             <div className="text-center mb-6 mt-auto">
               <div className="text-sm text-[#F1F3E8]/60 mb-1">De <s className="text-[#EF4444]">R$57,90</s> por:</div>
-              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$27,90</div>
-              <div className="text-sm text-[#F1F3E8]/70 mt-1">ou 2x de R$13,95 no cartão</div>
-              <div className="inline-block mt-3 px-3 py-1 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 text-[#A8C686] text-xs">💰 Você economiza R$30,00</div>
+              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$37,90</div>
+              <div className="text-sm text-[#F1F3E8]/70 mt-1">ou 5x de R$7,58 no cartão</div>
+              <div className="inline-block mt-3 px-3 py-1 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 text-[#A8C686] text-xs">💰 Você economiza R$20,00</div>
             </div>
             <CTAButton href={CHECKOUT_COMPLETO}>
               <span className="text-center">QUERO O PLANO COMPLETO</span>
