@@ -248,7 +248,7 @@ function Index() {
       <Section className="pt-16 md:pt-24">
         <div className="max-w-3xl mx-auto text-center fade-up">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-[#F1F3E8]">
-            <span className="text-gradient-gold">+200 soluções naturais</span> organizadas de forma simples, visual e prática.
+            <span className="text-gradient-gold">+200 soluções naturais</span> para você consultar de forma simples, visual e prática.
           </h1>
 
           <div className="max-w-xl mx-auto mb-8">
@@ -267,16 +267,16 @@ function Index() {
           </div>
 
           <p className="text-[#F1F3E8]/80 text-base md:text-lg leading-relaxed mb-8">
-            Tenha +200 soluções naturais organizadas em um único material visual, simples e fácil de consultar — com informações sobre plantas, utilizações, formas de preparo e cuidados importantes.
+            Você encontra +200 soluções naturais reunidas em um único material, com informações sobre plantas, utilizações, formas de preparo e cuidados importantes — tudo organizado para facilitar sua consulta.
           </p>
 
           <ul className="space-y-3 mb-10 inline-block text-left">
             {[
-              "Encontre rapidamente a planta ou solução que deseja consultar.",
-              "Visualize as principais informações sem precisar procurar em vários lugares.",
-              "Conheça diferentes plantas e suas principais utilizações.",
-              "Veja formas de preparo apresentadas de maneira simples e organizada.",
-              "Tenha um material completo para consultar sempre que precisar.",
+              "Encontre rapidamente a planta ou solução que está procurando.",
+              "Veja as principais informações sem precisar ficar pesquisando em vários lugares.",
+              "Conheça diferentes plantas e entenda como elas são tradicionalmente utilizadas.",
+              "Consulte as formas de preparo de maneira simples e organizada.",
+              "Tenha tudo em um só lugar para voltar e consultar sempre que precisar.",
             ].map((b) => (
               <li key={b} className="flex items-start gap-3 text-[#F1F3E8]/90">
                 <CheckIcon />
