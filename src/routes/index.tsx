@@ -555,7 +555,7 @@ function Index() {
             <CTAButton href={CHECKOUT_COMPLETO}>
               <span className="text-center">QUERO O PLANO COMPLETO</span>
             </CTAButton>
-            <p className="text-xs text-[#F1F3E8]/50 mt-4 text-center tracking-wide">📩 Você recebe tudo na hora, direto no seu e-mail.</p>
+            <p className="text-xs text-[#F1F3E8]/50 mt-4 text-center tracking-wide">Pagamento único&nbsp; • &nbsp;Acesso imediato&nbsp; • &nbsp;Garantia vitalícia</p>
           </article>
         </div>
 
