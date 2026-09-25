@@ -86,9 +86,9 @@ function Section({ children, className = "", id }: { children: React.ReactNode; 
 function GoldOrnament() {
   return (
     <div className="flex items-center justify-center gap-3 my-6">
-      <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#A8C686]" />
-      <span className="text-[#A8C686] text-xs tracking-[0.4em]">✦</span>
-      <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#A8C686]" />
+      <div className="h-px w-16 bg-gradient-to-r from-transparent to-antique-gold" />
+      <span className="text-antique-gold text-xs tracking-[0.4em]">✦</span>
+      <div className="h-px w-16 bg-gradient-to-l from-transparent to-antique-gold" />
     </div>
   );
 }
@@ -161,19 +161,19 @@ function TopOfferBar() {
 function GalleryMarquee() {
   const loop = [...PAGINAS_MANUAL, ...PAGINAS_MANUAL];
   return (
-    <section className="relative overflow-hidden py-14 md:py-20 bg-[#142019] border-y border-[#A8C686]/15">
+    <section className="relative overflow-hidden py-14 md:py-20 bg-surface-raised border-y border-antique-gold/15">
       <div className="text-center px-6 mb-10">
         <h2 className="text-3xl md:text-5xl font-semibold">
           Veja os <span className="text-gradient-gold">materiais</span> que você vai receber
         </h2>
       </div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 z-10 bg-gradient-to-r from-[#142019] to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 z-10 bg-gradient-to-l from-[#142019] to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 z-10 bg-gradient-to-r from-surface-raised to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 z-10 bg-gradient-to-l from-surface-raised to-transparent" />
       <div className="marquee-viewport group">
         <div className="marquee-track">
           {loop.map((src, i) => (
             <div key={i} className="shrink-0 px-3 md:px-4 w-[60vw] sm:w-[42vw] md:w-[26vw] lg:w-[19vw] xl:w-[17vw]">
-              <div className="rounded-lg overflow-hidden border border-[#A8C686]/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-[#0C120E]">
+              <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
                 <img src={src} alt={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`} width="640" height="905" loading="lazy" decoding="async" className="w-full h-auto block" draggable={false} />
               </div>
             </div>
@@ -198,13 +198,13 @@ function DemonstrativoCarousel() {
   const loop = [...DEMONSTRATIVO_IMAGES, ...DEMONSTRATIVO_IMAGES];
   return (
     <div className="relative overflow-hidden py-2">
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 z-10 bg-gradient-to-r from-[#0D1510] to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 z-10 bg-gradient-to-l from-[#0D1510] to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 z-10 bg-gradient-to-r from-surface to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 z-10 bg-gradient-to-l from-surface to-transparent" />
       <div className="marquee-viewport group">
         <div className="marquee-track">
           {loop.map((img, i) => (
             <div key={i} className="shrink-0 px-3 md:px-4 w-[62vw] sm:w-[44vw] md:w-[28vw] lg:w-[20vw] xl:w-[18vw]">
-              <div className="rounded-lg overflow-hidden border border-[#A8C686]/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-[#0C120E]">
+              <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
                 <img src={img.src} alt={img.alt} width="640" height="905" loading="lazy" decoding="async" className="w-full h-auto block" draggable={false} />
               </div>
             </div>
@@ -222,12 +222,12 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   return (
     <div className="premium-card rounded-lg overflow-hidden">
       <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between text-left p-5 md:p-6">
-        <span className="font-medium text-[#F1F3E8] pr-4">{q}</span>
-        <span className={`text-[#A8C686] text-xl transition-transform ${open ? "rotate-45" : ""}`}>+</span>
+        <span className="font-medium text-ink pr-4">{q}</span>
+        <span className={`text-antique-gold text-xl transition-transform ${open ? "rotate-45" : ""}`}>+</span>
       </button>
       <div className={`grid transition-all duration-300 ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
         <div className="overflow-hidden">
-          <p className="px-5 md:px-6 pb-6 text-[#F1F3E8]/70 leading-relaxed">{a}</p>
+          <p className="px-5 md:px-6 pb-6 text-ink/70 leading-relaxed">{a}</p>
         </div>
       </div>
     </div>
@@ -240,14 +240,14 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 
 function Index() {
   return (
-    <main className="min-h-screen bg-[#101812] text-[#F1F3E8] overflow-x-hidden">
+    <main className="min-h-screen bg-canvas text-ink overflow-x-hidden">
       {/* 1 · TOP OFFER BAR */}
       <TopOfferBar />
 
       {/* 2 · HERO */}
       <Section className="pt-16 md:pt-24">
         <div className="max-w-3xl mx-auto text-center fade-up">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-[#F1F3E8]">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-ink">
             Compare opções, encontre alternativas e faça escolhas alimentares mais claras no dia a dia.
           </h1>
 
@@ -266,13 +266,13 @@ function Index() {
              />
           </div>
 
-          <p className="text-[#F1F3E8]/80 text-base md:text-lg leading-relaxed mb-8">
+          <p className="text-ink/80 text-base md:text-lg leading-relaxed mb-8">
             Uma cartilha visual para você saber o que observar, comparar e trocar quando estiver no supermercado, em casa, no restaurante ou no delivery — sem precisar decorar listas enormes ou ficar procurando informações toda vez.
           </p>
 
           <div>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
-            <p className="text-xs text-[#F1F3E8]/50 mt-4 tracking-wide">📩 Você recebe tudo na hora, direto no seu e-mail.</p>
+            <p className="text-xs text-ink/50 mt-4 tracking-wide">📩 Você recebe tudo na hora, direto no seu e-mail.</p>
           </div>
         </div>
       </Section>
@@ -281,7 +281,7 @@ function Index() {
       <GalleryMarquee />
 
       {/* 4 · MATERIAIS / FEATURES */}
-      <Section className="bg-[#0D1510]">
+      <Section className="bg-surface">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-semibold">
             Os materiais do <span className="text-gradient-gold">ESCOLHA &amp; TROCA</span> possuem
@@ -295,9 +295,9 @@ function Index() {
             { i: "⚡", t: "DECISÃO RÁPIDA", d: "Quando você estiver com pressa, use o Modo 30 Segundos para organizar sua decisão sem precisar analisar tudo novamente." },
           ].map((c) => (
             <div key={c.t} className="premium-card rounded-xl p-6">
-              <div className="w-14 h-14 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 flex items-center justify-center text-2xl mb-4">{c.i}</div>
-              <h3 className="text-lg font-semibold mb-2 text-[#F1F3E8]">{c.t}</h3>
-              <p className="text-sm text-[#F1F3E8]/65 leading-relaxed">{c.d}</p>
+               <div className="w-14 h-14 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center text-2xl mb-4">{c.i}</div>
+               <h3 className="text-lg font-semibold mb-2 text-ink">{c.t}</h3>
+               <p className="text-sm text-ink/65 leading-relaxed">{c.d}</p>
             </div>
           ))}
         </div>
@@ -307,27 +307,27 @@ function Index() {
       </Section>
 
       {/* 5 · DEMONSTRATIVO CAROUSEL */}
-      <Section className="bg-[#0D1510] py-10 md:py-14">
+      <Section className="bg-surface py-10 md:py-14">
         <DemonstrativoCarousel />
       </Section>
 
       {/* 6 · URGENCY BANNER */}
       <Section>
         <div className="relative gold-border rounded-2xl p-10 md:p-16 text-center overflow-hidden">
-          <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at center, rgba(168,198,134,0.28), transparent 60%)" }} />
+          <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,var(--terracotta),transparent_60%)]" />
           <div className="relative">
             <GoldOrnament />
             <h2 className="text-3xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight mb-4">
               Quantas vezes você já ficou em dúvida diante de duas opções e não soube qual escolher?
             </h2>
-            <p className="text-[#F1F3E8]/70 mb-8">Aproveite a oferta por tempo limitado.</p>
+            <p className="text-ink/70 mb-8">Aproveite a oferta por tempo limitado.</p>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
           </div>
         </div>
       </Section>
 
       {/* 7 · FOR WHOM */}
-      <Section className="bg-[#142019] border-y border-[#A8C686]/15">
+      <Section className="bg-surface-raised border-y border-antique-gold/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold">
             Este material é ideal para <span className="text-gradient-gold">você que deseja:</span>
@@ -344,14 +344,14 @@ function Index() {
           ].map((c) => (
             <article key={c.t} className="premium-card rounded-xl p-6">
               <CheckIcon className="mb-4" />
-              <h3 className="text-base md:text-lg font-semibold text-[#F1F3E8]">{c.t}</h3>
+              <h3 className="text-base md:text-lg font-semibold text-ink">{c.t}</h3>
             </article>
           ))}
         </div>
       </Section>
 
       {/* 8 · EVERYTHING YOU RECEIVE */}
-      <Section className="bg-[#0D1510]">
+      <Section className="bg-surface">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold">Tudo o que você vai <span className="text-gradient-gold">receber</span></h2>
         </div>
@@ -371,8 +371,8 @@ function Index() {
           </div>
           <div>
             <span className="inline-block px-3 py-1 rounded-full bg-[#22C55E]/15 border border-[#22C55E]/40 text-[#22C55E] text-xs font-semibold mb-4">⚡ ACESSO IMEDIATO</span>
-            <p className="text-[#F1F3E8]/85 mb-2">Você não precisa passar horas estudando informações antes de tomar uma decisão.</p>
-            <p className="text-[#F1F3E8]/70 mb-6">Você encontra a situação que está vivendo, consulta os critérios apresentados, compara as opções e decide.</p>
+            <p className="text-ink/85 mb-2">Você não precisa passar horas estudando informações antes de tomar uma decisão.</p>
+            <p className="text-ink/70 mb-6">Você encontra a situação que está vivendo, consulta os critérios apresentados, compara as opções e decide.</p>
             <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">ESCOLHA &amp; TROCA</h3>
             <ul className="space-y-3">
             {[
@@ -400,7 +400,7 @@ function Index() {
               "Consulta simples e visual",
               "Acesso imediato",
             ].map((b) => (
-                <li key={b} className="flex items-center gap-3 text-[#F1F3E8]/90">
+                <li key={b} className="flex items-center gap-3 text-ink/90">
                   <CheckIcon />{b}
                 </li>
               ))}
@@ -410,10 +410,10 @@ function Index() {
       </Section>
 
       {/* 9 · BONUS */}
-      <Section className="bg-[#142019] border-y border-[#A8C686]/15">
+      <Section className="bg-surface-raised border-y border-antique-gold/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="text-[#A8C686] text-sm tracking-[0.3em] uppercase mb-2">E NÃO PARA POR AÍ...</div>
-          <p className="text-[#F1F3E8]/70 text-sm tracking-[0.2em] uppercase mb-3">VOCÊ TAMBÉM VAI RECEBER</p>
+          <div className="text-antique-gold text-sm tracking-[0.3em] uppercase mb-2">E NÃO PARA POR AÍ...</div>
+          <p className="text-ink/70 text-sm tracking-[0.2em] uppercase mb-3">VOCÊ TAMBÉM VAI RECEBER</p>
           <h2 className="text-3xl md:text-5xl font-semibold">
             🎁 <span className="text-gradient-gold">4 Bônus Exclusivos</span>
           </h2>
@@ -442,13 +442,13 @@ function Index() {
             },
           ].map((b, i) => (
             <div key={b.t} className="premium-card rounded-xl overflow-hidden flex flex-col">
-              <div className="bg-gradient-to-br from-[#1B2A20] to-[#0C120E]">
+              <div className="bg-gradient-to-br from-surface-soft to-canvas">
                 <img src={b.img} alt={b.t} width="540" height="540" loading="lazy" decoding="async" className="w-full h-auto object-cover" />
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <div className="text-[#A8C686] text-[10px] tracking-[0.3em] uppercase mb-2">BÔNUS #{i + 1}</div>
+                <div className="text-antique-gold text-[10px] tracking-[0.3em] uppercase mb-2">BÔNUS #{i + 1}</div>
                 <h3 className="text-lg font-semibold mb-2">{b.t}</h3>
-                <p className="text-sm text-[#F1F3E8]/65 leading-relaxed mb-4">{b.d}</p>
+                <p className="text-sm text-ink/65 leading-relaxed mb-4">{b.d}</p>
                 <div className="mt-auto inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-[#22C55E]/10 border border-[#22C55E]/35 text-xs">
                   <span className="text-[#F1F3E8]/60">Valor: <s>R$29</s></span>
                   <span className="text-[#22C55E] font-bold">GRÁTIS</span>
@@ -460,7 +460,7 @@ function Index() {
       </Section>
 
       {/* 10 · PLANS / OFERTA */}
-      <Section id="oferta" className="bg-[#0D1510]">
+      <Section id="oferta" className="bg-surface">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="inline-block px-4 py-2 rounded-full bg-[#EF4444]/15 border border-[#EF4444]/40 text-[#F87171] text-xs md:text-sm font-semibold tracking-wider mb-5">
             ⏰ ÚLTIMA CHANCE — OFERTA TERMINA HOJE
@@ -471,14 +471,14 @@ function Index() {
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto items-start">
           {/* PLANO BÁSICO */}
           <article className="premium-card rounded-2xl p-8 flex flex-col">
-            <h3 className="text-xl md:text-2xl font-bold text-center mb-6 tracking-wider text-[#F1F3E8]">PLANO BÁSICO</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-center mb-6 tracking-wider text-ink">PLANO BÁSICO</h3>
             <div className="mb-6">
                <img src={planoBasico480.url} srcSet={`${planoBasico480.url} 480w, ${planoBasico720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Básico" loading="lazy" decoding="async" className="w-full h-auto" />
             </div>
-            <p className="text-[#F1F3E8]/80 mb-4 font-medium">Você recebe:</p>
+            <p className="text-ink/80 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
               {["ESCOLHA & TROCA"].map((t) => (
-                <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/85 text-sm">
+                <li key={t} className="flex items-start gap-3 text-ink/85 text-sm">
                   <CheckIcon /><span>{t}</span>
                 </li>
               ))}
@@ -495,11 +495,11 @@ function Index() {
           {/* PLANO COMPLETO */}
           <article className="rounded-2xl p-8 flex flex-col relative gold-border shadow-gold gold-glow">
             <h3 className="text-xl md:text-2xl font-bold text-center mb-2 tracking-wider text-gradient-gold mt-3">PLANO COMPLETO</h3>
-            <p className="text-center text-[#F1F3E8]/75 text-sm mb-5">⚡ 4x mais conteúdos</p>
+            <p className="text-center text-ink/75 text-sm mb-5">⚡ 4x mais conteúdos</p>
             <div className="mb-6">
                <img src={planoCompleto480.url} srcSet={`${planoCompleto480.url} 480w, ${planoCompleto720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Completo" loading="lazy" decoding="async" className="w-full h-auto" />
             </div>
-            <p className="text-[#F1F3E8]/85 mb-4 font-medium">Você recebe:</p>
+            <p className="text-ink/85 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
               {[
                 "ESCOLHA & TROCA",
@@ -521,7 +521,7 @@ function Index() {
                 "Consulta visual",
                 "Acesso imediato",
               ].map((t) => (
-                <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/90 text-sm">
+                <li key={t} className="flex items-start gap-3 text-ink/90 text-sm">
                   <CheckIcon /><span>{t}</span>
                 </li>
               ))}
@@ -531,8 +531,8 @@ function Index() {
                 "Bônus #3 — Checklist de Supermercado",
                 "Bônus #4 — Raio-X do Rótulo",
               ].map((t) => (
-                <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/90 text-sm">
-                  <span className="shrink-0 w-6 h-6 rounded-full bg-[#A8C686]/15 border border-[#A8C686]/40 flex items-center justify-center text-[#A8C686] text-sm">🎁</span>
+                <li key={t} className="flex items-start gap-3 text-ink/90 text-sm">
+                  <span className="shrink-0 w-6 h-6 rounded-full bg-antique-gold/15 border border-antique-gold/40 flex items-center justify-center text-antique-gold text-sm">🎁</span>
                   <span>{t}</span>
                 </li>
               ))}
@@ -546,38 +546,38 @@ function Index() {
             <CTAButton href={CHECKOUT_COMPLETO}>
               <span className="text-center">QUERO O PLANO COMPLETO</span>
             </CTAButton>
-            <p className="text-xs text-[#F1F3E8]/50 mt-4 text-center tracking-wide">🔒 Compra 100% segura&nbsp; • &nbsp;Aceso imediato</p>
+            <p className="text-xs text-ink/50 mt-4 text-center tracking-wide">🔒 Compra 100% segura&nbsp; • &nbsp;Aceso imediato</p>
           </article>
         </div>
 
       </Section>
 
       {/* 11 · GUARANTEE */}
-      <Section className="bg-[#0D1510]">
+      <Section className="bg-surface">
         <div className="max-w-3xl mx-auto text-center premium-card rounded-2xl p-10 md:p-14">
           <div className="inline-flex flex-col items-center gap-3 mb-8">
-            <div className="w-16 h-16 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 flex items-center justify-center">
-              <svg className="w-8 h-8 text-[#A8C686]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.2}>
+            <div className="w-16 h-16 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center">
+              <svg className="w-8 h-8 text-antique-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285v0Z" />
               </svg>
             </div>
             <div>
-              <div className="text-[10px] tracking-[0.3em] text-[#A8C686] uppercase mb-1">100% Garantia</div>
+              <div className="text-[10px] tracking-[0.3em] text-antique-gold uppercase mb-1">100% Garantia</div>
               <div className="text-3xl font-bold text-gradient-gold">VITALÍCIA</div>
             </div>
           </div>
           <h2 className="text-2xl md:text-4xl font-semibold mb-6">Você tem garantia vitalícia no ESCOLHA &amp; TROCA.</h2>
-          <p className="text-[#F1F3E8]/75 leading-relaxed max-w-xl mx-auto mb-3">Se o material não fizer sentido para o que você procura, não facilitar suas consultas ou você simplesmente decidir que não quer continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.</p>
-          <p className="text-[#A8C686] font-semibold tracking-wide mb-2">Sem burocracia.</p>
-          <p className="text-[#F1F3E8]/85 leading-relaxed max-w-xl mx-auto">O risco fica do nosso lado.</p>
+          <p className="text-ink/75 leading-relaxed max-w-xl mx-auto mb-3">Se o material não fizer sentido para o que você procura, não facilitar suas consultas ou você simplesmente decidir que não quer continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.</p>
+          <p className="text-antique-gold font-semibold tracking-wide mb-2">Sem burocracia.</p>
+          <p className="text-ink/85 leading-relaxed max-w-xl mx-auto">O risco fica do nosso lado.</p>
         </div>
       </Section>
 
       {/* 12 · HOW ACCESS WORKS */}
-      <Section className="bg-[#142019] border-y border-[#A8C686]/15">
+      <Section className="bg-surface-raised border-y border-antique-gold/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold mb-3">Como é o Acesso</h2>
-          <p className="text-[#A8C686] text-xs tracking-[0.4em] uppercase">(PASSO A PASSO)</p>
+          <p className="text-antique-gold text-xs tracking-[0.4em] uppercase">(PASSO A PASSO)</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
@@ -587,15 +587,15 @@ function Index() {
             { i: "⚖️", t: "Comece a escolher", items: ["Identifique o que você está escolhendo", "Observe os critérios apresentados", "Compare as opções", "Procure uma alternativa quando necessário", "Tome sua decisão", "Volte à cartilha sempre que surgir uma nova dúvida"] },
           ].map((s, i) => (
             <div key={s.t} className="premium-card rounded-xl p-6 text-center">
-              <div className="w-14 h-14 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 flex items-center justify-center text-2xl mx-auto mb-4">{s.i}</div>
-              <div className="text-[#A8C686] text-[10px] tracking-[0.3em] uppercase mb-2">0{i + 1}</div>
-              <h3 className="text-lg font-semibold mb-2 text-[#F1F3E8]">{s.t}</h3>
-              {s.d && <p className="text-sm text-[#F1F3E8]/65 leading-relaxed">{s.d}</p>}
+              <div className="w-14 h-14 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center text-2xl mx-auto mb-4">{s.i}</div>
+              <div className="text-antique-gold text-[10px] tracking-[0.3em] uppercase mb-2">0{i + 1}</div>
+              <h3 className="text-lg font-semibold mb-2 text-ink">{s.t}</h3>
+              {s.d && <p className="text-sm text-ink/65 leading-relaxed">{s.d}</p>}
               {s.items && (
-                <ul className="space-y-2 text-sm text-[#F1F3E8]/70 text-left inline-block">
+                <ul className="space-y-2 text-sm text-ink/70 text-left inline-block">
                   {s.items.map((it) => (
                     <li key={it} className="flex items-start gap-2">
-                      <span className="text-[#A8C686]">✓</span>
+                      <span className="text-antique-gold">✓</span>
                       <span>{it}</span>
                     </li>
                   ))}
@@ -639,8 +639,8 @@ function Index() {
           <span className="text-gradient-gold">Compare opções, encontre alternativas</span> e faça escolhas alimentares mais claras no dia a dia.
         </h2>
         <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
-        <div className="mt-16 pt-8 border-t border-[#A8C686]/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-[#F1F3E8]/45 leading-relaxed text-center">
-          <p className="text-center text-[#F1F3E8]/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
+        <div className="mt-16 pt-8 border-t border-antique-gold/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-ink/45 leading-relaxed text-center">
+          <p className="text-center text-ink/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
           <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
           <p>O ESCOLHA &amp; TROCA é um material digital independente, criado para fins educacionais e práticos relacionados à organização de informações e decisões alimentares.</p>
           <p>A reprodução não autorizada desta publicação, no todo ou em parte, por quaisquer meios, constitui violação dos direitos autorais, sujeitando os infratores às sanções previstas na legislação aplicável.</p>
