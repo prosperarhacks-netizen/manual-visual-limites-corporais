@@ -26,21 +26,21 @@ import planoCompleto720 from "@/assets/catalogo-optimized/plano-completo-720.web
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Catálogo Visual das Plantas Medicinais" },
+      { title: "Escolha & Troca — Decisões Alimentares" },
       {
         name: "description",
-        content: "+200 soluções naturais organizadas de forma simples, visual e prática.",
+        content: "Compare opções, encontre alternativas e faça escolhas alimentares mais claras no dia a dia.",
       },
-      { property: "og:title", content: "Catálogo Visual das Plantas Medicinais" },
+      { property: "og:title", content: "Escolha & Troca — Decisões Alimentares" },
       {
         property: "og:description",
-        content: "+200 soluções naturais, plantas, preparos, utilizações e cuidados em um catálogo visual.",
+        content: "Uma cartilha visual para comparar opções e fazer escolhas alimentares mais claras.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:title", content: "Catálogo Visual das Plantas Medicinais" },
+      { name: "twitter:title", content: "Escolha & Troca — Decisões Alimentares" },
       {
         name: "twitter:description",
-        content: "+200 soluções naturais, plantas, preparos, utilizações e cuidados em um catálogo visual.",
+        content: "Uma cartilha visual para comparar opções e fazer escolhas alimentares mais claras.",
       },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -248,7 +248,7 @@ function Index() {
       <Section className="pt-16 md:pt-24">
         <div className="max-w-3xl mx-auto text-center fade-up">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-[#F1F3E8]">
-            <span className="text-gradient-gold">+200 soluções naturais</span> para você consultar de forma simples, visual e prática.
+            <span className="text-gradient-gold">ESCOLHA &amp; TROCA</span><br />Compare opções, encontre alternativas e faça escolhas alimentares mais claras no dia a dia.
           </h1>
 
           <div className="max-w-xl mx-auto mb-8">
@@ -258,7 +258,7 @@ function Index() {
                sizes="(max-width: 640px) calc(100vw - 48px), 576px"
                width="1080"
                height="1080"
-               alt="Catálogo Visual das Plantas Medicinais"
+               alt="Escolha e Troca"
                loading="eager"
                fetchPriority="high"
                decoding="sync"
@@ -267,7 +267,7 @@ function Index() {
           </div>
 
           <p className="text-[#F1F3E8]/80 text-base md:text-lg leading-relaxed mb-8">
-            Você encontra +200 soluções naturais reunidas em um único material, com informações sobre plantas, utilizações, formas de preparo e cuidados importantes — tudo organizado para facilitar sua consulta.
+            Uma cartilha visual para você saber o que observar, comparar e trocar quando estiver no supermercado, em casa, no restaurante ou no delivery — sem precisar decorar listas enormes ou ficar procurando informações toda vez.
           </p>
 
           <div>
@@ -284,15 +284,15 @@ function Index() {
       <Section className="bg-[#0D1510]">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Os materiais do <span className="text-gradient-gold">Catálogo Visual das Plantas Medicinais</span> possuem
+            Os materiais do <span className="text-gradient-gold">ESCOLHA &amp; TROCA</span> possuem
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { i: "🌿", t: "PLANTAS ORGANIZADAS", d: "Mais de 200 soluções naturais apresentadas de forma organizada para facilitar sua consulta." },
-            { i: "💬", t: "LINGUAGEM SIMPLES", d: "Informações objetivas para você compreender o conteúdo sem precisar enfrentar textos complicados." },
-            { i: "🎯", t: "UTILIZAÇÕES E CONTEXTOS", d: "Informações que ajudam você a entender como diferentes plantas são tradicionalmente utilizadas e em quais contextos aparecem." },
-            { i: "🔍", t: "CONSULTA RÁPIDA", d: "Encontre a planta ou informação que procura e consulte o conteúdo em poucos minutos." },
+            { i: "⚖️", t: "COMPARAÇÕES A × B", d: "Coloque duas opções lado a lado e veja quais critérios observar antes de decidir." },
+            { i: "👀", t: "VISUAL E FÁCIL DE CONSULTAR", d: "As informações são organizadas em guias, tabelas, checklists e comparações para você encontrar rapidamente o que procura." },
+            { i: "🔄", t: "ALTERNATIVAS PARA QUANDO NÃO ENCONTRAR", d: "Se a primeira opção não estiver disponível, você encontra uma lógica simples para procurar outra alternativa e comparar novamente." },
+            { i: "⚡", t: "DECISÃO RÁPIDA", d: "Quando você estiver com pressa, use o Modo 30 Segundos para organizar sua decisão sem precisar analisar tudo novamente." },
           ].map((c) => (
             <div key={c.t} className="premium-card rounded-xl p-6">
               <div className="w-14 h-14 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 flex items-center justify-center text-2xl mb-4">{c.i}</div>
@@ -303,9 +303,9 @@ function Index() {
         </div>
         <div className="text-center mt-14">
           <p className="text-xl md:text-2xl font-semibold max-w-2xl mx-auto mb-6 text-[#F1F3E8]">
-            Transforme informações espalhadas em um material simples de compreender, visualizar e consultar.
+            Compare opções com mais clareza e encontre alternativas para as situações do dia a dia.
           </p>
-          <CTAButton onClick={scrollToOffer}>EU QUERO O CATÁLOGO VISUAL</CTAButton>
+          <CTAButton onClick={scrollToOffer}>EU QUERO O ESCOLHA &amp; TROCA</CTAButton>
         </div>
       </Section>
 
@@ -321,7 +321,7 @@ function Index() {
           <div className="relative">
             <GoldOrnament />
             <h2 className="text-3xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight mb-4">
-              Quantas vezes você já precisou procurar uma informação sobre uma planta e encontrou tudo espalhado?
+              Quantas vezes você já ficou em dúvida diante de duas opções e não soube qual escolher?
             </h2>
             <p className="text-[#F1F3E8]/70 mb-8">Aproveite a oferta por tempo limitado.</p>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
@@ -338,12 +338,12 @@ function Index() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { t: "COMPREENDER AS PRINCIPAIS INFORMAÇÕES" },
-            { t: "TORNAR A CONSULTA MAIS SIMPLES" },
-            { t: "ENCONTRAR O QUE PROCURA COM FACILIDADE" },
-            { t: "ECONOMIZAR TEMPO" },
-            { t: "VISUALIZAR COM MAIS FACILIDADE" },
-            { t: "TER UMA FERRAMENTA DE CONSULTA" },
+            { t: "Comparar opções alimentares sem depender de listas decoradas" },
+            { t: "Saber o que observar antes de escolher um produto ou refeição" },
+            { t: "Parar de ficar procurando informações diferentes toda vez que surgir uma dúvida" },
+            { t: "Encontrar alternativas quando a primeira opção não estiver disponível" },
+            { t: "Ter uma ferramenta visual para consultar no supermercado, em casa, no restaurante ou no delivery" },
+            { t: "Tomar decisões alimentares com mais clareza no dia a dia" },
           ].map((c) => (
             <article key={c.t} className="premium-card rounded-xl p-6">
               <CheckIcon className="mb-4" />
@@ -366,7 +366,7 @@ function Index() {
               sizes="(max-width: 767px) calc(100vw - 96px), 528px"
               width="760"
               height="760"
-              alt="Catálogo Visual das Plantas Medicinais com quatro bônus exclusivos"
+              alt="Escolha e Troca com quatro bônus exclusivos"
               loading="lazy"
               decoding="async"
               className="w-full h-auto subtle-float"
@@ -374,24 +374,33 @@ function Index() {
           </div>
           <div>
             <span className="inline-block px-3 py-1 rounded-full bg-[#22C55E]/15 border border-[#22C55E]/40 text-[#22C55E] text-xs font-semibold mb-4">⚡ ACESSO IMEDIATO</span>
-            <p className="text-[#F1F3E8]/85 mb-2">Tudo foi organizado para ser simples de utilizar e consultar.</p>
-            <p className="text-[#F1F3E8]/70 mb-6">Você escolhe qualquer planta ou informação e começa a consultar imediatamente.</p>
-            <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">Catálogo Visual das Plantas Medicinais</h3>
+            <p className="text-[#F1F3E8]/85 mb-2">Você não precisa passar horas estudando informações antes de tomar uma decisão.</p>
+            <p className="text-[#F1F3E8]/70 mb-6">Você encontra a situação que está vivendo, consulta os critérios apresentados, compara as opções e decide.</p>
+            <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">ESCOLHA &amp; TROCA</h3>
             <ul className="space-y-3">
             {[
-              "+200 soluções naturais",
-              "Plantas apresentadas visualmente",
-              "Principais utilizações",
-              "Formas de preparo",
-              "Partes utilizadas",
-              "Cuidados importantes",
-              "Explicações simples e objetivas",
-              "Exemplos e contextos",
-              "Informações organizadas por planta",
-              "Palavras-chave",
-              "Índice de plantas",
-              "Índice por necessidade",
-              "Consulta rápida",
+              "Guias organizados por categorias",
+              "Guia de Pães",
+              "Guia de Bebidas",
+              "Guia de Iogurtes & Derivados",
+              "Guia de Cereais & Acompanhamentos",
+              "Guia de Lanches",
+              "Guia de Café da Manhã",
+              "Guia de Almoço",
+              "Guia de Jantar",
+              "Guia de Sobremesas",
+              "Guia de Restaurante",
+              "Guia de Delivery",
+              "Comparador A × B",
+              "Tabela de critérios de comparação",
+              "Guia “O Que Devo Observar?”",
+              "Guia “Não Encontrei”",
+              "Tabela de Trocas",
+              "Modo 30 Segundos",
+              "Cartão de Decisão Rápida",
+              "Mapa Rápido da Cartilha",
+              "Página de Minhas Decisões",
+              "Consulta simples e visual",
               "Acesso imediato",
             ].map((b) => (
                 <li key={b} className="flex items-center gap-3 text-[#F1F3E8]/90">
@@ -416,23 +425,23 @@ function Index() {
           {[
             {
                img: bonus1Imagem.url,
-              t: "Lista da Farmácia Natural",
-              d: "Uma lista prática para organizar e visualizar as principais plantas e itens que podem fazer parte da sua farmácia natural.",
+               t: "GUIA DE MOLHOS & TEMPEROS",
+               d: "Um guia visual para observar, comparar e encontrar alternativas entre molhos, temperos e acompanhamentos.",
             },
             {
                img: bonus2Imagem.url,
-              t: "Guia Visual de Preparos",
-              d: "Um guia visual com diferentes formas de preparo apresentadas de maneira simples e organizada para facilitar sua consulta.",
+              t: "GUIA DE FAST-FOOD",
+              d: "Um guia para analisar as opções disponíveis, comparar escolhas e encontrar possíveis alternativas quando estiver em uma situação de fast-food.",
             },
             {
                img: bonus3Imagem.url,
-              t: "Fichas de Consulta Rápida",
-              d: "Fichas práticas para você consultar rapidamente as principais informações sobre as plantas sem precisar percorrer todo o catálogo.",
+              t: "CHECKLIST DE SUPERMERCADO",
+              d: "Uma lista organizada por categorias para levar às compras, conferir o que você precisa e facilitar suas decisões diante das opções disponíveis.",
             },
             {
                img: bonus4Imagem.url,
-              t: "Checklist da Farmácia Natural",
-              d: "Um checklist simples para ajudar você a organizar sua consulta e acompanhar os principais itens da sua farmácia natural.",
+              t: "RAIO-X DO RÓTULO",
+              d: "Um guia visual para localizar as principais informações do rótulo e comparar produtos semelhantes com mais organização.",
             },
           ].map((b, i) => (
             <div key={b.t} className="premium-card rounded-xl overflow-hidden flex flex-col">
@@ -444,7 +453,7 @@ function Index() {
                 <h3 className="text-lg font-semibold mb-2">{b.t}</h3>
                 <p className="text-sm text-[#F1F3E8]/65 leading-relaxed mb-4">{b.d}</p>
                 <div className="mt-auto inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-[#22C55E]/10 border border-[#22C55E]/35 text-xs">
-                  <span className="text-[#F1F3E8]/60">Valor: <s>R$27</s></span>
+                  <span className="text-[#F1F3E8]/60">Valor: <s>R$29</s></span>
                   <span className="text-[#22C55E] font-bold">GRÁTIS</span>
                 </div>
               </div>
@@ -471,16 +480,16 @@ function Index() {
             </div>
             <p className="text-[#F1F3E8]/80 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
-              {["Catálogo Visual das Plantas Medicinais"].map((t) => (
+              {["ESCOLHA & TROCA"].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/85 text-sm">
                   <CheckIcon /><span>{t}</span>
                 </li>
               ))}
             </ul>
             <div className="text-center mb-6 mt-auto">
-              <div className="text-sm text-[#F1F3E8]/60 mb-1">De <s className="text-[#EF4444]">R$37,90</s> por:</div>
-              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$27,90</div>
-              <div className="text-sm text-[#F1F3E8]/70 mt-1">ou 2x de R$13,95 no cartão</div>
+              <div className="text-sm text-[#F1F3E8]/60 mb-1">De <s className="text-[#EF4444]">R$29,90</s> por:</div>
+              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$19,90</div>
+              <div className="text-sm text-[#F1F3E8]/70 mt-1">ou 2x de R$9,95 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 text-[#A8C686] text-xs">💰 Você economiza R$10,00</div>
             </div>
             <CTAButton href={CHECKOUT_BASICO} variant="ghost">QUERO O BÁSICO</CTAButton>
@@ -496,19 +505,23 @@ function Index() {
             <p className="text-[#F1F3E8]/85 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
               {[
-                "Catálogo Visual das Plantas Medicinais",
-                "+200 soluções naturais",
-                "Plantas apresentadas visualmente",
-                "Principais utilizações",
-                "Formas de preparo",
-                "Partes utilizadas",
-                "Cuidados importantes",
-                "Explicações simples e organizadas",
-                "Exemplos e contextos",
-                "Palavras-chave",
-                "Índice de plantas",
-                "Índice por necessidade",
-                "Consulta rápida",
+                "ESCOLHA & TROCA",
+                "Guias por categorias",
+                "Comparações A × B",
+                "Guia de Pães",
+                "Guia de Bebidas",
+                "Guia de Iogurtes & Derivados",
+                "Guia de Cereais & Acompanhamentos",
+                "Guia de Lanches",
+                "Guia de Refeições",
+                "Guia de Restaurante",
+                "Guia de Delivery",
+                "Guia “O Que Devo Observar?”",
+                "Guia “Não Encontrei”",
+                "Tabela de Trocas",
+                "Modo 30 Segundos",
+                "Cartão de Decisão Rápida",
+                "Consulta visual",
                 "Acesso imediato",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/90 text-sm">
@@ -516,10 +529,10 @@ function Index() {
                 </li>
               ))}
               {[
-                "Bônus #1 — Lista da Farmácia Natural",
-                "Bônus #2 — Guia Visual de Preparos",
-                "Bônus #3 — Fichas de Consulta Rápida",
-                "Bônus #4 — Checklist da Farmácia Natural",
+                "Bônus #1 — Guia de Molhos & Temperos",
+                "Bônus #2 — Guia de Fast-Food",
+                "Bônus #3 — Checklist de Supermercado",
+                "Bônus #4 — Raio-X do Rótulo",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/90 text-sm">
                   <span className="shrink-0 w-6 h-6 rounded-full bg-[#A8C686]/15 border border-[#A8C686]/40 flex items-center justify-center text-[#A8C686] text-sm">🎁</span>
@@ -528,9 +541,9 @@ function Index() {
               ))}
             </ul>
             <div className="text-center mb-6 mt-auto">
-              <div className="text-sm text-[#F1F3E8]/60 mb-1">De <s className="text-[#EF4444]">R$57,90</s> por:</div>
-              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$37,90</div>
-              <div className="text-sm text-[#F1F3E8]/70 mt-1">ou 5x de R$7,58 no cartão</div>
+              <div className="text-sm text-[#F1F3E8]/60 mb-1">De <s className="text-[#EF4444]">R$49,90</s> por:</div>
+              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$29,90</div>
+              <div className="text-sm text-[#F1F3E8]/70 mt-1">ou 5x de R$5,98 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 text-[#A8C686] text-xs">💰 Você economiza R$20,00</div>
             </div>
             <CTAButton href={CHECKOUT_COMPLETO}>
@@ -556,33 +569,10 @@ function Index() {
               <div className="text-3xl font-bold text-gradient-gold">VITALÍCIA</div>
             </div>
           </div>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-6">
-            Você tem garantia vitalícia no Catálogo Visual das Plantas Medicinais.
-          </h2>
-          <p className="text-[#F1F3E8]/75 mb-4">Isso significa que, a qualquer momento, se você achar que:</p>
-          <ul className="space-y-3 mb-6 inline-block text-left">
-            {[
-              "o material não faz sentido para seus objetivos",
-              "o conteúdo não ajuda na sua consulta",
-              "ou simplesmente não quiser continuar com o produto",
-            ].map((t) => (
-              <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/85">
-                <CheckIcon /><span>{t}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="text-[#F1F3E8]/90 font-medium mb-2">👉 você pode solicitar o reembolso.</p>
-          <p className="text-[#A8C686] font-semibold tracking-wide mb-6">Sem prazo. Sem burocracia. Sem explicação obrigatória.</p>
-          <div className="gold-divider my-6" />
-          <p className="text-[#F1F3E8]/70 leading-relaxed max-w-xl mx-auto mb-3">
-            Essa garantia existe porque acreditamos no valor prático do material.
-          </p>
-          <p className="text-[#F1F3E8]/70 leading-relaxed max-w-xl mx-auto mb-3">
-            Você não está comprando apenas informação. Está adquirindo uma biblioteca visual criada para facilitar a consulta e organização das informações sobre plantas medicinais.
-          </p>
-          <p className="text-[#F1F3E8]/85 leading-relaxed max-w-xl mx-auto">
-            Se não fizer sentido para você, o risco fica do nosso lado.
-          </p>
+          <h2 className="text-2xl md:text-4xl font-semibold mb-6">Você tem garantia vitalícia no ESCOLHA &amp; TROCA.</h2>
+          <p className="text-[#F1F3E8]/75 leading-relaxed max-w-xl mx-auto mb-3">Se o material não fizer sentido para o que você procura, não facilitar suas consultas ou você simplesmente decidir que não quer continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.</p>
+          <p className="text-[#A8C686] font-semibold tracking-wide mb-2">Sem burocracia.</p>
+          <p className="text-[#F1F3E8]/85 leading-relaxed max-w-xl mx-auto">O risco fica do nosso lado.</p>
         </div>
       </Section>
 
@@ -594,10 +584,10 @@ function Index() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { i: "🛒", t: "Conclua sua compra", d: "Após a confirmação do pagamento, seu acesso é liberado automaticamente." },
-            { i: "📩", t: "Entre na área de membros", d: "Todo o conteúdo ficará organizado para acesso imediato." },
-            { i: "📱", t: "Acesse os materiais", items: ["Catálogo Visual das Plantas Medicinais", "Bônus 01 — Lista da Farmácia Natural", "Bônus 02 — Guia Visual de Preparos", "Bônus 03 — Fichas de Consulta Rápida", "Bônus 04 — Checklist da Farmácia Natural"] },
-            { i: "📚", t: "Comece a consultar", items: ["Escolha uma planta ou categoria", "Encontre a informação desejada", "Consulte as formas de preparo", "Veja os cuidados importantes", "Volte ao material sempre que precisar"] },
+            { i: "🛒", t: "Conclua sua compra", d: "Depois que o pagamento for confirmado, seu acesso será liberado." },
+            { i: "📩", t: "Entre na área de membros", d: "Os materiais ficarão organizados em um único lugar para você acessar." },
+            { i: "📱", t: "Acesse os materiais", items: ["ESCOLHA & TROCA", "Bônus 01 — Guia de Molhos & Temperos", "Bônus 02 — Guia de Fast-Food", "Bônus 03 — Checklist de Supermercado", "Bônus 04 — Raio-X do Rótulo"] },
+            { i: "⚖️", t: "Comece a escolher", items: ["Identifique o que você está escolhendo", "Observe os critérios apresentados", "Compare as opções", "Procure uma alternativa quando necessário", "Tome sua decisão", "Volte à cartilha sempre que surgir uma nova dúvida"] },
           ].map((s, i) => (
             <div key={s.t} className="premium-card rounded-xl p-6 text-center">
               <div className="w-14 h-14 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 flex items-center justify-center text-2xl mx-auto mb-4">{s.i}</div>
@@ -629,16 +619,16 @@ function Index() {
         </div>
         <div className="max-w-3xl mx-auto space-y-3">
           {[
-            { q: "O que é o Catálogo Visual das Plantas Medicinais?", a: "É um material digital em PDF que reúne +200 soluções naturais e informações sobre plantas medicinais de forma visual, organizada e fácil de consultar." },
-            { q: "O material serve para iniciantes?", a: "Sim. O conteúdo foi estruturado para facilitar a consulta, inclusive para quem está começando a conhecer as plantas medicinais." },
-            { q: "Posso acessar pelo celular?", a: "Sim. Como o produto é digital, você poderá acessar o material pelo celular e por outros dispositivos compatíveis com PDF." },
-            { q: "O acesso é imediato?", a: "Sim. Após a confirmação do pagamento, o acesso aos materiais é liberado automaticamente." },
-            { q: "Os materiais podem ser impressos?", a: "Sim. Por serem materiais em PDF, você pode optar por utilizá-los digitalmente ou imprimir os conteúdos para consulta física." },
-            { q: "Os 4 bônus já estão incluídos?", a: "Sim. No Plano Completo, os quatro bônus são entregues gratuitamente junto com o Catálogo Visual." },
+            { q: "O que é o ESCOLHA & TROCA?", a: "É uma cartilha visual de decisões alimentares criada para ajudar você a observar, comparar e encontrar alternativas diante das opções disponíveis no dia a dia. Ela reúne guias, comparações, checklists e ferramentas de consulta para situações como supermercado, refeições, restaurante e delivery." },
+            { q: "O material serve para quem não entende muito de alimentação?", a: "Sim. A proposta é justamente organizar as informações de maneira simples e visual. Você não precisa dominar termos técnicos para utilizar os guias. A cartilha mostra o que observar e como comparar dentro das situações apresentadas." },
+            { q: "Posso acessar pelo celular?", a: "Sim. O material foi pensado para ser visual e fácil de consultar, inclusive pelo celular. Você também poderá acessar pelo computador ou tablet." },
+            { q: "O acesso é imediato?", a: "Sim. Após a confirmação do pagamento, as instruções de acesso são enviadas para você." },
+            { q: "Os materiais podem ser impressos?", a: "Sim. Os materiais podem ser utilizados digitalmente e também podem ser impressos para consulta, de acordo com as configurações do seu arquivo e impressora." },
+            { q: "Os 4 bônus já estão incluídos?", a: "Sim. No Plano Completo, você recebe os quatro bônus sem pagamento adicional: Guia de Molhos & Temperos, Guia de Fast-Food, Checklist de Supermercado e Raio-X do Rótulo." },
             { q: "O acesso possui mensalidade?", a: "Não. É uma compra única. Você não precisa pagar mensalidade para continuar acessando o material." },
-            { q: "Posso revisar o material sempre que quiser?", a: "Sim. O material fica disponível para você consultar novamente sempre que precisar." },
-            { q: "Como funciona a garantia?", a: "A garantia é vitalícia. Se o material não fizer sentido para seus objetivos, não ajudar na sua consulta ou você simplesmente não quiser continuar com o produto, poderá solicitar o reembolso." },
-            { q: "O material substitui orientação de um profissional de saúde?", a: "Não. O catálogo é um material educacional e de consulta. Informações sobre saúde, sintomas, medicamentos, condições específicas ou situações individuais devem ser avaliadas com um profissional de saúde qualificado." },
+            { q: "Posso revisar o material sempre que quiser?", a: "Sim. Depois de adquirir o produto, você poderá voltar aos materiais sempre que precisar consultar uma categoria, comparação, checklist ou guia." },
+            { q: "Como funciona a garantia?", a: "Você possui garantia vitalícia. Se o material não fizer sentido para o que você procura, não facilitar suas consultas ou você decidir que não deseja continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta." },
+            { q: "Preciso ter ingredientes específicos para usar o guia?", a: "Não. A proposta do ESCOLHA & TROCA é justamente ajudar você a tomar decisões entre as opções que estão disponíveis. Quando uma opção não estiver disponível, você pode utilizar a seção de trocas para procurar uma alternativa e comparar novamente." },
           ].map((f, i) => (
             <FaqItem key={i} q={f.q} a={f.a} />
           ))}
@@ -649,13 +639,13 @@ function Index() {
       <Section className="text-center">
         <GoldOrnament />
         <h2 className="text-3xl md:text-4xl font-semibold max-w-3xl mx-auto leading-tight mb-8">
-          Tenha <span className="text-gradient-gold">+200 soluções naturais</span> organizadas em um catálogo simples de consultar.
+          <span className="text-gradient-gold">Compare opções, encontre alternativas</span> e faça escolhas alimentares mais claras no dia a dia.
         </h2>
         <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
         <div className="mt-16 pt-8 border-t border-[#A8C686]/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-[#F1F3E8]/45 leading-relaxed text-left">
           <p className="text-center text-[#F1F3E8]/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
           <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
-          <p>O Catálogo Visual das Plantas Medicinais é um material independente de caráter educacional. As informações apresentadas não substituem orientação, diagnóstico ou tratamento realizado por profissional de saúde qualificado.</p>
+          <p>O ESCOLHA &amp; TROCA é um material digital independente, criado para fins educacionais e práticos relacionados à organização de informações e decisões alimentares.</p>
           <p>A reprodução não autorizada desta publicação, no todo ou em parte, por quaisquer meios, constitui violação dos direitos autorais, sujeitando os infratores às sanções previstas na legislação aplicável.</p>
         </div>
       </Section>
