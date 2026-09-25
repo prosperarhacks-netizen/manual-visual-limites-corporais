@@ -85,7 +85,7 @@ export const Route = createRootRoute({
     ],
     scripts: [
       {
-        children: `!function(w,d){var done=false;function load(){if(done)return;done=true;!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(w,d,'script','https://connect.facebook.net/en_US/fbevents.js');w.fbq('init','1097892546022801');w.fbq('track','PageView')}['pointerdown','keydown','touchstart','scroll'].forEach(function(e){w.addEventListener(e,load,{once:true,passive:true})});w.addEventListener('load',function(){'requestIdleCallback'in w?w.requestIdleCallback(load,{timeout:2500}):w.setTimeout(load,1500)},{once:true})}(window,document);`,
+        children: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1444582474223753');fbq('track','PageView');`,
       },
     ],
   }),
@@ -109,7 +109,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1097892546022801&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=1444582474223753&ev=PageView&noscript=1"
           />
         </noscript>
         <Scripts />
