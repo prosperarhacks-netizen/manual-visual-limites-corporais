@@ -248,7 +248,7 @@ function Index() {
       <Section className="pt-16 md:pt-24">
         <div className="max-w-3xl mx-auto text-center fade-up">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-[#F1F3E8]">
-            <span className="text-gradient-gold">ESCOLHA &amp; TROCA</span><br />Compare opções, encontre alternativas e faça escolhas alimentares mais claras no dia a dia.
+            Compare opções, encontre alternativas e faça escolhas alimentares mais claras no dia a dia.
           </h1>
 
           <div className="max-w-xl mx-auto mb-8">
@@ -639,7 +639,7 @@ function Index() {
           <span className="text-gradient-gold">Compare opções, encontre alternativas</span> e faça escolhas alimentares mais claras no dia a dia.
         </h2>
         <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
-        <div className="mt-16 pt-8 border-t border-[#A8C686]/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-[#F1F3E8]/45 leading-relaxed text-left">
+        <div className="mt-16 pt-8 border-t border-[#A8C686]/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-[#F1F3E8]/45 leading-relaxed text-center">
           <p className="text-center text-[#F1F3E8]/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
           <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
           <p>O ESCOLHA &amp; TROCA é um material digital independente, criado para fins educacionais e práticos relacionados à organização de informações e decisões alimentares.</p>
