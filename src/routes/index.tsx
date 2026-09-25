@@ -167,8 +167,8 @@ function GalleryMarquee() {
           Veja os <span className="text-gradient-gold">materiais</span> que você vai receber
         </h2>
       </div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 z-10 bg-gradient-to-r from-[#142019] to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 z-10 bg-gradient-to-l from-[#142019] to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 z-10 bg-gradient-to-r from-surface-raised to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 z-10 bg-gradient-to-l from-surface-raised to-transparent" />
       <div className="marquee-viewport group">
         <div className="marquee-track">
           {loop.map((src, i) => (
@@ -198,8 +198,8 @@ function DemonstrativoCarousel() {
   const loop = [...DEMONSTRATIVO_IMAGES, ...DEMONSTRATIVO_IMAGES];
   return (
     <div className="relative overflow-hidden py-2">
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 z-10 bg-gradient-to-r from-[#0D1510] to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 z-10 bg-gradient-to-l from-[#0D1510] to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 z-10 bg-gradient-to-r from-surface to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 z-10 bg-gradient-to-l from-surface to-transparent" />
       <div className="marquee-viewport group">
         <div className="marquee-track">
           {loop.map((img, i) => (
@@ -344,14 +344,14 @@ function Index() {
           ].map((c) => (
             <article key={c.t} className="premium-card rounded-xl p-6">
               <CheckIcon className="mb-4" />
-              <h3 className="text-base md:text-lg font-semibold text-[#F1F3E8]">{c.t}</h3>
+              <h3 className="text-base md:text-lg font-semibold text-ink">{c.t}</h3>
             </article>
           ))}
         </div>
       </Section>
 
       {/* 8 · EVERYTHING YOU RECEIVE */}
-      <Section className="bg-[#0D1510]">
+      <Section className="bg-surface">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold">Tudo o que você vai <span className="text-gradient-gold">receber</span></h2>
         </div>
@@ -371,8 +371,8 @@ function Index() {
           </div>
           <div>
             <span className="inline-block px-3 py-1 rounded-full bg-[#22C55E]/15 border border-[#22C55E]/40 text-[#22C55E] text-xs font-semibold mb-4">⚡ ACESSO IMEDIATO</span>
-            <p className="text-[#F1F3E8]/85 mb-2">Você não precisa passar horas estudando informações antes de tomar uma decisão.</p>
-            <p className="text-[#F1F3E8]/70 mb-6">Você encontra a situação que está vivendo, consulta os critérios apresentados, compara as opções e decide.</p>
+            <p className="text-ink/85 mb-2">Você não precisa passar horas estudando informações antes de tomar uma decisão.</p>
+            <p className="text-ink/70 mb-6">Você encontra a situação que está vivendo, consulta os critérios apresentados, compara as opções e decide.</p>
             <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">ESCOLHA &amp; TROCA</h3>
             <ul className="space-y-3">
             {[
