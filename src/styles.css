@@ -103,10 +103,8 @@
   .bg-gold { background-color: var(--antique-gold); }
   .border-gold { border-color: var(--antique-gold); }
   .text-gradient-gold {
-    background: linear-gradient(135deg, oklch(0.52 0.09 72) 0%, var(--antique-gold) 42%, var(--terracotta) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background: none;
+    color: var(--antique-gold);
   }
   .bg-cta { background-color: #22C55E; }
   .bg-cta-hover { background-color: #16A34A; }
