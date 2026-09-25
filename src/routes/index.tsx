@@ -302,9 +302,6 @@ function Index() {
           ))}
         </div>
         <div className="text-center mt-14">
-          <p className="text-xl md:text-2xl font-semibold max-w-2xl mx-auto mb-6 text-[#F1F3E8]">
-            Compare opções com mais clareza e encontre alternativas para as situações do dia a dia.
-          </p>
           <CTAButton onClick={scrollToOffer}>EU QUERO O ESCOLHA &amp; TROCA</CTAButton>
         </div>
       </Section>
@@ -333,7 +330,7 @@ function Index() {
       <Section className="bg-[#142019] border-y border-[#A8C686]/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Este material é ideal para <span className="text-gradient-gold">você que deseja</span>
+            Este material é ideal para <span className="text-gradient-gold">você que deseja:</span>
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
