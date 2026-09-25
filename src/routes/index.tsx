@@ -400,7 +400,7 @@ function Index() {
               "Consulta simples e visual",
               "Acesso imediato",
             ].map((b) => (
-                <li key={b} className="flex items-center gap-3 text-[#F1F3E8]/90">
+                <li key={b} className="flex items-center gap-3 text-ink/90">
                   <CheckIcon />{b}
                 </li>
               ))}
@@ -410,10 +410,10 @@ function Index() {
       </Section>
 
       {/* 9 · BONUS */}
-      <Section className="bg-[#142019] border-y border-[#A8C686]/15">
+      <Section className="bg-surface-raised border-y border-antique-gold/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="text-[#A8C686] text-sm tracking-[0.3em] uppercase mb-2">E NÃO PARA POR AÍ...</div>
-          <p className="text-[#F1F3E8]/70 text-sm tracking-[0.2em] uppercase mb-3">VOCÊ TAMBÉM VAI RECEBER</p>
+          <div className="text-antique-gold text-sm tracking-[0.3em] uppercase mb-2">E NÃO PARA POR AÍ...</div>
+          <p className="text-ink/70 text-sm tracking-[0.2em] uppercase mb-3">VOCÊ TAMBÉM VAI RECEBER</p>
           <h2 className="text-3xl md:text-5xl font-semibold">
             🎁 <span className="text-gradient-gold">4 Bônus Exclusivos</span>
           </h2>
@@ -442,13 +442,13 @@ function Index() {
             },
           ].map((b, i) => (
             <div key={b.t} className="premium-card rounded-xl overflow-hidden flex flex-col">
-              <div className="bg-gradient-to-br from-[#1B2A20] to-[#0C120E]">
+              <div className="bg-gradient-to-br from-surface-soft to-canvas">
                 <img src={b.img} alt={b.t} width="540" height="540" loading="lazy" decoding="async" className="w-full h-auto object-cover" />
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <div className="text-[#A8C686] text-[10px] tracking-[0.3em] uppercase mb-2">BÔNUS #{i + 1}</div>
+                <div className="text-antique-gold text-[10px] tracking-[0.3em] uppercase mb-2">BÔNUS #{i + 1}</div>
                 <h3 className="text-lg font-semibold mb-2">{b.t}</h3>
-                <p className="text-sm text-[#F1F3E8]/65 leading-relaxed mb-4">{b.d}</p>
+                <p className="text-sm text-ink/65 leading-relaxed mb-4">{b.d}</p>
                 <div className="mt-auto inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-[#22C55E]/10 border border-[#22C55E]/35 text-xs">
                   <span className="text-[#F1F3E8]/60">Valor: <s>R$29</s></span>
                   <span className="text-[#22C55E] font-bold">GRÁTIS</span>
@@ -460,7 +460,7 @@ function Index() {
       </Section>
 
       {/* 10 · PLANS / OFERTA */}
-      <Section id="oferta" className="bg-[#0D1510]">
+      <Section id="oferta" className="bg-surface">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="inline-block px-4 py-2 rounded-full bg-[#EF4444]/15 border border-[#EF4444]/40 text-[#F87171] text-xs md:text-sm font-semibold tracking-wider mb-5">
             ⏰ ÚLTIMA CHANCE — OFERTA TERMINA HOJE
@@ -471,14 +471,14 @@ function Index() {
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto items-start">
           {/* PLANO BÁSICO */}
           <article className="premium-card rounded-2xl p-8 flex flex-col">
-            <h3 className="text-xl md:text-2xl font-bold text-center mb-6 tracking-wider text-[#F1F3E8]">PLANO BÁSICO</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-center mb-6 tracking-wider text-ink">PLANO BÁSICO</h3>
             <div className="mb-6">
                <img src={planoBasico480.url} srcSet={`${planoBasico480.url} 480w, ${planoBasico720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Básico" loading="lazy" decoding="async" className="w-full h-auto" />
             </div>
-            <p className="text-[#F1F3E8]/80 mb-4 font-medium">Você recebe:</p>
+            <p className="text-ink/80 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
               {["ESCOLHA & TROCA"].map((t) => (
-                <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/85 text-sm">
+                <li key={t} className="flex items-start gap-3 text-ink/85 text-sm">
                   <CheckIcon /><span>{t}</span>
                 </li>
               ))}
@@ -495,11 +495,11 @@ function Index() {
           {/* PLANO COMPLETO */}
           <article className="rounded-2xl p-8 flex flex-col relative gold-border shadow-gold gold-glow">
             <h3 className="text-xl md:text-2xl font-bold text-center mb-2 tracking-wider text-gradient-gold mt-3">PLANO COMPLETO</h3>
-            <p className="text-center text-[#F1F3E8]/75 text-sm mb-5">⚡ 4x mais conteúdos</p>
+            <p className="text-center text-ink/75 text-sm mb-5">⚡ 4x mais conteúdos</p>
             <div className="mb-6">
                <img src={planoCompleto480.url} srcSet={`${planoCompleto480.url} 480w, ${planoCompleto720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Completo" loading="lazy" decoding="async" className="w-full h-auto" />
             </div>
-            <p className="text-[#F1F3E8]/85 mb-4 font-medium">Você recebe:</p>
+            <p className="text-ink/85 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
               {[
                 "ESCOLHA & TROCA",
@@ -521,7 +521,7 @@ function Index() {
                 "Consulta visual",
                 "Acesso imediato",
               ].map((t) => (
-                <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/90 text-sm">
+                <li key={t} className="flex items-start gap-3 text-ink/90 text-sm">
                   <CheckIcon /><span>{t}</span>
                 </li>
               ))}
@@ -531,8 +531,8 @@ function Index() {
                 "Bônus #3 — Checklist de Supermercado",
                 "Bônus #4 — Raio-X do Rótulo",
               ].map((t) => (
-                <li key={t} className="flex items-start gap-3 text-[#F1F3E8]/90 text-sm">
-                  <span className="shrink-0 w-6 h-6 rounded-full bg-[#A8C686]/15 border border-[#A8C686]/40 flex items-center justify-center text-[#A8C686] text-sm">🎁</span>
+                <li key={t} className="flex items-start gap-3 text-ink/90 text-sm">
+                  <span className="shrink-0 w-6 h-6 rounded-full bg-antique-gold/15 border border-antique-gold/40 flex items-center justify-center text-antique-gold text-sm">🎁</span>
                   <span>{t}</span>
                 </li>
               ))}
@@ -546,38 +546,38 @@ function Index() {
             <CTAButton href={CHECKOUT_COMPLETO}>
               <span className="text-center">QUERO O PLANO COMPLETO</span>
             </CTAButton>
-            <p className="text-xs text-[#F1F3E8]/50 mt-4 text-center tracking-wide">🔒 Compra 100% segura&nbsp; • &nbsp;Aceso imediato</p>
+            <p className="text-xs text-ink/50 mt-4 text-center tracking-wide">🔒 Compra 100% segura&nbsp; • &nbsp;Aceso imediato</p>
           </article>
         </div>
 
       </Section>
 
       {/* 11 · GUARANTEE */}
-      <Section className="bg-[#0D1510]">
+      <Section className="bg-surface">
         <div className="max-w-3xl mx-auto text-center premium-card rounded-2xl p-10 md:p-14">
           <div className="inline-flex flex-col items-center gap-3 mb-8">
-            <div className="w-16 h-16 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 flex items-center justify-center">
-              <svg className="w-8 h-8 text-[#A8C686]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.2}>
+            <div className="w-16 h-16 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center">
+              <svg className="w-8 h-8 text-antique-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285v0Z" />
               </svg>
             </div>
             <div>
-              <div className="text-[10px] tracking-[0.3em] text-[#A8C686] uppercase mb-1">100% Garantia</div>
+              <div className="text-[10px] tracking-[0.3em] text-antique-gold uppercase mb-1">100% Garantia</div>
               <div className="text-3xl font-bold text-gradient-gold">VITALÍCIA</div>
             </div>
           </div>
           <h2 className="text-2xl md:text-4xl font-semibold mb-6">Você tem garantia vitalícia no ESCOLHA &amp; TROCA.</h2>
-          <p className="text-[#F1F3E8]/75 leading-relaxed max-w-xl mx-auto mb-3">Se o material não fizer sentido para o que você procura, não facilitar suas consultas ou você simplesmente decidir que não quer continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.</p>
-          <p className="text-[#A8C686] font-semibold tracking-wide mb-2">Sem burocracia.</p>
-          <p className="text-[#F1F3E8]/85 leading-relaxed max-w-xl mx-auto">O risco fica do nosso lado.</p>
+          <p className="text-ink/75 leading-relaxed max-w-xl mx-auto mb-3">Se o material não fizer sentido para o que você procura, não facilitar suas consultas ou você simplesmente decidir que não quer continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.</p>
+          <p className="text-antique-gold font-semibold tracking-wide mb-2">Sem burocracia.</p>
+          <p className="text-ink/85 leading-relaxed max-w-xl mx-auto">O risco fica do nosso lado.</p>
         </div>
       </Section>
 
       {/* 12 · HOW ACCESS WORKS */}
-      <Section className="bg-[#142019] border-y border-[#A8C686]/15">
+      <Section className="bg-surface-raised border-y border-antique-gold/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold mb-3">Como é o Acesso</h2>
-          <p className="text-[#A8C686] text-xs tracking-[0.4em] uppercase">(PASSO A PASSO)</p>
+          <p className="text-antique-gold text-xs tracking-[0.4em] uppercase">(PASSO A PASSO)</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
@@ -587,15 +587,15 @@ function Index() {
             { i: "⚖️", t: "Comece a escolher", items: ["Identifique o que você está escolhendo", "Observe os critérios apresentados", "Compare as opções", "Procure uma alternativa quando necessário", "Tome sua decisão", "Volte à cartilha sempre que surgir uma nova dúvida"] },
           ].map((s, i) => (
             <div key={s.t} className="premium-card rounded-xl p-6 text-center">
-              <div className="w-14 h-14 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 flex items-center justify-center text-2xl mx-auto mb-4">{s.i}</div>
-              <div className="text-[#A8C686] text-[10px] tracking-[0.3em] uppercase mb-2">0{i + 1}</div>
-              <h3 className="text-lg font-semibold mb-2 text-[#F1F3E8]">{s.t}</h3>
-              {s.d && <p className="text-sm text-[#F1F3E8]/65 leading-relaxed">{s.d}</p>}
+              <div className="w-14 h-14 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center text-2xl mx-auto mb-4">{s.i}</div>
+              <div className="text-antique-gold text-[10px] tracking-[0.3em] uppercase mb-2">0{i + 1}</div>
+              <h3 className="text-lg font-semibold mb-2 text-ink">{s.t}</h3>
+              {s.d && <p className="text-sm text-ink/65 leading-relaxed">{s.d}</p>}
               {s.items && (
-                <ul className="space-y-2 text-sm text-[#F1F3E8]/70 text-left inline-block">
+                <ul className="space-y-2 text-sm text-ink/70 text-left inline-block">
                   {s.items.map((it) => (
                     <li key={it} className="flex items-start gap-2">
-                      <span className="text-[#A8C686]">✓</span>
+                      <span className="text-antique-gold">✓</span>
                       <span>{it}</span>
                     </li>
                   ))}
@@ -639,8 +639,8 @@ function Index() {
           <span className="text-gradient-gold">Compare opções, encontre alternativas</span> e faça escolhas alimentares mais claras no dia a dia.
         </h2>
         <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
-        <div className="mt-16 pt-8 border-t border-[#A8C686]/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-[#F1F3E8]/45 leading-relaxed text-center">
-          <p className="text-center text-[#F1F3E8]/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
+        <div className="mt-16 pt-8 border-t border-antique-gold/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-ink/45 leading-relaxed text-center">
+          <p className="text-center text-ink/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
           <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
           <p>O ESCOLHA &amp; TROCA é um material digital independente, criado para fins educacionais e práticos relacionados à organização de informações e decisões alimentares.</p>
           <p>A reprodução não autorizada desta publicação, no todo ou em parte, por quaisquer meios, constitui violação dos direitos autorais, sujeitando os infratores às sanções previstas na legislação aplicável.</p>
