@@ -152,11 +152,11 @@
   .marquee-track {
     display: flex;
     width: max-content;
-    animation: marqueeScroll 60s linear infinite;
+    animation: marqueeScroll 30s linear infinite;
     will-change: transform;
   }
   .marquee-viewport:hover .marquee-track { animation-play-state: paused; }
-  @media (max-width: 768px) { .marquee-track { animation-duration: 40s; } }
+  @media (max-width: 768px) { .marquee-track { animation-duration: 20s; } }
   @keyframes subtleFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-6px); }
