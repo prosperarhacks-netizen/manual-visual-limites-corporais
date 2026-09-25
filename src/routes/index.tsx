@@ -7,13 +7,13 @@ import bloco2Imagem2 from "@/assets/escolha-troca/pagina-2-640.webp.asset.json";
 import bloco2Imagem3 from "@/assets/escolha-troca/pagina-3-640.webp.asset.json";
 import bloco2Imagem4 from "@/assets/escolha-troca/pagina-4-640.webp.asset.json";
 import bloco2Imagem5 from "@/assets/escolha-troca/pagina-5-640.webp.asset.json";
-import demonstrativo1 from "@/assets/catalogo-optimized/pagina-7-640.webp.asset.json";
-import demonstrativo2 from "@/assets/catalogo-optimized/pagina-8-640.webp.asset.json";
-import demonstrativo3 from "@/assets/catalogo-optimized/pagina-9-640.webp.asset.json";
-import demonstrativo4 from "@/assets/catalogo-optimized/pagina-10-640.webp.asset.json";
-import demonstrativo5 from "@/assets/catalogo-optimized/pagina-11-640.webp.asset.json";
-import receber480 from "@/assets/catalogo-optimized/receber-480.webp.asset.json";
-import receber720 from "@/assets/catalogo-optimized/receber-720.webp.asset.json";
+import demonstrativo1 from "@/assets/escolha-troca/demonstrativo-6-640.webp.asset.json";
+import demonstrativo2 from "@/assets/escolha-troca/demonstrativo-7-640.webp.asset.json";
+import demonstrativo3 from "@/assets/escolha-troca/demonstrativo-8-640.webp.asset.json";
+import demonstrativo4 from "@/assets/escolha-troca/demonstrativo-9-640.webp.asset.json";
+import demonstrativo5 from "@/assets/escolha-troca/demonstrativo-10-640.webp.asset.json";
+import receber480 from "@/assets/escolha-troca/receber-480.webp.asset.json";
+import receber720 from "@/assets/escolha-troca/receber-720.webp.asset.json";
 import bonus1Imagem from "@/assets/catalogo-optimized/bonus-1-540.webp.asset.json";
 import bonus2Imagem from "@/assets/catalogo-optimized/bonus-2-540.webp.asset.json";
 import bonus3Imagem from "@/assets/catalogo-optimized/bonus-3-540.webp.asset.json";
@@ -187,11 +187,11 @@ function GalleryMarquee() {
 /* -------------------- 6. PHOTO CAROUSEL (Demonstrativo) -------------------- */
 
 const DEMONSTRATIVO_IMAGES = [
-  { src: demonstrativo1.url, alt: "Página demonstrativa sobre babosa" },
-  { src: demonstrativo2.url, alt: "Página demonstrativa sobre gengibre" },
-  { src: demonstrativo3.url, alt: "Página demonstrativa sobre calêndula" },
-  { src: demonstrativo4.url, alt: "Página demonstrativa sobre lavanda" },
-  { src: demonstrativo5.url, alt: "Página demonstrativa sobre arnica" },
+  { src: demonstrativo1.url, alt: "Página demonstrativa sobre frutas" },
+  { src: demonstrativo2.url, alt: "Página demonstrativa sobre verduras e legumes" },
+  { src: demonstrativo3.url, alt: "Página demonstrativa sobre hidratação" },
+  { src: demonstrativo4.url, alt: "Página demonstrativa sobre proteínas" },
+  { src: demonstrativo5.url, alt: "Página demonstrativa sobre café da manhã" },
 ];
 
 function DemonstrativoCarousel() {
