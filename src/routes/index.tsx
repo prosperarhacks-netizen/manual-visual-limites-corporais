@@ -86,9 +86,9 @@ function Section({ children, className = "", id }: { children: React.ReactNode; 
 function GoldOrnament() {
   return (
     <div className="flex items-center justify-center gap-3 my-6">
-      <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#A8C686]" />
-      <span className="text-[#A8C686] text-xs tracking-[0.4em]">✦</span>
-      <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#A8C686]" />
+      <div className="h-px w-16 bg-gradient-to-r from-transparent to-antique-gold" />
+      <span className="text-antique-gold text-xs tracking-[0.4em]">✦</span>
+      <div className="h-px w-16 bg-gradient-to-l from-transparent to-antique-gold" />
     </div>
   );
 }
@@ -161,7 +161,7 @@ function TopOfferBar() {
 function GalleryMarquee() {
   const loop = [...PAGINAS_MANUAL, ...PAGINAS_MANUAL];
   return (
-    <section className="relative overflow-hidden py-14 md:py-20 bg-[#142019] border-y border-[#A8C686]/15">
+    <section className="relative overflow-hidden py-14 md:py-20 bg-surface-raised border-y border-antique-gold/15">
       <div className="text-center px-6 mb-10">
         <h2 className="text-3xl md:text-5xl font-semibold">
           Veja os <span className="text-gradient-gold">materiais</span> que você vai receber
@@ -173,7 +173,7 @@ function GalleryMarquee() {
         <div className="marquee-track">
           {loop.map((src, i) => (
             <div key={i} className="shrink-0 px-3 md:px-4 w-[60vw] sm:w-[42vw] md:w-[26vw] lg:w-[19vw] xl:w-[17vw]">
-              <div className="rounded-lg overflow-hidden border border-[#A8C686]/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-[#0C120E]">
+              <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
                 <img src={src} alt={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`} width="640" height="905" loading="lazy" decoding="async" className="w-full h-auto block" draggable={false} />
               </div>
             </div>
@@ -204,7 +204,7 @@ function DemonstrativoCarousel() {
         <div className="marquee-track">
           {loop.map((img, i) => (
             <div key={i} className="shrink-0 px-3 md:px-4 w-[62vw] sm:w-[44vw] md:w-[28vw] lg:w-[20vw] xl:w-[18vw]">
-              <div className="rounded-lg overflow-hidden border border-[#A8C686]/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-[#0C120E]">
+              <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
                 <img src={img.src} alt={img.alt} width="640" height="905" loading="lazy" decoding="async" className="w-full h-auto block" draggable={false} />
               </div>
             </div>
@@ -222,12 +222,12 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   return (
     <div className="premium-card rounded-lg overflow-hidden">
       <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between text-left p-5 md:p-6">
-        <span className="font-medium text-[#F1F3E8] pr-4">{q}</span>
-        <span className={`text-[#A8C686] text-xl transition-transform ${open ? "rotate-45" : ""}`}>+</span>
+        <span className="font-medium text-ink pr-4">{q}</span>
+        <span className={`text-antique-gold text-xl transition-transform ${open ? "rotate-45" : ""}`}>+</span>
       </button>
       <div className={`grid transition-all duration-300 ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
         <div className="overflow-hidden">
-          <p className="px-5 md:px-6 pb-6 text-[#F1F3E8]/70 leading-relaxed">{a}</p>
+          <p className="px-5 md:px-6 pb-6 text-ink/70 leading-relaxed">{a}</p>
         </div>
       </div>
     </div>
@@ -240,14 +240,14 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 
 function Index() {
   return (
-    <main className="min-h-screen bg-[#101812] text-[#F1F3E8] overflow-x-hidden">
+    <main className="min-h-screen bg-canvas text-ink overflow-x-hidden">
       {/* 1 · TOP OFFER BAR */}
       <TopOfferBar />
 
       {/* 2 · HERO */}
       <Section className="pt-16 md:pt-24">
         <div className="max-w-3xl mx-auto text-center fade-up">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-[#F1F3E8]">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-ink">
             Compare opções, encontre alternativas e faça escolhas alimentares mais claras no dia a dia.
           </h1>
 
@@ -266,13 +266,13 @@ function Index() {
              />
           </div>
 
-          <p className="text-[#F1F3E8]/80 text-base md:text-lg leading-relaxed mb-8">
+          <p className="text-ink/80 text-base md:text-lg leading-relaxed mb-8">
             Uma cartilha visual para você saber o que observar, comparar e trocar quando estiver no supermercado, em casa, no restaurante ou no delivery — sem precisar decorar listas enormes ou ficar procurando informações toda vez.
           </p>
 
           <div>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
-            <p className="text-xs text-[#F1F3E8]/50 mt-4 tracking-wide">📩 Você recebe tudo na hora, direto no seu e-mail.</p>
+            <p className="text-xs text-ink/50 mt-4 tracking-wide">📩 Você recebe tudo na hora, direto no seu e-mail.</p>
           </div>
         </div>
       </Section>
@@ -281,7 +281,7 @@ function Index() {
       <GalleryMarquee />
 
       {/* 4 · MATERIAIS / FEATURES */}
-      <Section className="bg-[#0D1510]">
+      <Section className="bg-surface">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-semibold">
             Os materiais do <span className="text-gradient-gold">ESCOLHA &amp; TROCA</span> possuem
@@ -295,9 +295,9 @@ function Index() {
             { i: "⚡", t: "DECISÃO RÁPIDA", d: "Quando você estiver com pressa, use o Modo 30 Segundos para organizar sua decisão sem precisar analisar tudo novamente." },
           ].map((c) => (
             <div key={c.t} className="premium-card rounded-xl p-6">
-              <div className="w-14 h-14 rounded-full bg-[#A8C686]/10 border border-[#A8C686]/30 flex items-center justify-center text-2xl mb-4">{c.i}</div>
-              <h3 className="text-lg font-semibold mb-2 text-[#F1F3E8]">{c.t}</h3>
-              <p className="text-sm text-[#F1F3E8]/65 leading-relaxed">{c.d}</p>
+               <div className="w-14 h-14 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center text-2xl mb-4">{c.i}</div>
+               <h3 className="text-lg font-semibold mb-2 text-ink">{c.t}</h3>
+               <p className="text-sm text-ink/65 leading-relaxed">{c.d}</p>
             </div>
           ))}
         </div>
@@ -307,27 +307,27 @@ function Index() {
       </Section>
 
       {/* 5 · DEMONSTRATIVO CAROUSEL */}
-      <Section className="bg-[#0D1510] py-10 md:py-14">
+      <Section className="bg-surface py-10 md:py-14">
         <DemonstrativoCarousel />
       </Section>
 
       {/* 6 · URGENCY BANNER */}
       <Section>
         <div className="relative gold-border rounded-2xl p-10 md:p-16 text-center overflow-hidden">
-          <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at center, rgba(168,198,134,0.28), transparent 60%)" }} />
+          <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,var(--terracotta),transparent_60%)]" />
           <div className="relative">
             <GoldOrnament />
             <h2 className="text-3xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight mb-4">
               Quantas vezes você já ficou em dúvida diante de duas opções e não soube qual escolher?
             </h2>
-            <p className="text-[#F1F3E8]/70 mb-8">Aproveite a oferta por tempo limitado.</p>
+            <p className="text-ink/70 mb-8">Aproveite a oferta por tempo limitado.</p>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
           </div>
         </div>
       </Section>
 
       {/* 7 · FOR WHOM */}
-      <Section className="bg-[#142019] border-y border-[#A8C686]/15">
+      <Section className="bg-surface-raised border-y border-antique-gold/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold">
             Este material é ideal para <span className="text-gradient-gold">você que deseja:</span>
