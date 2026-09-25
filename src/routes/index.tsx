@@ -488,9 +488,6 @@ function Index() {
 
           {/* PLANO COMPLETO */}
           <article className="rounded-2xl p-8 flex flex-col relative gold-border shadow-gold gold-glow">
-            <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[#A8C686] text-[#101812] text-xs font-bold tracking-wider whitespace-nowrap">
-              ⭐ 92% das pessoas aproveitam a oferta completa
-            </span>
             <h3 className="text-xl md:text-2xl font-bold text-center mb-2 tracking-wider text-gradient-gold mt-3">PLANO COMPLETO</h3>
             <p className="text-center text-[#F1F3E8]/75 text-sm mb-5">⚡ 4x mais conteúdos</p>
             <div className="mb-6">
@@ -543,15 +540,6 @@ function Index() {
           </article>
         </div>
 
-        <div className="max-w-3xl mx-auto text-center mt-14">
-          <GoldOrnament />
-          <p className="text-lg md:text-2xl font-semibold leading-snug text-[#F1F3E8]">
-            Uma única informação encontrada no momento certo pode facilitar completamente a sua consulta.
-          </p>
-          <p className="text-[#F1F3E8]/70 mt-4">
-            Quando as informações sobre plantas ficam organizadas de forma simples e visual, você ganha mais praticidade para encontrar, compreender e revisar aquilo que procura.
-          </p>
-        </div>
       </Section>
 
       {/* 11 · GUARANTEE */}
