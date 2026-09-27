@@ -7,13 +7,13 @@ import bloco2Imagem2 from "@/assets/limites-corporais/pagina-2-640.webp.asset.js
 import bloco2Imagem3 from "@/assets/limites-corporais/pagina-3-640.webp.asset.json";
 import bloco2Imagem4 from "@/assets/limites-corporais/pagina-4-640.webp.asset.json";
 import bloco2Imagem5 from "@/assets/limites-corporais/pagina-5-640.webp.asset.json";
-import demonstrativo1 from "@/assets/escolha-troca/demonstrativo-6-640.webp.asset.json";
-import demonstrativo2 from "@/assets/escolha-troca/demonstrativo-7-640.webp.asset.json";
-import demonstrativo3 from "@/assets/escolha-troca/demonstrativo-8-640.webp.asset.json";
-import demonstrativo4 from "@/assets/escolha-troca/demonstrativo-9-640.webp.asset.json";
-import demonstrativo5 from "@/assets/escolha-troca/demonstrativo-10-640.webp.asset.json";
-import receber480 from "@/assets/escolha-troca/receber-480.webp.asset.json";
-import receber720 from "@/assets/escolha-troca/receber-720.webp.asset.json";
+import demonstrativo1 from "@/assets/limites-corporais/demonstrativo-6-640.webp.asset.json";
+import demonstrativo2 from "@/assets/limites-corporais/demonstrativo-7-640.webp.asset.json";
+import demonstrativo3 from "@/assets/limites-corporais/demonstrativo-8-640.webp.asset.json";
+import demonstrativo4 from "@/assets/limites-corporais/demonstrativo-9-640.webp.asset.json";
+import demonstrativo5 from "@/assets/limites-corporais/demonstrativo-10-640.webp.asset.json";
+import receber480 from "@/assets/limites-corporais/receber-480.webp.asset.json";
+import receber720 from "@/assets/limites-corporais/receber-720.webp.asset.json";
 import bonus1Imagem from "@/assets/escolha-troca/bonus-1-540.webp.asset.json";
 import bonus2Imagem from "@/assets/escolha-troca/bonus-2-540.webp.asset.json";
 import bonus3Imagem from "@/assets/escolha-troca/bonus-3-540.webp.asset.json";
@@ -187,11 +187,11 @@ function GalleryMarquee() {
 /* -------------------- 6. PHOTO CAROUSEL (Demonstrativo) -------------------- */
 
 const DEMONSTRATIVO_IMAGES = [
-  { src: demonstrativo1.url, alt: "Página demonstrativa sobre frutas" },
-  { src: demonstrativo2.url, alt: "Página demonstrativa sobre verduras e legumes" },
-  { src: demonstrativo3.url, alt: "Página demonstrativa sobre hidratação" },
-  { src: demonstrativo4.url, alt: "Página demonstrativa sobre proteínas" },
-  { src: demonstrativo5.url, alt: "Página demonstrativa sobre café da manhã" },
+  { src: demonstrativo1.url, alt: "Situação sobre presentes oferecidos por pessoas desconhecidas" },
+  { src: demonstrativo2.url, alt: "Situação sobre respeitar a escolha da criança ao receber abraços" },
+  { src: demonstrativo3.url, alt: "Situação sobre respeitar limites durante brincadeiras de cócegas" },
+  { src: demonstrativo4.url, alt: "Situação sobre privacidade no banheiro" },
+  { src: demonstrativo5.url, alt: "Situação sobre respeitar a escolha da criança ao receber beijos" },
 ];
 
 function DemonstrativoCarousel() {
