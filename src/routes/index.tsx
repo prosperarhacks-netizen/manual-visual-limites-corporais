@@ -281,7 +281,7 @@ function Index() {
       <GalleryMarquee />
 
       {/* 4 · MATERIAIS / FEATURES */}
-      <Section className="bg-ivory border-b border-petroleum/15">
+      <Section className="bg-ivory">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-semibold">
             Os materiais do <span className="text-gradient-gold">Manual Visual dos Limites Corporais</span> possuem
@@ -307,7 +307,7 @@ function Index() {
       </Section>
 
       {/* 5 · DEMONSTRATIVO CAROUSEL */}
-      <Section className="bg-sage py-10 md:py-14 border-b border-petroleum/15">
+      <Section className="bg-ivory py-10 md:py-14 border-b border-petroleum/15">
         <DemonstrativoCarousel />
       </Section>
 
