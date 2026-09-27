@@ -10,4 +10,3 @@
 - [x] Trocar as imagens do carrossel demonstrativo e do bloco Tudo o que você vai receber
 - [x] Substituir o Meta Pixel pelo ID 2074731739804423
 - [x] Trocar as imagens dos bônus e das opções de oferta
-- [x] Aplicar paleta azul-petróleo, marfim, sálvia e terracota com separação entre blocos

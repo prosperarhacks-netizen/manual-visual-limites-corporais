@@ -58,8 +58,8 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const CHECKOUT_BASICO = "https://pay.cakto.com.br/mo5x2co";
-const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/33d9xgo_1146876";
+const CHECKOUT_BASICO = "https://pay.cakto.com.br/qoyzgvq_1140309";
+const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/5d7zgs8";
 const PAGINAS_MANUAL = [
   bloco2Imagem1.url,
   bloco2Imagem2.url,
@@ -161,14 +161,14 @@ function TopOfferBar() {
 function GalleryMarquee() {
   const loop = [...PAGINAS_MANUAL, ...PAGINAS_MANUAL];
   return (
-    <section className="relative overflow-hidden py-14 md:py-20 bg-petroleum text-ivory border-y border-ivory/15">
+    <section className="relative overflow-hidden py-14 md:py-20 bg-surface-raised border-y border-antique-gold/15">
       <div className="text-center px-6 mb-10">
         <h2 className="text-3xl md:text-5xl font-semibold">
           Veja os <span className="text-gradient-gold">materiais</span> que você vai receber
         </h2>
       </div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 z-10 bg-gradient-to-r from-petroleum to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 z-10 bg-gradient-to-l from-petroleum to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 z-10 bg-gradient-to-r from-surface-raised to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 z-10 bg-gradient-to-l from-surface-raised to-transparent" />
       <div className="marquee-viewport group">
         <div className="marquee-track">
           {loop.map((src, i) => (
@@ -245,9 +245,9 @@ function Index() {
       <TopOfferBar />
 
       {/* 2 · HERO */}
-      <Section className="pt-16 md:pt-24 bg-petroleum text-ivory border-b border-ivory/15">
+      <Section className="pt-16 md:pt-24">
         <div className="max-w-3xl mx-auto text-center fade-up">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-ivory">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-ink">
             Ensine seu filho a reconhecer limites, dizer “não” e pedir ajuda em situações do dia a dia.
           </h1>
 
@@ -266,13 +266,13 @@ function Index() {
              />
           </div>
 
-          <p className="text-ivory/80 text-base md:text-lg leading-relaxed mb-8">
+          <p className="text-ink/80 text-base md:text-lg leading-relaxed mb-8">
             +30 situações do dia a dia para ensinar seu filho sobre corpo, toque e limites. Um manual visual para você saber o que conversar, o que falar e como praticar com seu filho — sem precisar inventar exemplos ou descobrir sozinho como abordar assuntos delicados.
           </p>
 
           <div>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
-            <p className="text-xs text-ivory/60 mt-4 tracking-wide">📩 Você recebe tudo na hora, direto no seu e-mail.</p>
+            <p className="text-xs text-ink/50 mt-4 tracking-wide">📩 Você recebe tudo na hora, direto no seu e-mail.</p>
           </div>
         </div>
       </Section>
@@ -281,7 +281,7 @@ function Index() {
       <GalleryMarquee />
 
       {/* 4 · MATERIAIS / FEATURES */}
-      <Section className="bg-ivory">
+      <Section className="bg-surface">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-semibold">
             Os materiais do <span className="text-gradient-gold">Manual Visual dos Limites Corporais</span> possuem
@@ -307,12 +307,12 @@ function Index() {
       </Section>
 
       {/* 5 · DEMONSTRATIVO CAROUSEL */}
-      <Section className="bg-ivory py-10 md:py-14 border-b border-petroleum/15">
+      <Section className="bg-surface py-10 md:py-14">
         <DemonstrativoCarousel />
       </Section>
 
       {/* 6 · URGENCY BANNER */}
-      <Section className="bg-canvas border-b border-petroleum/15">
+      <Section>
         <div className="relative gold-border rounded-2xl p-10 md:p-16 text-center overflow-hidden">
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,var(--terracotta),transparent_60%)]" />
           <div className="relative">
@@ -327,9 +327,9 @@ function Index() {
       </Section>
 
       {/* 7 · FOR WHOM */}
-      <Section className="bg-petroleum border-y border-ivory/15">
+      <Section className="bg-surface-raised border-y border-antique-gold/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-5xl font-semibold text-ivory">
+          <h2 className="text-3xl md:text-5xl font-semibold">
             Este material é ideal para <span className="text-gradient-gold">você que deseja:</span>
           </h2>
         </div>
@@ -351,7 +351,7 @@ function Index() {
       </Section>
 
       {/* 8 · EVERYTHING YOU RECEIVE */}
-      <Section className="bg-ivory border-b border-petroleum/15">
+      <Section className="bg-surface">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold">Tudo o que você vai <span className="text-gradient-gold">receber</span></h2>
         </div>
@@ -404,7 +404,7 @@ function Index() {
       </Section>
 
       {/* 9 · BONUS */}
-      <Section className="bg-sage border-y border-petroleum/15">
+      <Section className="bg-surface-raised border-y border-antique-gold/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="text-antique-gold text-sm tracking-[0.3em] uppercase mb-2">E NÃO PARA POR AÍ...</div>
           <p className="text-ink/70 text-sm tracking-[0.2em] uppercase mb-3">VOCÊ TAMBÉM VAI RECEBER</p>
@@ -454,7 +454,7 @@ function Index() {
       </Section>
 
       {/* 10 · PLANS / OFERTA */}
-      <Section id="oferta" className="bg-canvas border-b border-petroleum/15">
+      <Section id="oferta" className="bg-surface">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="inline-block px-4 py-2 rounded-full bg-[#EF4444]/15 border border-[#EF4444]/40 text-[#F87171] text-xs md:text-sm font-semibold tracking-wider mb-5">
             ⏰ ÚLTIMA CHANCE — OFERTA TERMINA HOJE
@@ -545,7 +545,7 @@ function Index() {
       </Section>
 
       {/* 11 · GUARANTEE */}
-      <Section className="bg-petroleum border-b border-ivory/15">
+      <Section className="bg-surface">
         <div className="max-w-3xl mx-auto text-center premium-card rounded-2xl p-10 md:p-14">
           <div className="inline-flex flex-col items-center gap-3 mb-8">
             <div className="w-16 h-16 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center">
@@ -566,7 +566,7 @@ function Index() {
       </Section>
 
       {/* 12 · HOW ACCESS WORKS */}
-      <Section className="bg-sage border-y border-petroleum/15">
+      <Section className="bg-surface-raised border-y border-antique-gold/15">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold mb-3">Como é o Acesso</h2>
           <p className="text-antique-gold text-xs tracking-[0.4em] uppercase">(PASSO A PASSO)</p>
@@ -602,7 +602,7 @@ function Index() {
       </Section>
 
       {/* 13 · FAQ */}
-      <Section className="bg-ivory border-b border-petroleum/15">
+      <Section>
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl font-semibold">Perguntas <span className="text-gradient-gold">Frequentes</span></h2>
         </div>
@@ -625,14 +625,14 @@ function Index() {
       </Section>
 
       {/* FOOTER */}
-      <Section className="text-center bg-petroleum text-ivory">
+      <Section className="text-center">
         <GoldOrnament />
         <h2 className="text-3xl md:text-4xl font-semibold max-w-3xl mx-auto leading-tight mb-8">
-          <span className="text-terracotta">Ensine seu filho a reconhecer seus limites,</span> expressar o que sente e saber quando pedir ajuda.
+          <span className="text-gradient-gold">Ensine seu filho a reconhecer seus limites,</span> expressar o que sente e saber quando pedir ajuda.
         </h2>
         <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
-        <div className="mt-16 pt-8 border-t border-ivory/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-ivory/55 leading-relaxed text-center">
-          <p className="text-center text-ivory/65 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
+        <div className="mt-16 pt-8 border-t border-antique-gold/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-ink/45 leading-relaxed text-center">
+          <p className="text-center text-ink/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
           <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
           <p>O Manual Visual dos Limites Corporais é um material digital independente, criado para fins educacionais e práticos sobre conversas familiares relacionadas a corpo, limites, segurança e comunicação com crianças.</p>
           <p>A reprodução não autorizada desta publicação, no todo ou em parte, por quaisquer meios, constitui violação dos direitos autorais, sujeitando os infratores às sanções previstas na legislação aplicável.</p>
