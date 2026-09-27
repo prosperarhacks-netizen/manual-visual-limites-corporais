@@ -14,14 +14,14 @@ import demonstrativo4 from "@/assets/limites-corporais/demonstrativo-9-640.webp.
 import demonstrativo5 from "@/assets/limites-corporais/demonstrativo-10-640.webp.asset.json";
 import receber480 from "@/assets/limites-corporais/receber-480.webp.asset.json";
 import receber720 from "@/assets/limites-corporais/receber-720.webp.asset.json";
-import bonus1Imagem from "@/assets/escolha-troca/bonus-1-540.webp.asset.json";
-import bonus2Imagem from "@/assets/escolha-troca/bonus-2-540.webp.asset.json";
-import bonus3Imagem from "@/assets/escolha-troca/bonus-3-540.webp.asset.json";
-import bonus4Imagem from "@/assets/escolha-troca/bonus-4-540.webp.asset.json";
-import planoBasico480 from "@/assets/escolha-troca/plano-basico-480.webp.asset.json";
-import planoBasico720 from "@/assets/escolha-troca/plano-basico-720.webp.asset.json";
-import planoCompleto480 from "@/assets/escolha-troca/plano-completo-480.webp.asset.json";
-import planoCompleto720 from "@/assets/escolha-troca/plano-completo-720.webp.asset.json";
+import bonus1Imagem from "@/assets/limites-corporais/bonus-1-540.webp.asset.json";
+import bonus2Imagem from "@/assets/limites-corporais/bonus-2-540.webp.asset.json";
+import bonus3Imagem from "@/assets/limites-corporais/bonus-3-540.webp.asset.json";
+import bonus4Imagem from "@/assets/limites-corporais/bonus-4-540.webp.asset.json";
+import planoBasico480 from "@/assets/limites-corporais/plano-basico-480.webp.asset.json";
+import planoBasico720 from "@/assets/limites-corporais/plano-basico-720.webp.asset.json";
+import planoCompleto480 from "@/assets/limites-corporais/plano-completo-480.webp.asset.json";
+import planoCompleto720 from "@/assets/limites-corporais/plano-completo-720.webp.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
