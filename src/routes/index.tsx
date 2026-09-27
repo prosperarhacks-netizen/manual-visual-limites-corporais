@@ -26,21 +26,21 @@ import planoCompleto720 from "@/assets/escolha-troca/plano-completo-720.webp.ass
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Escolha & Troca — Decisões Alimentares" },
+      { title: "Manual Visual dos Limites Corporais" },
       {
         name: "description",
-        content: "Compare opções, encontre alternativas e faça escolhas alimentares mais claras no dia a dia.",
+        content: "Ensine seu filho a reconhecer limites, dizer não e pedir ajuda em situações do dia a dia.",
       },
-      { property: "og:title", content: "Escolha & Troca — Decisões Alimentares" },
+      { property: "og:title", content: "Manual Visual dos Limites Corporais" },
       {
         property: "og:description",
-        content: "Uma cartilha visual para comparar opções e fazer escolhas alimentares mais claras.",
+        content: "Mais de 30 situações do dia a dia para conversar com seu filho sobre corpo, toque e limites.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:title", content: "Escolha & Troca — Decisões Alimentares" },
+      { name: "twitter:title", content: "Manual Visual dos Limites Corporais" },
       {
         name: "twitter:description",
-        content: "Uma cartilha visual para comparar opções e fazer escolhas alimentares mais claras.",
+        content: "Mais de 30 situações do dia a dia para conversar com seu filho sobre corpo, toque e limites.",
       },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -248,17 +248,17 @@ function Index() {
       <Section className="pt-16 md:pt-24">
         <div className="max-w-3xl mx-auto text-center fade-up">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-ink">
-            Compare opções, encontre alternativas e faça escolhas alimentares mais claras no dia a dia.
+            Ensine seu filho a reconhecer limites, dizer “não” e pedir ajuda em situações do dia a dia.
           </h1>
 
           <div className="max-w-xl mx-auto mb-8">
-             <img
+              <img
                 src={hero480.url}
                 srcSet={`${hero480.url} 480w, ${hero720.url} 720w`}
                sizes="(max-width: 640px) calc(100vw - 48px), 576px"
                width="1080"
                height="1080"
-               alt="Escolha e Troca"
+               alt="Manual Visual dos Limites Corporais"
                loading="eager"
                fetchPriority="high"
                decoding="sync"
@@ -267,7 +267,7 @@ function Index() {
           </div>
 
           <p className="text-ink/80 text-base md:text-lg leading-relaxed mb-8">
-            Uma cartilha visual para você saber o que observar, comparar e trocar quando estiver no supermercado, em casa, no restaurante ou no delivery — sem precisar decorar listas enormes ou ficar procurando informações toda vez.
+            +30 situações do dia a dia para ensinar seu filho sobre corpo, toque e limites. Um manual visual para você saber o que conversar, o que falar e como praticar com seu filho — sem precisar inventar exemplos ou descobrir sozinho como abordar assuntos delicados.
           </p>
 
           <div>
@@ -284,15 +284,15 @@ function Index() {
       <Section className="bg-surface">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Os materiais do <span className="text-gradient-gold">ESCOLHA &amp; TROCA</span> possuem
+            Os materiais do <span className="text-gradient-gold">Manual Visual dos Limites Corporais</span> possuem
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { i: "⚖️", t: "COMPARAÇÕES A × B", d: "Coloque duas opções lado a lado e veja quais critérios observar antes de decidir." },
-            { i: "👀", t: "VISUAL E FÁCIL DE CONSULTAR", d: "As informações são organizadas em guias, tabelas, checklists e comparações para você encontrar rapidamente o que procura." },
-            { i: "🔄", t: "ALTERNATIVAS PARA QUANDO NÃO ENCONTRAR", d: "Se a primeira opção não estiver disponível, você encontra uma lógica simples para procurar outra alternativa e comparar novamente." },
-            { i: "⚡", t: "DECISÃO RÁPIDA", d: "Quando você estiver com pressa, use o Modo 30 Segundos para organizar sua decisão sem precisar analisar tudo novamente." },
+            { i: "🧩", t: "+30 SITUAÇÕES DO DIA A DIA", d: "Você encontra situações práticas para conversar com seu filho sobre corpo, toque, desconforto, limites, segredos e pedidos de ajuda." },
+            { i: "👀", t: "VISUAL E FÁCIL DE CONSULTAR", d: "Cada situação é apresentada de maneira visual para você entender rapidamente o assunto e saber como conduzir a conversa." },
+            { i: "💬", t: "FRASES E PERGUNTAS PRONTAS", d: "Você encontra sugestões do que falar e perguntas para ajudar seu filho a pensar, responder e participar da conversa." },
+            { i: "⭐", t: "PRÁTICAS PARA FAZER JUNTO", d: "Além de conversar, você encontra pequenas atividades para transformar o aprendizado em algo que a criança possa praticar no cotidiano." },
           ].map((c) => (
             <div key={c.t} className="premium-card rounded-xl p-6">
                <div className="w-14 h-14 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center text-2xl mb-4">{c.i}</div>
@@ -302,7 +302,7 @@ function Index() {
           ))}
         </div>
         <div className="text-center mt-14">
-          <CTAButton onClick={scrollToOffer}>EU QUERO O ESCOLHA &amp; TROCA</CTAButton>
+          <CTAButton onClick={scrollToOffer}>EU QUERO O MANUAL VISUAL</CTAButton>
         </div>
       </Section>
 
@@ -318,7 +318,7 @@ function Index() {
           <div className="relative">
             <GoldOrnament />
             <h2 className="text-3xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight mb-4">
-              Quantas vezes você já ficou em dúvida diante de duas opções e não soube qual escolher?
+              Quantas vezes você já quis conversar sobre esses assuntos com seu filho, mas não soube exatamente o que dizer?
             </h2>
             <p className="text-ink/70 mb-8">Aproveite a oferta por tempo limitado.</p>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
@@ -335,12 +335,12 @@ function Index() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { t: "Comparar opções alimentares sem depender de listas decoradas" },
-            { t: "Saber o que observar antes de escolher um produto ou refeição" },
-            { t: "Parar de ficar procurando informações diferentes toda vez que surgir uma dúvida" },
-            { t: "Encontrar alternativas quando a primeira opção não estiver disponível" },
-            { t: "Ter uma ferramenta visual para consultar no supermercado, em casa, no restaurante ou no delivery" },
-            { t: "Tomar decisões alimentares com mais clareza no dia a dia" },
+            { t: "Ensinar seu filho que ele pode dizer “não” quando não se sentir confortável" },
+            { t: "Conversar sobre corpo e limites sem precisar criar exemplos na hora" },
+            { t: "Ter situações prontas para abordar assuntos delicados de maneira natural" },
+            { t: "Ajudar seu filho a reconhecer quando precisa procurar um adulto de confiança" },
+            { t: "Ensinar frases simples para expressar desconforto e pedir ajuda" },
+            { t: "Criar oportunidades para conversar sobre segurança no cotidiano" },
           ].map((c) => (
             <article key={c.t} className="premium-card rounded-xl p-6">
               <CheckIcon className="mb-4" />
@@ -363,7 +363,7 @@ function Index() {
               sizes="(max-width: 767px) calc(100vw - 96px), 528px"
               width="760"
               height="760"
-              alt="Escolha e Troca com quatro bônus exclusivos"
+               alt="Manual Visual dos Limites Corporais com quatro bônus exclusivos"
               loading="lazy"
               decoding="async"
               className="w-full h-auto subtle-float"
@@ -371,33 +371,27 @@ function Index() {
           </div>
           <div>
             <span className="inline-block px-3 py-1 rounded-full bg-[#22C55E]/15 border border-[#22C55E]/40 text-[#22C55E] text-xs font-semibold mb-4">⚡ ACESSO IMEDIATO</span>
-            <p className="text-ink/85 mb-2">Você não precisa passar horas estudando informações antes de tomar uma decisão.</p>
-            <p className="text-ink/70 mb-6">Você encontra a situação que está vivendo, consulta os critérios apresentados, compara as opções e decide.</p>
-            <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">ESCOLHA &amp; TROCA</h3>
+            <p className="text-ink/85 mb-2">Você não precisa esperar surgir uma situação difícil para começar essa conversa.</p>
+            <p className="text-ink/70 mb-6">Você escolhe uma situação, lê o conteúdo, entende como abordar o assunto e coloca a atividade em prática com seu filho.</p>
+            <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">Manual Visual dos Limites Corporais</h3>
             <ul className="space-y-3">
             {[
-              "Guias organizados por categorias",
-              "Guia de Pães",
-              "Guia de Bebidas",
-              "Guia de Iogurtes & Derivados",
-              "Guia de Cereais & Acompanhamentos",
-              "Guia de Lanches",
-              "Guia de Café da Manhã",
-              "Guia de Almoço",
-              "Guia de Jantar",
-              "Guia de Sobremesas",
-              "Guia de Restaurante",
-              "Guia de Delivery",
-              "Comparador A × B",
-              "Tabela de critérios de comparação",
-              "Guia “O Que Devo Observar?”",
-              "Guia “Não Encontrei”",
-              "Tabela de Trocas",
-              "Modo 30 Segundos",
-              "Cartão de Decisão Rápida",
-              "Mapa Rápido da Cartilha",
-              "Página de Minhas Decisões",
-              "Consulta simples e visual",
+              "+30 situações prontas",
+              "Situações sobre corpo e limites",
+              "Situações sobre toque e contato físico",
+              "Situações sobre dizer “não”",
+              "Situações sobre segredos e pedidos inadequados",
+              "Situações sobre pedir ajuda",
+              "Adultos de confiança",
+              "Situações envolvendo escola e familiares",
+              "Situações envolvendo outras crianças",
+              "Situações envolvendo internet e telas",
+              "O que a criança precisa entender",
+              "O que você pode falar",
+              "Perguntas para fazer ao seu filho",
+              "Atividades para praticar",
+              "Consulta visual",
+              "Material organizado por situações",
               "Acesso imediato",
             ].map((b) => (
                 <li key={b} className="flex items-center gap-3 text-ink/90">
@@ -422,23 +416,23 @@ function Index() {
           {[
             {
                img: bonus1Imagem.url,
-               t: "GUIA DE MOLHOS & TEMPEROS",
-               d: "Um guia visual para observar, comparar e encontrar alternativas entre molhos, temperos e acompanhamentos.",
+               t: "20 FRASES PARA ENSINAR SEU FILHO A DIZER “NÃO”",
+               d: "Um material com frases simples que a criança pode aprender e praticar para expressar desconforto, recusar algo e pedir ajuda quando necessário.",
             },
             {
                img: bonus2Imagem.url,
-              t: "GUIA DE FAST-FOOD",
-              d: "Um guia para analisar as opções disponíveis, comparar escolhas e encontrar possíveis alternativas quando estiver em uma situação de fast-food.",
+              t: "20 CARTÕES “O QUE VOCÊ FARIA?”",
+              d: "Cartões com situações do cotidiano para você apresentar ao seu filho, ouvir o que ele faria e transformar cada situação em uma conversa.",
             },
             {
                img: bonus3Imagem.url,
-              t: "CHECKLIST DE SUPERMERCADO",
-              d: "Uma lista organizada por categorias para levar às compras, conferir o que você precisa e facilitar suas decisões diante das opções disponíveis.",
+              t: "MAPA DOS ADULTOS DE CONFIANÇA",
+              d: "Uma atividade visual para ajudar seu filho a identificar pessoas de confiança que ele pode procurar quando estiver com medo, desconfortável ou precisar de ajuda.",
             },
             {
                img: bonus4Imagem.url,
-              t: "RAIO-X DO RÓTULO",
-              d: "Um guia visual para localizar as principais informações do rótulo e comparar produtos semelhantes com mais organização.",
+              t: "GUIA “COMO CONVERSAR SEM ASSUSTAR SEU FILHO”",
+              d: "Um guia prático para ajudar você a abordar limites corporais com linguagem simples, respeitando o ritmo da criança e aproveitando situações naturais do cotidiano.",
             },
           ].map((b, i) => (
             <div key={b.t} className="premium-card rounded-xl overflow-hidden flex flex-col">
@@ -477,7 +471,7 @@ function Index() {
             </div>
             <p className="text-ink/80 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
-              {["ESCOLHA & TROCA"].map((t) => (
+              {["Manual Visual dos Limites Corporais"].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-ink/85 text-sm">
                   <CheckIcon /><span>{t}</span>
                 </li>
@@ -502,23 +496,21 @@ function Index() {
             <p className="text-ink/85 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
               {[
-                "ESCOLHA & TROCA",
-                "Guias por categorias",
-                "Comparações A × B",
-                "Guia de Pães",
-                "Guia de Bebidas",
-                "Guia de Iogurtes & Derivados",
-                "Guia de Cereais & Acompanhamentos",
-                "Guia de Lanches",
-                "Guia de Refeições",
-                "Guia de Restaurante",
-                "Guia de Delivery",
-                "Guia “O Que Devo Observar?”",
-                "Guia “Não Encontrei”",
-                "Tabela de Trocas",
-                "Modo 30 Segundos",
-                "Cartão de Decisão Rápida",
+                "Manual Visual dos Limites Corporais",
+                "+30 situações práticas",
+                "Situações sobre corpo e limites",
+                "Situações sobre toque",
+                "Situações sobre dizer “não”",
+                "Situações sobre segredos",
+                "Situações sobre pedir ajuda",
+                "Adultos de confiança",
+                "Situações do cotidiano",
+                "O que a criança precisa entender",
+                "O que você pode falar",
+                "Perguntas para conversar",
+                "Práticas para fazer junto",
                 "Consulta visual",
+                "Situações organizadas",
                 "Acesso imediato",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-ink/90 text-sm">
@@ -526,10 +518,10 @@ function Index() {
                 </li>
               ))}
               {[
-                "Bônus #1 — Guia de Molhos & Temperos",
-                "Bônus #2 — Guia de Fast-Food",
-                "Bônus #3 — Checklist de Supermercado",
-                "Bônus #4 — Raio-X do Rótulo",
+                "Bônus #1 — 20 Frases para Ensinar seu Filho a Dizer “Não”",
+                "Bônus #2 — 20 Cartões “O Que Você Faria?”",
+                "Bônus #3 — Mapa dos Adultos de Confiança",
+                "Bônus #4 — Guia “Como Conversar Sem Assustar Seu Filho”",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-ink/90 text-sm">
                   <span className="shrink-0 w-6 h-6 rounded-full bg-antique-gold/15 border border-antique-gold/40 flex items-center justify-center text-antique-gold text-sm">🎁</span>
@@ -546,7 +538,7 @@ function Index() {
             <CTAButton href={CHECKOUT_COMPLETO}>
               <span className="text-center">QUERO O PLANO COMPLETO</span>
             </CTAButton>
-            <p className="text-xs text-ink/50 mt-4 text-center tracking-wide">🔒 Compra 100% segura&nbsp; • &nbsp;Aceso imediato</p>
+            <p className="text-xs text-ink/50 mt-4 text-center tracking-wide">🔒 Compra 100% segura&nbsp; • &nbsp;Acesso imediato</p>
           </article>
         </div>
 
@@ -566,8 +558,8 @@ function Index() {
               <div className="text-3xl font-bold text-gradient-gold">VITALÍCIA</div>
             </div>
           </div>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-6">Você tem garantia vitalícia no ESCOLHA &amp; TROCA.</h2>
-          <p className="text-ink/75 leading-relaxed max-w-xl mx-auto mb-3">Se o material não fizer sentido para o que você procura, não facilitar suas consultas ou você simplesmente decidir que não quer continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.</p>
+          <h2 className="text-2xl md:text-4xl font-semibold mb-6">Você tem garantia vitalícia no Manual Visual dos Limites Corporais.</h2>
+          <p className="text-ink/75 leading-relaxed max-w-xl mx-auto mb-3">Se o material não fizer sentido para o que você procura, não facilitar suas conversas ou você simplesmente decidir que não quer continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.</p>
           <p className="text-antique-gold font-semibold tracking-wide mb-2">Sem burocracia.</p>
           <p className="text-ink/85 leading-relaxed max-w-xl mx-auto">O risco fica do nosso lado.</p>
         </div>
@@ -583,8 +575,8 @@ function Index() {
           {[
             { i: "🛒", t: "Conclua sua compra", d: "Depois que o pagamento for confirmado, seu acesso será liberado." },
             { i: "📩", t: "Entre na área de membros", d: "Os materiais ficarão organizados em um único lugar para você acessar." },
-            { i: "📱", t: "Acesse os materiais", items: ["ESCOLHA & TROCA", "Bônus 01 — Guia de Molhos & Temperos", "Bônus 02 — Guia de Fast-Food", "Bônus 03 — Checklist de Supermercado", "Bônus 04 — Raio-X do Rótulo"] },
-            { i: "⚖️", t: "Comece a escolher", items: ["Identifique o que você está escolhendo", "Observe os critérios apresentados", "Compare as opções", "Procure uma alternativa quando necessário", "Tome sua decisão", "Volte à cartilha sempre que surgir uma nova dúvida"] },
+            { i: "📱", t: "Acesse os materiais", items: ["Manual Visual dos Limites Corporais", "Bônus 01 — 20 Frases para Ensinar seu Filho a Dizer “Não”", "Bônus 02 — 20 Cartões “O Que Você Faria?”", "Bônus 03 — Mapa dos Adultos de Confiança", "Bônus 04 — Guia “Como Conversar Sem Assustar Seu Filho”"] },
+            { i: "🛡️", t: "Comece a conversar", items: ["Escolha uma situação", "Leia o que a criança precisa entender", "Use a sugestão de fala", "Faça as perguntas", "Pratique junto", "Volte ao manual sempre que quiser conversar sobre outra situação"] },
           ].map((s, i) => (
             <div key={s.t} className="premium-card rounded-xl p-6 text-center">
               <div className="w-14 h-14 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center text-2xl mx-auto mb-4">{s.i}</div>
@@ -616,16 +608,16 @@ function Index() {
         </div>
         <div className="max-w-3xl mx-auto space-y-3">
           {[
-            { q: "O que é o ESCOLHA & TROCA?", a: "É uma cartilha visual de decisões alimentares criada para ajudar você a observar, comparar e encontrar alternativas diante das opções disponíveis no dia a dia. Ela reúne guias, comparações, checklists e ferramentas de consulta para situações como supermercado, refeições, restaurante e delivery." },
-            { q: "O material serve para quem não entende muito de alimentação?", a: "Sim. A proposta é justamente organizar as informações de maneira simples e visual. Você não precisa dominar termos técnicos para utilizar os guias. A cartilha mostra o que observar e como comparar dentro das situações apresentadas." },
-            { q: "Posso acessar pelo celular?", a: "Sim. O material foi pensado para ser visual e fácil de consultar, inclusive pelo celular. Você também poderá acessar pelo computador ou tablet." },
-            { q: "O acesso é imediato?", a: "Sim. Após a confirmação do pagamento, as instruções de acesso são enviadas para você." },
-            { q: "Os materiais podem ser impressos?", a: "Sim. Os materiais podem ser utilizados digitalmente e também podem ser impressos para consulta, de acordo com as configurações do seu arquivo e impressora." },
-            { q: "Os 4 bônus já estão incluídos?", a: "Sim. No Plano Completo, você recebe os quatro bônus sem pagamento adicional: Guia de Molhos & Temperos, Guia de Fast-Food, Checklist de Supermercado e Raio-X do Rótulo." },
-            { q: "O acesso possui mensalidade?", a: "Não. É uma compra única. Você não precisa pagar mensalidade para continuar acessando o material." },
-            { q: "Posso revisar o material sempre que quiser?", a: "Sim. Depois de adquirir o produto, você poderá voltar aos materiais sempre que precisar consultar uma categoria, comparação, checklist ou guia." },
-            { q: "Como funciona a garantia?", a: "Você possui garantia vitalícia. Se o material não fizer sentido para o que você procura, não facilitar suas consultas ou você decidir que não deseja continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta." },
-            { q: "Preciso ter ingredientes específicos para usar o guia?", a: "Não. A proposta do ESCOLHA & TROCA é justamente ajudar você a tomar decisões entre as opções que estão disponíveis. Quando uma opção não estiver disponível, você pode utilizar a seção de trocas para procurar uma alternativa e comparar novamente." },
+            { q: "O que é o Manual Visual dos Limites Corporais?", a: "É um material visual com +30 situações do dia a dia para ajudar pais a conversar com os filhos sobre corpo, toque, limites, dizer “não” e pedir ajuda. Cada situação traz orientação do que a criança precisa entender, o que o adulto pode falar, perguntas e uma prática." },
+            { q: "O material serve para quem não sabe muito sobre educação corporal?", a: "Sim. O material foi organizado para facilitar a conversa mesmo quando o adulto não sabe exatamente como começar ou o que dizer." },
+            { q: "Posso acessar pelo celular?", a: "Sim. O material fica disponível digitalmente e pode ser acessado pelo celular, tablet ou computador." },
+            { q: "O acesso é imediato?", a: "Sim. Depois da confirmação do pagamento, o acesso aos materiais é liberado." },
+            { q: "Os materiais podem ser impressos?", a: "Sim. O material principal foi desenvolvido em formato visual e A4, permitindo também a impressão para uso físico." },
+            { q: "Os 4 bônus já estão incluídos?", a: "Sim. No Plano Completo, os quatro bônus já fazem parte da oferta, sem cobrança adicional." },
+            { q: "O acesso possui mensalidade?", a: "Não. Trata-se de uma compra única, conforme as condições apresentadas na oferta." },
+            { q: "Posso revisar o material sempre que quiser?", a: "Sim. Depois de receber o acesso, você pode retornar ao material sempre que quiser consultar outra situação ou retomar uma conversa." },
+            { q: "Como funciona a garantia?", a: "A garantia é vitalícia. Caso o material não faça sentido para o que você procura, não facilite suas conversas ou você decida não continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta." },
+            { q: "Preciso ter materiais específicos para usar o manual?", a: "Não. O manual foi pensado para ser utilizado com situações e conversas simples do cotidiano. Algumas práticas podem envolver brincadeiras, encenações ou os próprios materiais disponíveis em casa." },
           ].map((f, i) => (
             <FaqItem key={i} q={f.q} a={f.a} />
           ))}
@@ -636,13 +628,13 @@ function Index() {
       <Section className="text-center">
         <GoldOrnament />
         <h2 className="text-3xl md:text-4xl font-semibold max-w-3xl mx-auto leading-tight mb-8">
-          <span className="text-gradient-gold">Compare opções, encontre alternativas</span> e faça escolhas alimentares mais claras no dia a dia.
+          <span className="text-gradient-gold">Ensine seu filho a reconhecer seus limites,</span> expressar o que sente e saber quando pedir ajuda.
         </h2>
         <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
         <div className="mt-16 pt-8 border-t border-antique-gold/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-ink/45 leading-relaxed text-center">
           <p className="text-center text-ink/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
           <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
-          <p>O ESCOLHA &amp; TROCA é um material digital independente, criado para fins educacionais e práticos relacionados à organização de informações e decisões alimentares.</p>
+          <p>O Manual Visual dos Limites Corporais é um material digital independente, criado para fins educacionais e práticos sobre conversas familiares relacionadas a corpo, limites, segurança e comunicação com crianças.</p>
           <p>A reprodução não autorizada desta publicação, no todo ou em parte, por quaisquer meios, constitui violação dos direitos autorais, sujeitando os infratores às sanções previstas na legislação aplicável.</p>
         </div>
       </Section>

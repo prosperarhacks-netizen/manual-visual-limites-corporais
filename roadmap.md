@@ -5,3 +5,4 @@
 - [x] Adiar imagens, seções e Pixel não essenciais ao primeiro carregamento
 - [x] Validar aparência, interações, links e erros em celular e desktop
 - [x] Comparar carregamento e corrigir gargalos restantes
+- [x] Substituir toda a copy pelo Manual Visual dos Limites Corporais
