@@ -443,7 +443,7 @@ function Index() {
                 <h3 className="text-lg font-semibold mb-2">{b.t}</h3>
                 <p className="text-sm text-ink/65 leading-relaxed mb-4">{b.d}</p>
                 <div className="mt-auto inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-[#22C55E]/10 border border-[#22C55E]/35 text-xs">
-                  <span className="text-ink/60">Valor: <s>R$29</s></span>
+                  <span className="text-ink/60">Valor: <s>R$27</s></span>
                   <span className="text-[#22C55E] font-bold">GRÁTIS</span>
                 </div>
               </div>
@@ -477,9 +477,9 @@ function Index() {
               ))}
             </ul>
             <div className="text-center mb-6 mt-auto">
-              <div className="text-sm text-ink/60 mb-1">De <s className="text-[#EF4444]">R$29,90</s> por:</div>
-              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$19,90</div>
-              <div className="text-sm text-ink/70 mt-1">ou 2x de R$9,95 no cartão</div>
+              <div className="text-sm text-ink/60 mb-1">De <s className="text-[#EF4444]">R$37,90</s> por:</div>
+              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$27,90</div>
+              <div className="text-sm text-ink/70 mt-1">ou 2x de R$13,95 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-antique-gold/10 border border-antique-gold/30 text-antique-gold text-xs">💰 Você economiza R$10,00</div>
             </div>
             <CTAButton href={CHECKOUT_BASICO} variant="ghost">QUERO O BÁSICO</CTAButton>
@@ -529,9 +529,9 @@ function Index() {
               ))}
             </ul>
             <div className="text-center mb-6 mt-auto">
-              <div className="text-sm text-ink/60 mb-1">De <s className="text-[#EF4444]">R$49,90</s> por:</div>
-              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$29,90</div>
-              <div className="text-sm text-ink/70 mt-1">ou 5x de R$5,98 no cartão</div>
+              <div className="text-sm text-ink/60 mb-1">De <s className="text-[#EF4444]">R$57,90</s> por:</div>
+              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$37,90</div>
+              <div className="text-sm text-ink/70 mt-1">ou 5x de R$7,58 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-antique-gold/10 border border-antique-gold/30 text-antique-gold text-xs">💰 Você economiza R$20,00</div>
             </div>
             <CTAButton href={CHECKOUT_COMPLETO}>
