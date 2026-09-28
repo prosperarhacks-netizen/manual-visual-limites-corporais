@@ -370,7 +370,6 @@ function Index() {
             />
           </div>
           <div>
-            <span className="inline-block px-3 py-1 rounded-full bg-[#22C55E]/15 border border-[#22C55E]/40 text-[#22C55E] text-xs font-semibold mb-4">⚡ ACESSO IMEDIATO</span>
             <p className="text-ink/85 mb-2">Você não precisa esperar surgir uma situação difícil para começar essa conversa.</p>
             <p className="text-ink/70 mb-6">Você escolhe uma situação, lê o conteúdo, entende como abordar o assunto e coloca a atividade em prática com seu filho.</p>
             <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">Manual Visual dos Limites Corporais</h3>
@@ -538,7 +537,7 @@ function Index() {
             <CTAButton href={CHECKOUT_COMPLETO}>
               <span className="text-center">QUERO O PLANO COMPLETO</span>
             </CTAButton>
-            <p className="text-xs text-ink/50 mt-4 text-center tracking-wide">🔒 Compra 100% segura&nbsp; • &nbsp;Acesso imediato</p>
+            <p className="text-xs text-ink/50 mt-4 text-center tracking-wide">🔒 Compra 100% segura&nbsp; • &nbsp;Pagamento único</p>
           </article>
         </div>
 
