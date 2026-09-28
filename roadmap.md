@@ -11,3 +11,4 @@
 - [x] Substituir o Meta Pixel pelo ID 2074731739804423
 - [x] Trocar as imagens dos bônus e das opções de oferta
 - [x] Atualizar os links dos botões dos planos Básico e Completo
+- [x] Harmonizar a paleta da página com as ilustrações do manual
