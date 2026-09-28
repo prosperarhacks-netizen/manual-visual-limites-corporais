@@ -547,8 +547,8 @@ function Index() {
       <Section className="bg-surface">
         <div className="max-w-3xl mx-auto text-center premium-card rounded-2xl p-10 md:p-14">
           <div className="inline-flex flex-col items-center gap-3 mb-8">
-            <div className="w-16 h-16 rounded-full bg-antique-gold/10 border border-antique-gold/30 flex items-center justify-center">
-              <svg className="w-8 h-8 text-antique-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.2}>
+            <div className="w-64 h-64 rounded-full bg-antique-gold/10 border-2 border-antique-gold/30 flex items-center justify-center">
+              <svg className="w-32 h-32 text-antique-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.4}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285v0Z" />
               </svg>
             </div>
