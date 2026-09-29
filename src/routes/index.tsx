@@ -267,7 +267,7 @@ function Index() {
           </div>
 
           <p className="text-ink/80 text-base md:text-lg leading-relaxed mb-8">
-            +30 situações do dia a dia para ensinar seu filho sobre corpo, toque e limites. Um manual visual para você saber o que conversar, o que falar e como praticar com seu filho — sem precisar inventar exemplos ou descobrir sozinho como abordar assuntos delicados.
+            Um manual visual para você saber o que conversar, o que falar e como praticar com seu filho — sem precisar inventar exemplos ou descobrir sozinho como abordar assuntos delicados.
           </p>
 
           <div>
