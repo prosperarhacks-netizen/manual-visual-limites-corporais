@@ -488,7 +488,7 @@ function Index() {
           {/* PLANO COMPLETO */}
           <article className="rounded-2xl p-8 flex flex-col relative gold-border shadow-gold gold-glow">
             <h3 className="text-xl md:text-2xl font-bold text-center mb-2 tracking-wider text-gradient-gold mt-3">PLANO COMPLETO</h3>
-            <p className="text-center text-ink/75 text-sm mb-5">⚡ 4x mais conteúdos</p>
+            <p className="text-center text-ink/75 text-sm mb-5">⚡ 2x mais conteúdos</p>
             <div className="mb-6">
                <img src={planoCompleto480.url} srcSet={`${planoCompleto480.url} 480w, ${planoCompleto720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Completo" loading="lazy" decoding="async" className="w-full h-auto" />
             </div>
