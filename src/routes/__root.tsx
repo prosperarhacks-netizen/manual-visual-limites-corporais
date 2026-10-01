@@ -76,6 +76,7 @@ export const Route = createRootRoute({
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://connect.facebook.net", crossOrigin: "" },
       {
         rel: "preload",
         href: poppinsRegular,
