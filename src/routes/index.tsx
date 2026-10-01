@@ -174,7 +174,7 @@ function GalleryMarquee() {
           {loop.map((src, i) => (
             <div key={i} className="shrink-0 px-3 md:px-4 w-[60vw] sm:w-[42vw] md:w-[26vw] lg:w-[19vw] xl:w-[17vw]">
               <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
-                <img src={src} alt={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`} width="640" height="905" loading="lazy" decoding="async" className="w-full h-auto block" draggable={false} />
+                <img src={src} alt={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`} width="640" height="905" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto block" draggable={false} />
               </div>
             </div>
           ))}
@@ -261,7 +261,7 @@ function Index() {
                alt="Manual Visual dos Limites Corporais"
                loading="eager"
                fetchPriority="high"
-               decoding="sync"
+               decoding="async"
                className="w-full h-auto subtle-float"
              />
           </div>
@@ -436,7 +436,7 @@ function Index() {
           ].map((b, i) => (
             <div key={b.t} className="premium-card rounded-xl overflow-hidden flex flex-col">
               <div className="bg-gradient-to-br from-surface-soft to-canvas">
-                <img src={b.img} alt={b.t} width="540" height="540" loading="lazy" decoding="async" className="w-full h-auto object-cover" />
+                <img src={b.img} alt={b.t} width="540" height="540" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto object-cover" />
               </div>
               <div className="p-5 flex-1 flex flex-col">
                 <div className="text-antique-gold text-[10px] tracking-[0.3em] uppercase mb-2">BÔNUS #{i + 1}</div>
