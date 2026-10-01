@@ -205,7 +205,7 @@ function DemonstrativoCarousel() {
           {loop.map((img, i) => (
             <div key={i} className="shrink-0 px-3 md:px-4 w-[62vw] sm:w-[44vw] md:w-[28vw] lg:w-[20vw] xl:w-[18vw]">
               <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
-                <img src={img.src} alt={img.alt} width="640" height="905" loading="lazy" decoding="async" className="w-full h-auto block" draggable={false} />
+                <img src={img.src} alt={img.alt} width="640" height="905" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto block" draggable={false} />
               </div>
             </div>
           ))}
@@ -365,6 +365,7 @@ function Index() {
               height="760"
                alt="Manual Visual dos Limites Corporais com quatro bônus exclusivos"
               loading="lazy"
+              fetchPriority="low"
               decoding="async"
               className="w-full h-auto subtle-float"
             />
