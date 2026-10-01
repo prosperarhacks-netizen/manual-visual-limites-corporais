@@ -174,7 +174,7 @@ function GalleryMarquee() {
           {loop.map((src, i) => (
             <div key={i} className="shrink-0 px-3 md:px-4 w-[60vw] sm:w-[42vw] md:w-[26vw] lg:w-[19vw] xl:w-[17vw]">
               <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
-                <img src={src} alt={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`} width="640" height="905" loading="lazy" decoding="async" className="w-full h-auto block" draggable={false} />
+                <img src={src} alt={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`} width="640" height="905" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto block" draggable={false} />
               </div>
             </div>
           ))}
@@ -205,7 +205,7 @@ function DemonstrativoCarousel() {
           {loop.map((img, i) => (
             <div key={i} className="shrink-0 px-3 md:px-4 w-[62vw] sm:w-[44vw] md:w-[28vw] lg:w-[20vw] xl:w-[18vw]">
               <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
-                <img src={img.src} alt={img.alt} width="640" height="905" loading="lazy" decoding="async" className="w-full h-auto block" draggable={false} />
+                <img src={img.src} alt={img.alt} width="640" height="905" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto block" draggable={false} />
               </div>
             </div>
           ))}
@@ -261,7 +261,7 @@ function Index() {
                alt="Manual Visual dos Limites Corporais"
                loading="eager"
                fetchPriority="high"
-               decoding="sync"
+               decoding="async"
                className="w-full h-auto subtle-float"
              />
           </div>
@@ -365,6 +365,7 @@ function Index() {
               height="760"
                alt="Manual Visual dos Limites Corporais com quatro bônus exclusivos"
               loading="lazy"
+              fetchPriority="low"
               decoding="async"
               className="w-full h-auto subtle-float"
             />
@@ -436,7 +437,7 @@ function Index() {
           ].map((b, i) => (
             <div key={b.t} className="premium-card rounded-xl overflow-hidden flex flex-col">
               <div className="bg-gradient-to-br from-surface-soft to-canvas">
-                <img src={b.img} alt={b.t} width="540" height="540" loading="lazy" decoding="async" className="w-full h-auto object-cover" />
+                <img src={b.img} alt={b.t} width="540" height="540" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto object-cover" />
               </div>
               <div className="p-5 flex-1 flex flex-col">
                 <div className="text-antique-gold text-[10px] tracking-[0.3em] uppercase mb-2">BÔNUS #{i + 1}</div>
@@ -466,7 +467,7 @@ function Index() {
           <article className="premium-card rounded-2xl p-8 flex flex-col">
             <h3 className="text-xl md:text-2xl font-bold text-center mb-6 tracking-wider text-ink">PLANO BÁSICO</h3>
             <div className="mb-6">
-               <img src={planoBasico480.url} srcSet={`${planoBasico480.url} 480w, ${planoBasico720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Básico" loading="lazy" decoding="async" className="w-full h-auto" />
+               <img src={planoBasico480.url} srcSet={`${planoBasico480.url} 480w, ${planoBasico720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Básico" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto" />
             </div>
             <p className="text-ink/80 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
@@ -490,7 +491,7 @@ function Index() {
             <h3 className="text-xl md:text-2xl font-bold text-center mb-2 tracking-wider text-gradient-gold mt-3">PLANO COMPLETO</h3>
             <p className="text-center text-ink/75 text-sm mb-5">⚡ 2x mais conteúdos</p>
             <div className="mb-6">
-               <img src={planoCompleto480.url} srcSet={`${planoCompleto480.url} 480w, ${planoCompleto720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Completo" loading="lazy" decoding="async" className="w-full h-auto" />
+               <img src={planoCompleto480.url} srcSet={`${planoCompleto480.url} 480w, ${planoCompleto720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Completo" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto" />
             </div>
             <p className="text-ink/85 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
