@@ -467,7 +467,7 @@ function Index() {
           <article className="premium-card rounded-2xl p-8 flex flex-col">
             <h3 className="text-xl md:text-2xl font-bold text-center mb-6 tracking-wider text-ink">PLANO BÁSICO</h3>
             <div className="mb-6">
-               <img src={planoBasico480.url} srcSet={`${planoBasico480.url} 480w, ${planoBasico720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Básico" loading="lazy" decoding="async" className="w-full h-auto" />
+               <img src={planoBasico480.url} srcSet={`${planoBasico480.url} 480w, ${planoBasico720.url} 720w`} sizes="(max-width: 1023px) calc(100vw - 112px), 448px" width="720" height="720" alt="Mockup do Plano Básico" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto" />
             </div>
             <p className="text-ink/80 mb-4 font-medium">Você recebe:</p>
             <ul className="space-y-3 mb-6">
