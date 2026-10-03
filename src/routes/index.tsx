@@ -6,11 +6,11 @@ import bloco2Imagem2 from "../../3.jpg";
 import bloco2Imagem3 from "../../4.jpg";
 import bloco2Imagem4 from "../../5.jpg";
 import bloco2Imagem5 from "../../6.jpg";
-import demonstrativo1 from "@/assets/limites-corporais/demonstrativo-6-640.webp.asset.json";
-import demonstrativo2 from "@/assets/limites-corporais/demonstrativo-7-640.webp.asset.json";
-import demonstrativo3 from "@/assets/limites-corporais/demonstrativo-8-640.webp.asset.json";
-import demonstrativo4 from "@/assets/limites-corporais/demonstrativo-9-640.webp.asset.json";
-import demonstrativo5 from "@/assets/limites-corporais/demonstrativo-10-640.webp.asset.json";
+import demonstrativo1 from "../../7.jpg";
+import demonstrativo2 from "../../8.jpg";
+import demonstrativo3 from "../../9.jpg";
+import demonstrativo4 from "../../10.jpg";
+import demonstrativo5 from "../../11.jpg";
 import receber480 from "@/assets/limites-corporais/receber-480.webp.asset.json";
 import receber720 from "@/assets/limites-corporais/receber-720.webp.asset.json";
 import bonus1Imagem from "@/assets/limites-corporais/bonus-1-540.webp.asset.json";
@@ -184,11 +184,11 @@ function GalleryMarquee() {
 /* -------------------- 6. PHOTO CAROUSEL (Demonstrativo) -------------------- */
 
 const DEMONSTRATIVO_IMAGES = [
-  { src: demonstrativo1.url, alt: "Situação sobre presentes oferecidos por pessoas desconhecidas" },
-  { src: demonstrativo2.url, alt: "Situação sobre respeitar a escolha da criança ao receber abraços" },
-  { src: demonstrativo3.url, alt: "Situação sobre respeitar limites durante brincadeiras de cócegas" },
-  { src: demonstrativo4.url, alt: "Situação sobre privacidade no banheiro" },
-  { src: demonstrativo5.url, alt: "Situação sobre respeitar a escolha da criança ao receber beijos" },
+  { src: demonstrativo1, alt: "Situação sobre presentes oferecidos por pessoas desconhecidas" },
+  { src: demonstrativo2, alt: "Situação sobre respeitar a escolha da criança ao receber abraços" },
+  { src: demonstrativo3, alt: "Situação sobre respeitar limites durante brincadeiras de cócegas" },
+  { src: demonstrativo4, alt: "Situação sobre privacidade no banheiro" },
+  { src: demonstrativo5, alt: "Situação sobre respeitar a escolha da criança ao receber beijos" },
 ];
 
 function DemonstrativoCarousel() {
