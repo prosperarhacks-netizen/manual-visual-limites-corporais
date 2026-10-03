@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import hero480 from "@/assets/limites-corporais/hero-480.webp.asset.json";
-import hero720 from "@/assets/limites-corporais/hero-720.webp.asset.json";
+import heroImagem from "../../1.png";
 import bloco2Imagem1 from "@/assets/limites-corporais/pagina-1-640.webp.asset.json";
 import bloco2Imagem2 from "@/assets/limites-corporais/pagina-2-640.webp.asset.json";
 import bloco2Imagem3 from "@/assets/limites-corporais/pagina-3-640.webp.asset.json";
@@ -48,9 +47,7 @@ export const Route = createFileRoute("/")({
       {
         rel: "preload",
         as: "image",
-        href: hero480.url,
-        imageSrcSet: `${hero480.url} 480w, ${hero720.url} 720w`,
-        imageSizes: "(max-width: 640px) calc(100vw - 48px), 576px",
+        href: heroImagem,
         fetchPriority: "high",
       },
     ],
@@ -253,8 +250,7 @@ function Index() {
 
           <div className="max-w-xl mx-auto mb-8">
             <img
-              src={hero480.url}
-              srcSet={`${hero480.url} 480w, ${hero720.url} 720w`}
+              src={heroImagem}
               sizes="(max-width: 640px) calc(100vw - 48px), 576px"
               width="1080"
               height="1080"
