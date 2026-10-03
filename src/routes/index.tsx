@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroImagem from "../../1.png";
-import bloco2Imagem1 from "@/assets/limites-corporais/pagina-1-640.webp.asset.json";
-import bloco2Imagem2 from "@/assets/limites-corporais/pagina-2-640.webp.asset.json";
-import bloco2Imagem3 from "@/assets/limites-corporais/pagina-3-640.webp.asset.json";
-import bloco2Imagem4 from "@/assets/limites-corporais/pagina-4-640.webp.asset.json";
-import bloco2Imagem5 from "@/assets/limites-corporais/pagina-5-640.webp.asset.json";
+import bloco2Imagem1 from "../../2.jpg";
+import bloco2Imagem2 from "../../3.jpg";
+import bloco2Imagem3 from "../../4.jpg";
+import bloco2Imagem4 from "../../5.jpg";
+import bloco2Imagem5 from "../../6.jpg";
 import demonstrativo1 from "@/assets/limites-corporais/demonstrativo-6-640.webp.asset.json";
 import demonstrativo2 from "@/assets/limites-corporais/demonstrativo-7-640.webp.asset.json";
 import demonstrativo3 from "@/assets/limites-corporais/demonstrativo-8-640.webp.asset.json";
@@ -58,11 +58,11 @@ export const Route = createFileRoute("/")({
 const CHECKOUT_BASICO = "https://pay.cakto.com.br/mo5x2co";
 const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/33d9xgo_1146876";
 const PAGINAS_MANUAL = [
-  bloco2Imagem1.url,
-  bloco2Imagem2.url,
-  bloco2Imagem3.url,
-  bloco2Imagem4.url,
-  bloco2Imagem5.url,
+  bloco2Imagem1,
+  bloco2Imagem2,
+  bloco2Imagem3,
+  bloco2Imagem4,
+  bloco2Imagem5,
 ];
 
 function scrollToOffer(e: React.MouseEvent) {
