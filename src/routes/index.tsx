@@ -16,10 +16,6 @@ import bonus1Imagem from "@/assets/limites-corporais/bonus-1-540.webp.asset.json
 import bonus2Imagem from "@/assets/limites-corporais/bonus-2-540.webp.asset.json";
 import bonus3Imagem from "@/assets/limites-corporais/bonus-3-540.webp.asset.json";
 import bonus4Imagem from "@/assets/limites-corporais/bonus-4-540.webp.asset.json";
-import planoBasico480 from "@/assets/limites-corporais/plano-basico-480.webp.asset.json";
-import planoBasico720 from "@/assets/limites-corporais/plano-basico-720.webp.asset.json";
-import planoCompleto480 from "@/assets/limites-corporais/plano-completo-480.webp.asset.json";
-import planoCompleto720 from "@/assets/limites-corporais/plano-completo-720.webp.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -507,11 +503,9 @@ function Index() {
 
             <div className="mb-6">
               <img
-                src={planoBasico480.url}
-                srcSet={`${planoBasico480.url} 480w, ${planoBasico720.url} 720w`}
-                sizes="(max-width: 1023px) calc(100vw - 112px), 448px"
-                width="720"
-                height="720"
+                src={heroImagem}
+                width="1080"
+                height="1080"
                 alt="Mockup do Plano Básico"
                 loading="lazy"
                 fetchPriority="low"
@@ -550,11 +544,9 @@ function Index() {
 
             <div className="mb-6">
               <img
-                src={planoCompleto480.url}
-                srcSet={`${planoCompleto480.url} 480w, ${planoCompleto720.url} 720w`}
-                sizes="(max-width: 1023px) calc(100vw - 112px), 448px"
-                width="720"
-                height="720"
+                src={receberImagem}
+                width="1080"
+                height="1080"
                 alt="Mockup do Plano Completo"
                 loading="lazy"
                 fetchPriority="low"
