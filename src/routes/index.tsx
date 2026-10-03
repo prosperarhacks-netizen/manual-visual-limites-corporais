@@ -11,8 +11,7 @@ import demonstrativo2 from "../../8.jpg";
 import demonstrativo3 from "../../9.jpg";
 import demonstrativo4 from "../../10.jpg";
 import demonstrativo5 from "../../11.jpg";
-import receber480 from "@/assets/limites-corporais/receber-480.webp.asset.json";
-import receber720 from "@/assets/limites-corporais/receber-720.webp.asset.json";
+import receberImagem from "../../2.png";
 import bonus1Imagem from "@/assets/limites-corporais/bonus-1-540.webp.asset.json";
 import bonus2Imagem from "@/assets/limites-corporais/bonus-2-540.webp.asset.json";
 import bonus3Imagem from "@/assets/limites-corporais/bonus-3-540.webp.asset.json";
@@ -378,11 +377,9 @@ function Index() {
         <div className="premium-card rounded-2xl p-6 md:p-10 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <img
-              src={receber480.url}
-              srcSet={`${receber480.url} 480w, ${receber720.url} 720w`}
-              sizes="(max-width: 767px) calc(100vw - 96px), 528px"
-              width="760"
-              height="760"
+              src={receberImagem}
+              width="1080"
+              height="1080"
               alt="Manual Visual dos Limites Corporais com quatro bônus exclusivos"
               loading="lazy"
               fetchPriority="low"
