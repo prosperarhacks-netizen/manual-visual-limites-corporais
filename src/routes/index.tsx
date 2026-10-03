@@ -537,8 +537,9 @@ function Index() {
             </ul>
 
             <div className="text-center mb-6 mt-auto">
-              <div className="text-sm text-ink/60 mb-1">De R$37,90 por:</div>
-              <div className="text-4xl md:text-5xl font-bold line-through text-ink/40">R$37,90</div>
+              <div className="text-sm text-ink/60 mb-1">
+                De <span className="text-[#EF4444] line-through">R$37,90</span> por:
+              </div>
               <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$27,90</div>
               <div className="text-sm text-ink/70 mt-1">ou 2x de R$13,95 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-antique-gold/10 border border-antique-gold/30 text-antique-gold text-xs">
@@ -608,8 +609,9 @@ function Index() {
             </ul>
 
             <div className="text-center mb-6 mt-auto">
-              <div className="text-sm text-ink/60 mb-1">De R$57,90 por:</div>
-              <div className="text-5xl md:text-6xl font-bold line-through text-ink/40">R$57,90</div>
+              <div className="text-sm text-ink/60 mb-1">
+                De <span className="text-[#EF4444] line-through">R$57,90</span> por:
+              </div>
               <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$37,90</div>
               <div className="text-sm text-ink/70 mt-1">ou 5x de R$7,58 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-antique-gold/10 border border-antique-gold/30 text-antique-gold text-xs">
