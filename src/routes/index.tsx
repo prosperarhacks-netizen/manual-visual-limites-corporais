@@ -20,21 +20,21 @@ import bonus4Imagem from "@/assets/limites-corporais/bonus-4-540.webp.asset.json
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Manual Visual dos Limites Corporais" },
+      { title: "Manual Visual dos Hábitos Atômicos" },
       {
         name: "description",
-        content: "Mais de 30 situações do dia a dia para conversar com sua filha sobre corpo, toque e limites.",
+        content: "Uma leitura visual e simplificada das principais ideias de Hábitos Atômicos, organizada para você entender conceitos complexos de forma clara, rápida e fácil de aplicar.",
       },
-      { property: "og:title", content: "Manual Visual dos Limites Corporais" },
+      { property: "og:title", content: "Manual Visual dos Hábitos Atômicos" },
       {
         property: "og:description",
         content: "Mais de 30 situações do dia a dia para conversar com sua filha sobre corpo, toque e limites.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:title", content: "Manual Visual dos Limites Corporais" },
+      { name: "twitter:title", content: "Manual Visual dos Hábitos Atômicos" },
       {
         name: "twitter:description",
-        content: "Mais de 30 situações do dia a dia para conversar com seu filho sobre corpo, toque e limites.",
+        content: "Uma leitura visual e simplificada das principais ideias de Hábitos Atômicos, organizada para você entender conceitos complexos de forma clara, rápida e fácil de aplicar.",
       },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -143,7 +143,7 @@ function TopOfferBar() {
         color: "#F87171",
         borderBottom: "1px solid rgba(239, 68, 68, 0.40)",
       }}>
-      ⚡ OFERTA ESPECIAL DISPONÍVEL APENAS HOJE {today && <b className="text-[#FCA5A5]">{today}</b>}
+      ⚡ OFERTA ESPECIAL DISPONÍVEL APENAS HOJE {today && <>• <b className="text-[#FCA5A5]">{today}</b></>}
     </div>
   );
 }
@@ -240,16 +240,15 @@ function Index() {
       <Section className="pt-16 md:pt-24">
         <div className="max-w-3xl mx-auto text-center fade-up">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-ink">
-            Mãe, comece hoje as conversas que podem ajudar sua filha a reconhecer e respeitar os próprios limites.
+            Pare de encarar uma leitura complexa e comece a entender as ideias de Hábitos Atômicos de forma simples.
           </h1>
 
           <div className="max-w-xl mx-auto mb-8">
             <img
               src={heroImagem}
-              sizes="(max-width: 640px) calc(100vw - 48px), 576px"
               width="1080"
               height="1080"
-              alt="Manual Visual dos Limites Corporais"
+              alt="Manual Visual dos Hábitos Atômicos"
               loading="eager"
               fetchPriority="high"
               decoding="async"
@@ -258,12 +257,12 @@ function Index() {
           </div>
 
           <p className="text-ink/80 text-base md:text-lg leading-relaxed mb-8">
-            Um material visual para você conversar com sua filha sobre situações que fazem parte da infância — com orientações simples sobre <strong>o que explicar, o que falar, o que perguntar e como praticar juntas.</strong>
+            Uma leitura visual e simplificada das principais ideias de <strong>Hábitos Atômicos</strong>, organizada para você entender conceitos complexos de forma clara, rápida e fácil de aplicar.
           </p>
 
           <div>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
-            <p className="text-xs text-ink/50 mt-4 tracking-wide">📩 <strong>Você recebe tudo na hora, direto no seu e-mail e whatsapp.</strong></p>
+            <p className="text-xs text-ink/50 mt-4 tracking-wide">📩 <strong>Você recebe tudo na hora, direto no seu e-mail e WhatsApp.</strong></p>
           </div>
         </div>
       </Section>
@@ -275,7 +274,7 @@ function Index() {
       <Section className="bg-surface">
         <div className="text-center max-w-4xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            O material foi criado para transformar situações comuns em conversas importantes entre mãe e filha
+            O Manual Visual dos Hábitos Atômicos possui
           </h2>
         </div>
 
@@ -283,23 +282,23 @@ function Index() {
           {[
             {
               i: "🧩",
-              t: "+30 SITUAÇÕES PRONTAS",
-              d: "Situações do cotidiano para você conversar com sua filha sobre corpo, toque, privacidade, desconforto, limites, segredos e pedidos de ajuda.",
+              t: "CONCEITOS COMPLEXOS EM FORMATO SIMPLES",
+              d: "As principais ideias são organizadas de forma visual para facilitar a compreensão e ajudar você a enxergar como os conceitos se conectam.",
             },
             {
               i: "👀",
-              t: "VISUAL E FÁCIL DE USAR",
-              d: "Cada situação é apresentada de forma clara para você entender rapidamente o assunto e saber como conduzir a conversa.",
+              t: "VISUAL E FÁCIL DE ENTENDER",
+              d: "Ilustrações, mapas, comparações e elementos visuais ajudam a transformar explicações complexas em uma experiência de leitura mais clara.",
             },
             {
               i: "💬",
-              t: "O QUE FALAR E O QUE PERGUNTAR",
-              d: "Você encontra sugestões de falas e perguntas para ajudar sua filha a pensar, responder e aprender a se posicionar.",
+              t: "EXPLICAÇÕES DIRETAS",
+              d: "Você encontra explicações objetivas para entender o que cada conceito significa, sem precisar passar por uma leitura pesada.",
             },
             {
               i: "⭐",
-              t: "PRATIQUE JUNTAS",
-              d: "As conversas também podem virar pequenas práticas para sua filha experimentar diferentes formas de responder a situações do dia a dia.",
+              t: "LEVE PARA A PRÁTICA",
+              d: "Além de entender as ideias, você encontra exemplos e aplicações para relacionar o conteúdo com situações da sua própria rotina.",
             },
           ].map((c) => (
             <div key={c.t} className="premium-card rounded-xl p-6">
@@ -319,6 +318,9 @@ function Index() {
 
       {/* 5 · DEMONSTRATIVO CAROUSEL */}
       <Section className="bg-surface py-10 md:py-14">
+        <div className="text-center max-w-3xl mx-auto mb-10">
+          <h2 className="text-3xl md:text-5xl font-semibold">Veja uma amostra dos materiais que você vai receber</h2>
+        </div>
         <DemonstrativoCarousel />
       </Section>
 
@@ -329,7 +331,7 @@ function Index() {
           <div className="relative">
             <GoldOrnament />
             <h2 className="text-3xl md:text-5xl font-semibold max-w-3xl mx-auto leading-tight mb-4">
-              Você sabe o que diria se sua filha contasse que uma situação deixou ela desconfortável?
+              Você consegue explicar o que realmente significa um conceito depois de ler sobre ele?
             </h2>
             <p className="text-ink/70 mb-8">Aproveite a oferta por tempo limitado.</p>
             <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
@@ -347,12 +349,11 @@ function Index() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            "Ensinar sua filha que ela pode dizer “não” quando não se sentir confortável",
-            "Conversar sobre corpo, toque e limites usando exemplos do cotidiano",
-            "Saber o que falar quando surgir uma situação delicada",
-            "Ajudar sua filha a perceber e comunicar quando algo não está confortável",
-            "Ensinar sua filha a identificar adultos de confiança",
-            "Criar oportunidades para conversar sobre esses assuntos de forma natural",
+            "Entender as principais ideias de Hábitos Atômicos sem enfrentar uma leitura pesada",
+            "Transformar conceitos complexos em explicações simples e fáceis de visualizar",
+            "Visualizar os conceitos através de ilustrações e mapas",
+            "Ter um material para consultar sempre que precisar relembrar uma ideia",
+            "Enxergar como os conceitos se conectam ao longo do conteúdo",
           ].map((t) => (
             <article key={t} className="premium-card rounded-xl p-6">
               <CheckIcon className="mb-4" />
@@ -376,7 +377,7 @@ function Index() {
               src={receberImagem}
               width="1080"
               height="1080"
-              alt="Manual Visual dos Limites Corporais com quatro bônus exclusivos"
+              alt="Manual Visual dos Hábitos Atômicos com quatro bônus exclusivos"
               loading="lazy"
               fetchPriority="low"
               decoding="async"
@@ -386,32 +387,36 @@ function Index() {
 
           <div>
             <p className="text-ink/85 mb-6">
-              Você não precisa esperar uma situação difícil acontecer para começar essas conversas.
+              Você não precisa passar horas tentando organizar mentalmente cada conceito.
               <br />
-              Escolha uma situação, veja como abordar o assunto, converse com sua filha e pratique juntas.
+              Abra o material, escolha um assunto, veja a explicação visual e avance pelo conteúdo de forma simples.
             </p>
 
-            <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">+30 Situações do Dia a Dia</h3>
+            <h3 className="text-2xl font-semibold mb-5 text-gradient-gold">Manual Visual dos Hábitos Atômicos</h3>
 
             <ul className="space-y-3">
               {[
-                "+30 situações práticas",
-                "Situações sobre corpo e autonomia",
-                "Situações sobre toque",
-                "Situações sobre privacidade",
-                "Situações sobre dizer “não”",
-                "Situações de desconforto",
-                "Situações envolvendo segredos",
-                "Situações sobre pedir ajuda",
-                "Adultos de confiança",
-                "Situações na escola",
-                "Situações com familiares",
-                "Situações com outras crianças",
-                "Situações na internet e nas telas",
-                "O que sua filha precisa entender",
-                "O que você pode falar",
-                "Perguntas para fazer",
-                "Práticas para realizar juntas",
+                "Fundamentos dos hábitos",
+                "Pequenas mudanças e efeito acumulado",
+                "Identidade e comportamento",
+                "Ciclo dos hábitos",
+                "Construção de bons hábitos",
+                "Como tornar hábitos mais óbvios",
+                "Como tornar hábitos mais atrativos",
+                "Como tornar hábitos mais fáceis",
+                "Como tornar hábitos mais satisfatórios",
+                "Redução de maus hábitos",
+                "Ambiente e comportamento",
+                "Gatilhos e contexto",
+                "Consistência e acompanhamento",
+                "Aplicação prática",
+                "Mapas visuais",
+                "Infográficos",
+                "Ilustrações",
+                "Comparações visuais",
+                "Checklists",
+                "Exercícios de aplicação",
+                "Espaços para anotações",
                 "Consulta visual",
                 "Material organizado",
                 "Acesso imediato",
@@ -439,23 +444,23 @@ function Index() {
           {[
             {
               img: bonus1Imagem.url,
-              t: "20 FRASES PARA ENSINAR SUA FILHA A DIZER “NÃO”",
-              d: "Um conjunto de frases simples para você praticar com sua filha e ajudá-la a expressar seus limites em diferentes situações.",
+              t: "MAPA VISUAL DOS HÁBITOS",
+              d: "Um material de consulta rápida com os principais conceitos organizados visualmente. Veja como as ideias se conectam em mapas, esquemas e representações simples para revisar o conteúdo com muito mais facilidade.",
             },
             {
               img: bonus2Imagem.url,
-              t: "20 CARTÕES “O QUE VOCÊ FARIA?”",
-              d: "20 situações prontas para você apresentar à sua filha, ouvir como ela reagiria e transformar cada uma em uma oportunidade de conversa.",
+              t: "30 IDEIAS DE HÁBITOS PARA APLICAR",
+              d: "Uma seleção de 30 ideias práticas para transformar conhecimento em ações do cotidiano. As ideias são organizadas para facilitar a escolha de pequenos comportamentos que você pode começar a colocar em prática.",
             },
             {
               img: bonus3Imagem.url,
-              t: "MAPA DOS ADULTOS DE CONFIANÇA",
-              d: "Uma atividade visual para ajudar sua filha a reconhecer as pessoas que ela pode procurar quando estiver desconfortável ou precisar de ajuda.",
+              t: "PLANNER VISUAL DE HÁBITOS",
+              d: "Um planner para organizar, acompanhar e visualizar os hábitos que você deseja construir. Planeje seus hábitos, registre sua execução e acompanhe sua evolução de forma simples e visual.",
             },
             {
               img: bonus4Imagem.url,
-              t: "GUIA “COMO CONVERSAR SEM ASSUSTAR SUA FILHA”",
-              d: "Um guia prático para ajudar você a abordar assuntos delicados com linguagem simples, natural e adequada ao momento da sua filha.",
+              t: "GUIA PARA NÃO ABANDONAR SEUS HÁBITOS",
+              d: "Um guia rápido para entender o que pode atrapalhar sua constância e como voltar ao ritmo quando sair do plano. Uma ferramenta prática para reorganizar sua rotina e continuar avançando.",
             },
           ].map((b, i) => (
             <div key={b.t} className="premium-card rounded-xl overflow-hidden flex flex-col">
@@ -478,7 +483,7 @@ function Index() {
                 <p className="text-sm text-ink/65 leading-relaxed mb-4">{b.d}</p>
 
                 <div className="mt-auto inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-[#22C55E]/10 border border-[#22C55E]/35 text-xs">
-                  <span className="text-ink/60">Valor: <s>R$27</s></span>
+                  <span className="text-ink/60">Valor: <s>R$29</s></span>
                   <span className="text-[#22C55E] font-bold">GRÁTIS</span>
                 </div>
               </div>
@@ -519,16 +524,16 @@ function Index() {
             <ul className="space-y-3 mb-6">
               <li className="flex items-start gap-3 text-ink/85 text-sm">
                 <CheckIcon />
-                <span>+30 Situações do Dia a Dia para Ensinar Sua Filha sobre Corpo, Toque e Limites</span>
+                <span>Manual Visual dos Hábitos Atômicos</span>
               </li>
             </ul>
 
             <div className="text-center mb-6 mt-auto">
               <div className="text-sm text-ink/60 mb-1">
-                De <span className="text-[#EF4444] line-through">R$37,90</span> por:
+                De <span className="text-[#EF4444] line-through">R$29,90</span> por:
               </div>
-              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$27,90</div>
-              <div className="text-sm text-ink/70 mt-1">ou 2x de R$13,95 no cartão</div>
+              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$19,90</div>
+              <div className="text-sm text-ink/70 mt-1">ou 2x de R$9,95 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-antique-gold/10 border border-antique-gold/30 text-antique-gold text-xs">
                 💰 Você economiza R$10,00
               </div>
@@ -559,19 +564,19 @@ function Index() {
 
             <ul className="space-y-3 mb-6">
               {[
-                "+30 situações práticas",
-                "Corpo e autonomia",
-                "Toque e privacidade",
-                "Limites e desconforto",
-                "Dizer “não”",
-                "Segredos e pedidos para não contar",
-                "Adultos de confiança",
-                "Pedidos de ajuda",
-                "Situações do cotidiano",
-                "O que sua filha precisa entender",
-                "O que você pode falar",
-                "Perguntas para conversar",
-                "Práticas para fazer juntas",
+                "Manual Visual dos Hábitos Atômicos",
+                "Fundamentos dos hábitos",
+                "Identidade e comportamento",
+                "Ciclo dos hábitos",
+                "Construção de bons hábitos",
+                "Redução de maus hábitos",
+                "Ambiente e comportamento",
+                "Aplicações práticas",
+                "Mapas visuais",
+                "Infográficos",
+                "Ilustrações",
+                "Checklists",
+                "Exercícios de aplicação",
                 "Consulta visual",
                 "Material organizado",
               ].map((t) => (
@@ -581,10 +586,10 @@ function Index() {
               ))}
 
               {[
-                "Bônus #1 — 20 Frases para Ensinar Sua Filha a Dizer “Não”",
-                "Bônus #2 — 20 Cartões “O Que Você Faria?”",
-                "Bônus #3 — Mapa dos Adultos de Confiança",
-                "Bônus #4 — Guia “Como Conversar Sem Assustar Sua Filha”",
+                "Bônus #1 — Mapa Visual dos Hábitos",
+                "Bônus #2 — 30 Ideias de Hábitos Para Aplicar",
+                "Bônus #3 — Planner Visual de Hábitos",
+                "Bônus #4 — Guia Para Não Abandonar Seus Hábitos",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-ink/90 text-sm">
                   <span className="shrink-0 w-6 h-6 rounded-full bg-antique-gold/15 border border-antique-gold/40 flex items-center justify-center text-antique-gold text-sm">🎁</span>
@@ -595,10 +600,10 @@ function Index() {
 
             <div className="text-center mb-6 mt-auto">
               <div className="text-sm text-ink/60 mb-1">
-                De <span className="text-[#EF4444] line-through">R$57,90</span> por:
+                De <span className="text-[#EF4444] line-through">R$49,90</span> por:
               </div>
-              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$37,90</div>
-              <div className="text-sm text-ink/70 mt-1">ou 5x de R$7,58 no cartão</div>
+              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$29,90</div>
+              <div className="text-sm text-ink/70 mt-1">ou 5x de R$5,98 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-antique-gold/10 border border-antique-gold/30 text-antique-gold text-xs">
                 💰 Você economiza R$20,00
               </div>
@@ -628,9 +633,9 @@ function Index() {
             </div>
           </div>
 
-          <h2 className="text-2xl md:text-4xl font-semibold mb-6">Você tem garantia vitalícia no material.</h2>
+          <h2 className="text-2xl md:text-4xl font-semibold mb-6">Você tem garantia vitalícia no Manual Visual dos Hábitos Atômicos.</h2>
           <p className="text-ink/75 leading-relaxed max-w-xl mx-auto mb-3">
-            Se o conteúdo não fizer sentido para o que você procura, não facilitar suas conversas ou você simplesmente decidir que não quer continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.
+            Se o conteúdo não fizer sentido para o que você procura, não facilitar sua compreensão ou você simplesmente decidir que não quer continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.
           </p>
           <p className="text-antique-gold font-semibold tracking-wide mb-2">Sem burocracia.</p>
           <p className="text-ink/85 leading-relaxed max-w-xl mx-auto">O risco fica do nosso lado.</p>
@@ -660,24 +665,24 @@ function Index() {
               i: "📱",
               t: "Acesse os materiais",
               items: [
-                "+30 Situações do Dia a Dia",
-                "Bônus 01 — 20 Frases para Ensinar Sua Filha a Dizer “Não”",
-                "Bônus 02 — 20 Cartões “O Que Você Faria?”",
-                "Bônus 03 — Mapa dos Adultos de Confiança",
-                "Bônus 04 — Guia “Como Conversar Sem Assustar Sua Filha”",
+                "Manual Visual dos Hábitos Atômicos",
+                "Bônus 01 — Mapa Visual dos Hábitos",
+                "Bônus 02 — 30 Ideias de Hábitos Para Aplicar",
+                "Bônus 03 — Planner Visual de Hábitos",
+                "Bônus 04 — Guia Para Não Abandonar Seus Hábitos",
               ],
             },
             {
-              i: "👩‍👧",
-              t: "Comece uma conversa",
+              i: "🧠",
+              t: "Comece sua leitura",
               items: [
-                "Escolha uma situação",
-                "Leia o que sua filha precisa entender",
-                "Use a sugestão de fala",
-                "Faça as perguntas",
-                "Escute o que ela pensa",
-                "Pratiquem juntas",
-                "Volte ao material sempre que quiser trabalhar uma nova situação",
+                "Escolha um conceito",
+                "Veja a explicação visual",
+                "Entenda a ideia principal",
+                "Observe os exemplos",
+                "Relacione com sua rotina",
+                "Use as ferramentas práticas",
+                "Volte ao material sempre que quiser revisar um conceito",
               ],
             },
           ].map((s, i) => (
@@ -714,48 +719,48 @@ function Index() {
         <div className="max-w-3xl mx-auto space-y-3">
           {[
             {
-              q: "O que é o +30 Situações do Dia a Dia?",
-              a: "É um material visual criado para ajudar mães a conversar com suas filhas sobre corpo, toque e limites a partir de situações que fazem parte do cotidiano. Cada situação apresenta o que a criança precisa entender, sugestões do que a mãe pode falar, perguntas para conversar e uma proposta de prática.",
+              q: "O que é o Manual Visual dos Hábitos Atômicos?",
+              a: "É um material digital que organiza e apresenta as principais ideias de Hábitos Atômicos de forma visual, simples e fácil de entender. O conteúdo utiliza explicações, ilustrações, mapas, exemplos e ferramentas práticas para facilitar a compreensão.",
             },
             {
-              q: "O material serve para mim mesmo que eu não saiba como abordar esses assuntos?",
-              a: "Sim. O material foi estruturado para facilitar a conversa. Você escolhe uma situação e encontra uma orientação clara para começar o assunto com sua filha.",
+              q: "O material serve para mim mesmo que eu não goste de leituras longas?",
+              a: "Sim. A proposta do material é justamente facilitar a compreensão por meio de uma apresentação mais visual e objetiva, tornando a experiência de leitura mais leve.",
             },
             {
-              q: "Para qual idade o material é indicado?",
-              a: "O material foi pensado para conversas com crianças, usando situações cotidianas e linguagem simples. A mãe pode adaptar a forma de conversar conforme a idade e a maturidade da filha.",
+              q: "Preciso ter lido o livro para usar o material?",
+              a: "Não. O material foi organizado para apresentar os conceitos de forma independente e facilitar a compreensão mesmo para quem ainda não teve contato completo com o conteúdo.",
             },
             {
               q: "Posso acessar pelo celular?",
-              a: "Sim. O material é digital e pode ser acessado pelo celular, tablet ou computador.",
+              a: "Sim. O material é digital e pode ser acessado pelos dispositivos compatíveis com a leitura de PDF.",
             },
             {
               q: "O acesso é imediato?",
-              a: "Sim. Após a confirmação do pagamento, o acesso aos materiais é liberado.",
+              a: "Sim. Depois da confirmação do pagamento, as instruções de acesso são enviadas para você.",
             },
             {
               q: "O material pode ser impresso?",
-              a: "Sim. O material principal foi desenvolvido em formato A4, facilitando também a impressão e a consulta física.",
+              a: "Sim. O material foi desenvolvido em formato digital e pode ser impresso para uso pessoal, caso você prefira fazer a leitura no papel.",
             },
             {
               q: "Os 4 bônus já estão incluídos?",
-              a: "Sim. No Plano Completo, os quatro bônus fazem parte da oferta e não possuem cobrança adicional.",
+              a: "Sim. No Plano Completo, os quatro bônus são incluídos sem custo adicional.",
             },
             {
               q: "O acesso possui mensalidade?",
-              a: "Não. A oferta é de pagamento único, conforme as condições apresentadas na página.",
+              a: "Não. Trata-se de uma compra única. Você não precisa pagar mensalidade para continuar acessando o material.",
             },
             {
               q: "Posso voltar ao material sempre que quiser?",
-              a: "Sim. Depois de receber o acesso, você poderá consultar as situações novamente sempre que quiser iniciar uma nova conversa com sua filha.",
+              a: "Sim. Depois de receber o acesso, você pode retornar ao material para revisar os conceitos e consultar as ferramentas sempre que precisar.",
             },
             {
               q: "Como funciona a garantia?",
-              a: "A garantia é vitalícia. Caso você decida que o material não é adequado ao que procura ou não queira continuar com o produto, poderá solicitar o reembolso conforme as condições da oferta.",
+              a: "Você possui garantia vitalícia conforme as condições da oferta. Caso decida que o material não é adequado para você, poderá solicitar o reembolso dentro das condições estabelecidas.",
             },
             {
               q: "Preciso comprar algum material para usar as atividades?",
-              a: "Não. O material foi pensado para utilizar situações e recursos simples do cotidiano. Algumas práticas podem ser feitas com brincadeiras, conversas ou materiais que você já tenha em casa.",
+              a: "Não. O material já foi organizado para que você possa utilizar as ferramentas e exercícios apresentados. Se quiser, também pode imprimir as páginas de aplicação para facilitar o uso.",
             },
           ].map((f, i) => (
             <FaqItem key={i} q={f.q} a={f.a} />
@@ -768,9 +773,9 @@ function Index() {
         <GoldOrnament />
 
         <h2 className="text-3xl md:text-4xl font-semibold max-w-3xl mx-auto leading-tight mb-8">
-          <span className="text-gradient-gold">Mãe, você não precisa esperar uma situação acontecer para começar essa conversa.</span>
+          <span className="text-gradient-gold">Você não precisa enfrentar uma leitura pesada para começar a entender as ideias.</span>
           <br />
-          Tenha +30 situações prontas para ensinar sua filha sobre corpo, toque e limites.
+          Tenha uma experiência visual, simples e organizada para compreender os principais conceitos de Hábitos Atômicos.
         </h2>
 
         <CTAButton onClick={scrollToOffer}>QUERO ACESSAR AGORA</CTAButton>
@@ -778,7 +783,7 @@ function Index() {
         <div className="mt-16 pt-8 border-t border-antique-gold/15 max-w-3xl mx-auto space-y-4 text-xs md:text-[13px] text-ink/45 leading-relaxed text-center">
           <p className="text-center text-ink/55 tracking-wider">Copyright © 2026 | Todos os direitos reservados.</p>
           <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
-          <p>O <strong>+30 Situações do Dia a Dia para Ensinar Sua Filha sobre Corpo, Toque e Limites</strong> é um material digital independente, criado para fins educacionais e práticos sobre conversas familiares relacionadas a corpo, limites, segurança e comunicação com crianças.</p>
+          <p>O <strong>Manual Visual dos Hábitos Atômicos</strong> é um material digital independente, criado para fins educacionais e de organização de conteúdo. O material apresenta e organiza ideias relacionadas ao tema de hábitos de forma visual e simplificada.</p>
           <p>A reprodução não autorizada desta publicação, no todo ou em parte, por quaisquer meios, constitui violação dos direitos autorais, sujeitando os infratores às sanções previstas na legislação aplicável.</p>
         </div>
       </Section>
