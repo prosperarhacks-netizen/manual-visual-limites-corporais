@@ -2,10 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroImagem from "../../1.png";
 import planoBasicoHabitosImagem from "../../1.png";
-import bloco2Imagem1 from "@/assets/manual/nh-2-6.jpg.asset.json";
-import bloco2Imagem2 from "@/assets/manual/nh-3-6.jpg.asset.json";
-import bloco2Imagem3 from "@/assets/manual/nh-5-5.jpg.asset.json";
-import bloco2Imagem4 from "@/assets/manual/nh-6-4.jpg.asset.json";
+import bloco2Imagem1 from "../../2.jpg";
+import bloco2Imagem2 from "@/assets/habitos-bloco2/2.webp";
+import bloco2Imagem34 from "@/assets/habitos-bloco2/3-4.webp";
 import demonstrativo1 from "../../7.jpg";
 import demonstrativo2 from "../../8.jpg";
 import demonstrativo3 from "../../9.jpg";
@@ -52,11 +51,14 @@ export const Route = createFileRoute("/")({
 
 const CHECKOUT_BASICO = "https://pay.cakto.com.br/mo5x2co";
 const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/33d9xgo_1146876";
-const PAGINAS_MANUAL = [
-  `${bloco2Imagem1.url}?v=20261004`,
-  `${bloco2Imagem2.url}?v=20261004`,
-  `${bloco2Imagem3.url}?v=20261004`,
-  `${bloco2Imagem4.url}?v=20261004`,
+const PAGINAS_MANUAL: Array<
+  | { type: "image"; src: string }
+  | { type: "sprite"; src: string; position: string }
+> = [
+  { type: "image", src: bloco2Imagem1 },
+  { type: "image", src: bloco2Imagem2 },
+  { type: "sprite", src: bloco2Imagem34, position: "left center" },
+  { type: "sprite", src: bloco2Imagem34, position: "right center" },
 ];
 
 function scrollToOffer(e: React.MouseEvent) {
@@ -162,10 +164,33 @@ function GalleryMarquee() {
       <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 z-10 bg-gradient-to-l from-surface-raised to-transparent" />
       <div className="marquee-viewport group">
         <div className="marquee-track">
-          {loop.map((src, i) => (
+          {loop.map((page, i) => (
             <div key={i} className="shrink-0 px-3 md:px-4 w-[60vw] sm:w-[42vw] md:w-[26vw] lg:w-[19vw] xl:w-[17vw]">
               <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
-                <img src={src} alt={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`} width="640" height="905" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto block" draggable={false} />
+                {page.type === "image" ? (
+                <img
+                  src={page.src}
+                  alt={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`}
+                  width="640"
+                  height="905"
+                  loading="lazy"
+                  fetchPriority="low"
+                  decoding="async"
+                  className="w-full h-auto block"
+                  draggable={false}
+                />
+              ) : (
+                <div
+                  role="img"
+                  aria-label={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`}
+                  className="w-full aspect-[800/1132] bg-no-repeat bg-cover"
+                  style={{
+                    backgroundImage: `url(${page.src})`,
+                    backgroundSize: "200% 100%",
+                    backgroundPosition: page.position,
+                  }}
+                />
+              )}
               </div>
             </div>
           ))}
