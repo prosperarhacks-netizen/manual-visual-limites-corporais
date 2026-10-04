@@ -156,7 +156,7 @@ function GalleryMarquee() {
     <section className="relative overflow-hidden py-14 md:py-20 bg-surface-raised border-y border-antique-gold/15">
       <div className="text-center px-6 mb-10">
         <h2 className="text-3xl md:text-5xl font-semibold">
-          Veja os materiais que você vai receber
+          Veja uma amostra dos materiais que você vai receber
         </h2>
       </div>
       <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 z-10 bg-gradient-to-r from-surface-raised to-transparent" />
@@ -318,9 +318,6 @@ function Index() {
 
       {/* 5 · DEMONSTRATIVO CAROUSEL */}
       <Section className="bg-surface py-10 md:py-14">
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <h2 className="text-3xl md:text-5xl font-semibold">Veja uma amostra dos materiais que você vai receber</h2>
-        </div>
         <DemonstrativoCarousel />
       </Section>
 
