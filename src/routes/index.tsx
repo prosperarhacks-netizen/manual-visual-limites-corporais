@@ -6,11 +6,10 @@ import bloco2Imagem1 from "../../2.jpg";
 import bloco2Imagem2 from "@/assets/habitos-bloco2/2-240.webp";
 import bloco2Imagem3 from "@/assets/habitos-bloco2/3-240.webp";
 import bloco2Imagem4 from "@/assets/habitos-bloco2/4-240.webp";
-import demonstrativo1 from "../../7.jpg";
-import demonstrativo2 from "../../8.jpg";
-import demonstrativo3 from "../../9.jpg";
-import demonstrativo4 from "../../10.jpg";
-import demonstrativo5 from "../../11.jpg";
+import demonstrativo1 from "../../6.jpg";
+import demonstrativo2 from "../../7.jpg";
+import demonstrativo3 from "../../8.jpg";
+import demonstrativo4 from "../../9.jpg";
 import receberImagem from "../../2.png";
 import bonus1Imagem from "@/assets/limites-corporais/bonus-1-540.webp.asset.json";
 import bonus2Imagem from "@/assets/limites-corporais/bonus-2-540.webp.asset.json";
@@ -188,11 +187,10 @@ function GalleryMarquee() {
 /* -------------------- 6. PHOTO CAROUSEL (Demonstrativo) -------------------- */
 
 const DEMONSTRATIVO_IMAGES = [
-  { src: demonstrativo1, alt: "Situação sobre presentes oferecidos por pessoas desconhecidas" },
-  { src: demonstrativo2, alt: "Situação sobre respeitar a escolha da criança ao receber abraços" },
-  { src: demonstrativo3, alt: "Situação sobre respeitar limites durante brincadeiras de cócegas" },
-  { src: demonstrativo4, alt: "Situação sobre privacidade no banheiro" },
-  { src: demonstrativo5, alt: "Situação sobre respeitar a escolha da criança ao receber beijos" },
+  { src: demonstrativo1, alt: "Demonstração 6" },
+  { src: demonstrativo2, alt: "Demonstração 7" },
+  { src: demonstrativo3, alt: "Demonstração 8" },
+  { src: demonstrativo4, alt: "Demonstração 9" },
 ];
 
 function DemonstrativoCarousel() {
