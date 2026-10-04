@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroImagem from "../../1.png";
-import heroHabitosImagem from "@/assets/catalogo-novo/1-Photoroom.png.asset.json";
+import planoBasicoHabitosImagem from "@/assets/catalogo-novo/plano-basico-novo.png.asset.json";
 import bloco2Imagem1 from "../../2.jpg";
 import bloco2Imagem2 from "../../3.jpg";
 import bloco2Imagem3 from "../../4.jpg";
@@ -43,7 +43,7 @@ export const Route = createFileRoute("/")({
       {
         rel: "preload",
         as: "image",
-        href: heroHabitosImagem.url,
+        href: planoBasicoHabitosImagem.url,
         fetchPriority: "high",
       },
     ],
@@ -246,7 +246,7 @@ function Index() {
 
           <div className="max-w-xl mx-auto mb-8">
             <img
-              src={heroHabitosImagem.url}
+              src={planoBasicoHabitosImagem.url}
               width="1080"
               height="1080"
               alt="Manual Visual dos Hábitos Atômicos"
