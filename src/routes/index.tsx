@@ -53,10 +53,10 @@ export const Route = createFileRoute("/")({
 const CHECKOUT_BASICO = "https://pay.cakto.com.br/mo5x2co";
 const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/33d9xgo_1146876";
 const PAGINAS_MANUAL = [
-  bloco2Imagem1.url,
-  bloco2Imagem2.url,
-  bloco2Imagem3.url,
-  bloco2Imagem4.url,
+  `${bloco2Imagem1.url}?v=20261004`,
+  `${bloco2Imagem2.url}?v=20261004`,
+  `${bloco2Imagem3.url}?v=20261004`,
+  `${bloco2Imagem4.url}?v=20261004`,
 ];
 
 function scrollToOffer(e: React.MouseEvent) {
