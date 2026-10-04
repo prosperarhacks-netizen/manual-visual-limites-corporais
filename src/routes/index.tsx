@@ -2,11 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroImagem from "../../1.png";
 import planoBasicoHabitosImagem from "../../1.png";
-import bloco2Imagem1 from "../../2.jpg";
-import bloco2Imagem2 from "../../3.jpg";
-import bloco2Imagem3 from "../../4.jpg";
-import bloco2Imagem4 from "../../5.jpg";
-import bloco2Imagem5 from "../../6.jpg";
+import bloco2Imagem1 from "@/assets/manual/nh-2-6.jpg.asset.json";
+import bloco2Imagem2 from "@/assets/manual/nh-3-6.jpg.asset.json";
+import bloco2Imagem3 from "@/assets/manual/nh-5-5.jpg.asset.json";
+import bloco2Imagem4 from "@/assets/manual/nh-6-4.jpg.asset.json";
 import demonstrativo1 from "../../7.jpg";
 import demonstrativo2 from "../../8.jpg";
 import demonstrativo3 from "../../9.jpg";
@@ -54,11 +53,10 @@ export const Route = createFileRoute("/")({
 const CHECKOUT_BASICO = "https://pay.cakto.com.br/mo5x2co";
 const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/33d9xgo_1146876";
 const PAGINAS_MANUAL = [
-  bloco2Imagem1,
-  bloco2Imagem2,
-  bloco2Imagem3,
-  bloco2Imagem4,
-  bloco2Imagem5,
+  bloco2Imagem1.url,
+  bloco2Imagem2.url,
+  bloco2Imagem3.url,
+  bloco2Imagem4.url,
 ];
 
 function scrollToOffer(e: React.MouseEvent) {
