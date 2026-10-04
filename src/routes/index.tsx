@@ -2,11 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import hero480 from "@/assets/limites-corporais/hero-480.webp.asset.json";
 import hero720 from "@/assets/limites-corporais/hero-720.webp.asset.json";
-import bloco2Imagem1 from "@/assets/limites-corporais/pagina-1-640.webp.asset.json";
-import bloco2Imagem2 from "@/assets/limites-corporais/pagina-2-640.webp.asset.json";
-import bloco2Imagem3 from "@/assets/limites-corporais/pagina-3-640.webp.asset.json";
-import bloco2Imagem4 from "@/assets/limites-corporais/pagina-4-640.webp.asset.json";
-import bloco2Imagem5 from "@/assets/limites-corporais/pagina-5-640.webp.asset.json";
 import demonstrativo1 from "@/assets/limites-corporais/demonstrativo-6-640.webp.asset.json";
 import demonstrativo2 from "@/assets/limites-corporais/demonstrativo-7-640.webp.asset.json";
 import demonstrativo3 from "@/assets/limites-corporais/demonstrativo-8-640.webp.asset.json";
@@ -59,14 +54,6 @@ export const Route = createFileRoute("/")({
 
 const CHECKOUT_BASICO = "https://pay.cakto.com.br/mo5x2co";
 const CHECKOUT_COMPLETO = "https://pay.cakto.com.br/33d9xgo_1146876";
-const PAGINAS_MANUAL = [
-  bloco2Imagem1.url,
-  bloco2Imagem2.url,
-  bloco2Imagem3.url,
-  bloco2Imagem4.url,
-  bloco2Imagem5.url,
-];
-
 function scrollToOffer(e: React.MouseEvent) {
   e.preventDefault();
   document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -156,32 +143,6 @@ function TopOfferBar() {
 }
 
 /* -------------------- 3. GALLERY MARQUEE -------------------- */
-
-function GalleryMarquee() {
-  const loop = [...PAGINAS_MANUAL, ...PAGINAS_MANUAL];
-  return (
-    <section className="relative overflow-hidden py-14 md:py-20 bg-surface-raised border-y border-antique-gold/15">
-      <div className="text-center px-6 mb-10">
-        <h2 className="text-3xl md:text-5xl font-semibold">
-          Veja os <span className="text-gradient-gold">materiais</span> que você vai receber
-        </h2>
-      </div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 z-10 bg-gradient-to-r from-surface-raised to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 z-10 bg-gradient-to-l from-surface-raised to-transparent" />
-      <div className="marquee-viewport group">
-        <div className="marquee-track">
-          {loop.map((src, i) => (
-            <div key={i} className="shrink-0 px-3 md:px-4 w-[60vw] sm:w-[42vw] md:w-[26vw] lg:w-[19vw] xl:w-[17vw]">
-              <div className="rounded-lg overflow-hidden border border-antique-gold/25 shadow-[0_20px_50px_-20px_rgba(3,12,6,0.85)] bg-canvas">
-                <img src={src} alt={`Prévia ${(i % PAGINAS_MANUAL.length) + 1}`} width="640" height="905" loading="lazy" fetchPriority="low" decoding="async" className="w-full h-auto block" draggable={false} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* -------------------- 6. PHOTO CAROUSEL (Demonstrativo) -------------------- */
 
@@ -274,9 +235,6 @@ function Index() {
           </div>
         </div>
       </Section>
-
-      {/* 3 · GALLERY MARQUEE */}
-      <GalleryMarquee />
 
       {/* 4 · MATERIAIS / FEATURES */}
       <Section className="bg-surface">
