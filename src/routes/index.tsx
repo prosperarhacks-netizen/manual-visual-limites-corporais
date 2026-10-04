@@ -90,17 +90,17 @@ function CTAButton({ children, href, onClick, variant = "primary" }: { children:
     "cta-pulse group inline-flex items-center justify-center gap-3 px-8 py-5 rounded-md font-semibold text-base md:text-lg tracking-wide transition-all duration-300 uppercase";
   const styles =
     variant === "primary"
-      ? { backgroundColor: "#22C55E", color: "#fff" }
-      : { backgroundColor: "transparent", color: "#C8A96B", border: "1px solid #C8A96B" };
+      ? { backgroundColor: "#E85D04", color: "#FFFFFF" }
+      : { backgroundColor: "transparent", color: "#F4A261", border: "1px solid #F4A261" };
   const cls = variant === "primary" ? `${base} shadow-cta text-white` : `${base}`;
   const enter = (e: React.MouseEvent<HTMLElement>) => {
-    if (variant === "primary") e.currentTarget.style.backgroundColor = "#16A34A";
+    if (variant === "primary") e.currentTarget.style.backgroundColor = "#C94F0A";
     else {
       e.currentTarget.style.backgroundColor = "rgba(200,169,107,0.1)";
     }
   };
   const leave = (e: React.MouseEvent<HTMLElement>) => {
-    if (variant === "primary") e.currentTarget.style.backgroundColor = "#22C55E";
+    if (variant === "primary") e.currentTarget.style.backgroundColor = "#E85D04";
     else e.currentTarget.style.backgroundColor = "transparent";
   };
   if (href) {
@@ -121,7 +121,7 @@ function CTAButton({ children, href, onClick, variant = "primary" }: { children:
 
 function CheckIcon({ className = "" }: { className?: string }) {
   return (
-    <span className={`shrink-0 w-6 h-6 rounded-full bg-[#22C55E]/15 border border-[#22C55E]/40 flex items-center justify-center text-[#22C55E] text-sm ${className}`}>
+    <span className={`shrink-0 w-6 h-6 rounded-full bg-[#E85D04]/15 border border-[#E85D04]/40 flex items-center justify-center text-[#E85D04] text-sm ${className}`}>
       ✓
     </span>
   );
@@ -139,11 +139,11 @@ function TopOfferBar() {
   return (
     <div className="w-full text-center py-2.5 px-4 text-xs md:text-sm font-semibold tracking-wide"
       style={{
-        background: "rgba(239, 68, 68, 0.15)",
-        color: "#F87171",
-        borderBottom: "1px solid rgba(239, 68, 68, 0.40)",
+        background: "rgba(201, 79, 10, 0.15)",
+        color: "#C94F0A",
+        borderBottom: "1px solid rgba(201, 79, 10, 0.40)",
       }}>
-      ⚡ OFERTA ESPECIAL DISPONÍVEL APENAS HOJE {today && <>• <b className="text-[#FCA5A5]">{today}</b></>}
+      ⚡ OFERTA ESPECIAL DISPONÍVEL APENAS HOJE {today && <>• <b className="text-[#E85D04]">{today}</b></>}
     </div>
   );
 }
@@ -479,9 +479,9 @@ function Index() {
                 <h3 className="text-lg font-semibold mb-2 text-ink">{b.t}</h3>
                 <p className="text-sm text-ink/65 leading-relaxed mb-4">{b.d}</p>
 
-                <div className="mt-auto inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-[#22C55E]/10 border border-[#22C55E]/35 text-xs">
+                <div className="mt-auto inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-[#E85D04]/10 border border-[#E85D04]/35 text-xs">
                   <span className="text-ink/60">Valor: <s>R$29</s></span>
-                  <span className="text-[#22C55E] font-bold">GRÁTIS</span>
+                  <span className="text-[#E85D04] font-bold">GRÁTIS</span>
                 </div>
               </div>
             </div>
@@ -492,7 +492,7 @@ function Index() {
       {/* 10 · PLANS / OFERTA */}
       <Section id="oferta" className="bg-surface">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-block px-4 py-2 rounded-full bg-[#EF4444]/15 border border-[#EF4444]/40 text-[#F87171] text-xs md:text-sm font-semibold tracking-wider mb-5">
+          <span className="inline-block px-4 py-2 rounded-full bg-[#C94F0A]/15 border border-[#C94F0A]/40 text-[#C94F0A] text-xs md:text-sm font-semibold tracking-wider mb-5">
             ⏰ ÚLTIMA CHANCE — OFERTA TERMINA HOJE
           </span>
           <h2 className="text-3xl md:text-5xl font-semibold">Escolha a opção ideal para você</h2>
@@ -527,9 +527,9 @@ function Index() {
 
             <div className="text-center mb-6 mt-auto">
               <div className="text-sm text-ink/60 mb-1">
-                De <span className="text-[#EF4444] line-through">R$29,90</span> por:
+                De <span className="text-[#C94F0A] line-through">R$29,90</span> por:
               </div>
-              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#22C55E" }}>R$19,90</div>
+              <div className="text-4xl md:text-5xl font-bold" style={{ color: "#E85D04" }}>R$19,90</div>
               <div className="text-sm text-ink/70 mt-1">ou 2x de R$9,95 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-antique-gold/10 border border-antique-gold/30 text-antique-gold text-xs">
                 💰 Você economiza R$10,00
@@ -597,9 +597,9 @@ function Index() {
 
             <div className="text-center mb-6 mt-auto">
               <div className="text-sm text-ink/60 mb-1">
-                De <span className="text-[#EF4444] line-through">R$49,90</span> por:
+                De <span className="text-[#C94F0A] line-through">R$49,90</span> por:
               </div>
-              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#22C55E" }}>R$29,90</div>
+              <div className="text-5xl md:text-6xl font-bold" style={{ color: "#E85D04" }}>R$29,90</div>
               <div className="text-sm text-ink/70 mt-1">ou 5x de R$5,98 no cartão</div>
               <div className="inline-block mt-3 px-3 py-1 rounded-full bg-antique-gold/10 border border-antique-gold/30 text-antique-gold text-xs">
                 💰 Você economiza R$20,00
